@@ -83,7 +83,8 @@ cinephile-theme/
 ├── index.php                   # Fallback loop standard WordPress
 ├── languages/
 │   └── cinephile.pot           # File master di traduzione e localizzazione con 2.400+ stringhe
-├── LICENSE                     # Licenza open-source del progetto
+├── LICENSE                     # Licenza ufficiale internazionale (GNU GPL v2 in lingua inglese)
+├── LICENZA.md                  # Traduzione italiana di cortesia & guida alla licenza GPL v2
 ├── page-chi-siamo.php          # Pagina manifesto con banner 2.35:1 e transient cache autori
 ├── page-contatti.php           # Template pagina contatti sicura
 ├── page.php                    # Layout pagina generica pulita
@@ -333,7 +334,7 @@ Se la tua rivista diventa virale e ricevi decine di migliaia di visualizzazioni 
 - **Ideazione e Direzione Artistica**: Diego Costanzo (Firenze)
 - **Sviluppo Software e AI Engineering**: Antigravity & Gemini (Google DeepMind)
 - **Versione**: 1.0.0 (Settembre 2026)
-- **Licenza**: GNU General Public License v2.0 o successiva (vedi [LICENSE](LICENSE)).
+- **Licenza**: GNU General Public License v2.0 o successiva (testo ufficiale vincolante in [LICENSE](LICENSE), traduzione e spiegazione in italiano in [LICENZA.md](LICENZA.md)).
 
 ---
 ---
@@ -404,7 +405,8 @@ cinephile-theme/
 ├── index.php                   # Fallback loop standard WordPress
 ├── languages/
 │   └── cinephile.pot           # Master localization template file with 2,400+ indexed strings
-├── LICENSE                     # Open-source project license
+├── LICENSE                     # Official international license (GNU GPL v2 in English)
+├── LICENZA.md                  # Italian courtesy translation & plain-language summary of GPL v2
 ├── page-chi-siamo.php          # Editorial "About Us" magazine layout with 2.35:1 banner
 ├── page-contatti.php           # Native contact page template
 ├── page.php                    # Default clean page layout
