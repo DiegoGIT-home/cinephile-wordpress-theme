@@ -27,7 +27,7 @@ get_header();
 $read_more = get_theme_mod( 'archive_read_more_text', __( 'Leggi articolo', 'cinephile' ) );
 ?>
 
-<main class="site-main content-container archive-main-container">
+<main id="main-content" class="site-main content-container archive-main-container">
     <header class="archive-header-clean">
         <h1 class="archive-title-clean">
             <?php echo wp_kses_post( get_the_archive_title() ); ?>

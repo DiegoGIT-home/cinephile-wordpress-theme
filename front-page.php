@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<main class="site-main">
+<main id="main-content" class="site-main">
     <div class="content-container">
 
         <?php

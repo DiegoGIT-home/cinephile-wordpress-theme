@@ -28,7 +28,7 @@ $show_thumb  = get_theme_mod( 'show_featured_images', true );
 $page_title  = get_theme_mod( 'archive_main_title', __( 'Ultimi Articoli', 'cinephile' ) );
 ?>
 
-<main class="site-main content-container archive-main-container">
+<main id="main-content" class="site-main content-container archive-main-container">
 
     <header class="archive-header-clean">
         <h1 class="archive-title-clean"><?php echo esc_html( $page_title ); ?></h1>

@@ -22,10 +22,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Protezione da accesso diretto via URL.
 }
 
+/**
+ * Imposta la larghezza massima globale del contenuto per WordPress.
+ */
+if ( ! isset( $content_width ) ) {
+	$content_width = 1200;
+}
+
 if ( ! function_exists( 'cinephile_setup' ) ) :
 	function cinephile_setup() {
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'align-wide' );
 
 		add_theme_support(
 			'html5',

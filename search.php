@@ -39,7 +39,7 @@ $citazioni_no_results = array(
 $frase_casuale = $citazioni_no_results[ array_rand( $citazioni_no_results ) ];
 ?>
 
-<main class="site-main">
+<main id="main-content" class="site-main">
     <div class="content-container">
 
         <?php if ( have_posts() ) : ?>

@@ -45,7 +45,7 @@ if ( $author_user && ! empty( $author_user->roles ) ) {
 }
 ?>
 
-<main class="site-main content-container author-main-container">
+<main id="main-content" class="site-main content-container author-main-container">
 	
 	<!-- SCHEDA BIOGRAFICA DEL CRITICO CINEMATOGRAFICO -->
 	<header class="author-profile-header">

@@ -27,7 +27,7 @@ get_header();
 $show_thumb = get_theme_mod( 'single_show_featured_image', true );
 ?>
 
-<main class="site-main content-container single-main-container">
+<main id="main-content" class="site-main content-container single-main-container">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <article id="post-<?php the_ID(); ?>" <?php post_class( 'single-article-card' ); ?>>

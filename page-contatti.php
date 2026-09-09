@@ -61,7 +61,7 @@ $button_label    = get_theme_mod( 'contact_button_label', __( 'Invia Messaggio',
 $privacy_notice  = get_theme_mod( 'contact_privacy_notice', __( "I dati inseriti e l'indirizzo IP di connessione vengono temporaneamente elaborati per un massimo di 15 minuti al solo fine di proteggere il sistema da invii spam automatizzati.", 'cinephile' ) );
 ?>
 
-<main class="site-main content-container page-custom-template">
+<main id="main-content" class="site-main content-container page-custom-template">
 
 	<!-- HERO SECTION -->
 	<section class="page-hero-section">

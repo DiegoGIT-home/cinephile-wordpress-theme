@@ -27,7 +27,7 @@ get_header();
 $default_thumb = get_theme_mod( 'default_fallback_image', '' );
 ?>
 
-<main class="site-main content-container page-custom-template">
+<main id="main-content" class="site-main content-container page-custom-template">
 
     <header class="page-hero-section">
         <h1 class="page-title"><?php echo esc_html( single_cat_title( '', false ) ); ?></h1>

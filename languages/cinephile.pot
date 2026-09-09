@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-09T21:54:15+00:00\n"
+"POT-Creation-Date: 2026-09-09T22:11:43+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: cinephile\n"
@@ -300,6 +300,10 @@ msgstr ""
 
 #: front-page.php:114
 msgid "Dal nostro archivio"
+msgstr ""
+
+#: header.php:34
+msgid "Salta al contenuto principale"
 msgstr ""
 
 #: inc/customizer.php:39
@@ -2134,11 +2138,11 @@ msgstr ""
 msgid "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR)."
 msgstr ""
 
-#: inc/setup.php:60
+#: inc/setup.php:68
 msgid "Menu Principale"
 msgstr ""
 
-#: inc/setup.php:61
+#: inc/setup.php:69
 msgid "Menu Footer"
 msgstr ""
 

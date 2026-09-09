@@ -31,6 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<a class="skip-link screen-reader-text" href="#main-content"><?php esc_html_e( 'Salta al contenuto principale', 'cinephile' ); ?></a>
 
 <!-- BARRA MENU FIXED ASSOLUTA -->
 <div class="header-top-fixed">

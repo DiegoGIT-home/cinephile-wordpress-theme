@@ -33,7 +33,7 @@ $kicker        = get_theme_mod( 'tag_hero_kicker', __( 'DOSSIER TEMATICO', 'cine
 $default_thumb = get_theme_mod( 'default_fallback_image', '' );
 ?>
 
-<main class="site-main content-container tag-bento-container">
+<main id="main-content" class="site-main content-container tag-bento-container">
 
     <header class="page-hero-section tag-hero-header">
         <span class="tag-kicker-meta">

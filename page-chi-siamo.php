@@ -52,7 +52,7 @@ $pillar3_icon   = get_theme_mod( 'about_pillar3_icon', 'book' );
 $pillar3_custom = get_theme_mod( 'about_pillar3_custom_icon', '' );
 ?>
 
-<main class="site-main content-container page-custom-template">
+<main id="main-content" class="site-main content-container page-custom-template">
 
 	<section class="page-hero-section">
 		<?php if ( ! empty( $kicker ) ) : ?>

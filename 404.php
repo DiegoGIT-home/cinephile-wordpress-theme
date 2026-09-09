@@ -69,7 +69,7 @@ $citazione_attiva = $citazioni_cinema[ array_rand( $citazioni_cinema ) ];
 get_header();
 ?>
 
-<main class="site-main content-container template-404-container">
+<main id="main-content" class="site-main content-container template-404-container">
     <div class="template-404-box">
 
         <span class="template-404-number">404</span>
