@@ -47,7 +47,7 @@ $show_thumb = get_theme_mod( 'single_show_featured_image', true );
 
             <?php if ( $show_thumb && has_post_thumbnail() ) : ?>
                 <div class="post-thumbnail">
-                    <?php the_post_thumbnail( 'large' ); ?>
+                    <?php the_post_thumbnail( 'large', array( 'fetchpriority' => 'high', 'loading' => 'eager' ) ); ?>
                 </div>
             <?php endif; ?>
 

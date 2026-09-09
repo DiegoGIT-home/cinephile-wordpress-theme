@@ -102,7 +102,7 @@ $pillar3_custom = get_theme_mod( 'about_pillar3_custom_icon', '' );
 	<!-- SCHEDA AUTORE / GRIGLIA MULTI-AUTORE DINAMICA -->
 	<section class="team-section">
 		<?php
-		$authors = get_users( array(
+		$authors = function_exists( 'cinephile_get_about_team_users' ) ? cinephile_get_about_team_users() : get_users( array(
 			'role__in' => array( 'administrator', 'editor', 'author' ),
 			'orderby'  => 'post_count',
 			'order'    => 'DESC',

@@ -59,7 +59,7 @@ get_header();
                 <article id="post-<?php the_ID(); ?>" <?php post_class( 'hero-card' ); ?>>
                     <?php if ( has_post_thumbnail() ) : ?>
                         <div class="hero-image">
-                            <a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+                            <a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail( 'large', array( 'fetchpriority' => 'high', 'loading' => 'eager' ) ); ?></a>
                         </div>
                     <?php endif; ?>
                     <div class="hero-body">
