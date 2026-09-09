@@ -52,6 +52,8 @@ if ( ! function_exists( 'cinephile_setup' ) ) :
 
 		add_theme_support( 'responsive-embeds' );
 		add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'editor-styles' );
+		add_editor_style( array( 'assets/fonts/local-fonts.css', 'assets/css/editor-style.css' ) );
 
 		register_nav_menus(
 			array(

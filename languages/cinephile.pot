@@ -1,0 +1,2414 @@
+# Copyright (C) 2026 Diego Costanzo (Ideatore, Firenze) & Antigravity / Gemini (Google DeepMind)
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Cinephile - Editorial Cinema Magazine 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cinemaecritica-theme\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-09T21:35:24+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: cinephile\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Cinephile - Editorial Cinema Magazine"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/DiegoGIT-home/cinephile-wordpress-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Tema editoriale WordPress per riviste di cinema, critica cinematografica e cinefili. Ideato a Firenze nel Settembre 2026 da Diego Costanzo e sviluppato con il supporto dell'Intelligenza Artificiale (Antigravity & Gemini). 100% GDPR-Native, Open Source, responsive a blocchi, con scheda tecnica film, galleria polaroid interattiva e controlli completi nel Customizer."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Diego Costanzo (Ideatore, Firenze) & Antigravity / Gemini (Google DeepMind)"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://github.com/DiegoGIT-home"
+msgstr ""
+
+#: 404.php:25
+msgid "Scena Tagliata in Montaggio"
+msgstr ""
+
+#: 404.php:26
+msgid "Torna alla Home Page"
+msgstr ""
+
+#: 404.php:30
+msgid "Noi vogliamo sapere: per andare dove dobbiamo andare, per dove dobbiamo andare?"
+msgstr ""
+
+#: 404.php:31
+msgid "Totò, Peppino e la... malafemmina"
+msgstr ""
+
+#: 404.php:33
+msgid "Camillo Mastrocinque"
+msgstr ""
+
+#: 404.php:36
+msgid "Ho come la sensazione che non siamo più nel Kansas..."
+msgstr ""
+
+#: 404.php:37
+msgid "Il Mago di Oz"
+msgstr ""
+
+#: 404.php:42
+msgid "Questi non sono i droidi che state cercando."
+msgstr ""
+
+#: 404.php:43
+msgid "Star Wars: Una nuova speranza"
+msgstr ""
+
+#: 404.php:48
+msgid "Strade? Dove andiamo noi non servono strade!"
+msgstr ""
+
+#: 404.php:49
+msgid "Ritorno al futuro"
+msgstr ""
+
+#: 404.php:54
+msgid "Se non sai dove vuoi andare, poco importa quale strada prendi."
+msgstr ""
+
+#: 404.php:55
+msgid "Alice nel Paese delle Meraviglie"
+msgstr ""
+
+#: 404.php:60
+msgid "Fermati! Chi siete? Cosa portate? Un fiorino!"
+msgstr ""
+
+#: 404.php:61
+msgid "Non ci resta che piangere"
+msgstr ""
+
+#: 404.php:84
+msgid "regia di"
+msgstr ""
+
+#: 404.php:88
+msgid "La pagina che stavi cercando è stata spostata, rimossa oppure l'indirizzo inserito non è corretto."
+msgstr ""
+
+#: 404.php:92
+msgid "Cerca un titolo o un regista nell'archivio:"
+msgstr ""
+
+#: 404.php:109
+msgid "Invece di tornare a mani vuote, lasciati ispirare dall'archivio:"
+msgstr ""
+
+#: 404.php:135
+#: single.php:251
+#: tag.php:107
+msgid "Leggi l'articolo"
+msgstr ""
+
+#: archive.php:27
+#: front-page.php:69
+#: inc/customizer.php:141
+msgid "Leggi articolo"
+msgstr ""
+
+#: archive.php:71
+#: category.php:75
+#: index.php:68
+#: search.php:82
+#: tag.php:244
+msgid "Precedenti"
+msgstr ""
+
+#: archive.php:72
+#: category.php:76
+#: index.php:69
+#: search.php:83
+#: tag.php:245
+msgid "Successivi"
+msgstr ""
+
+#: archive.php:78
+msgid "Nessun articolo trovato per questo archivio."
+msgstr ""
+
+#: category.php:85
+#: inc/customizer.php:144
+msgid "Nessun articolo trovato"
+msgstr ""
+
+#: category.php:86
+msgid "Non ci sono ancora contenuti pubblicati in questa categoria."
+msgstr ""
+
+#: comments.php:43
+msgid "1 Commento"
+msgstr ""
+
+#. translators: %1$s: Numero commenti
+#: comments.php:47
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Commento"
+msgid_plural "%1$s Commenti"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:68
+msgid "Commenti Precedenti"
+msgstr ""
+
+#: comments.php:69
+msgid "Commenti Successivi"
+msgstr ""
+
+#: comments.php:79
+msgid "I commenti sono disabilitati per questo contenuto."
+msgstr ""
+
+#: comments.php:87
+msgid "Nome *"
+msgstr ""
+
+#: comments.php:88
+msgid "Il tuo nome"
+msgstr ""
+
+#: comments.php:89
+msgid "Email *"
+msgstr ""
+
+#: comments.php:90
+msgid "tua@email.it"
+msgstr ""
+
+#: comments.php:96
+msgid "Lascia un commento"
+msgstr ""
+
+#: comments.php:97
+#, php-format
+msgid "Rispondi a %s"
+msgstr ""
+
+#: comments.php:98
+msgid "Annulla risposta"
+msgstr ""
+
+#: comments.php:99
+msgid "Invia Commento"
+msgstr ""
+
+#: comments.php:102
+msgid "Commento *"
+msgstr ""
+
+#: comments.php:102
+msgid "Scrivi qui la tua opinione..."
+msgstr ""
+
+#: footer.php:50
+msgid "Privacy & Cookie Policy"
+msgstr ""
+
+#: footer.php:51
+#: inc/setup-pages.php:215
+#: inc/setup-pages.php:332
+msgid "Chi siamo"
+msgstr ""
+
+#. Template Name of the theme
+#: footer.php:52
+#: inc/setup-pages.php:227
+msgid "Contatti"
+msgstr ""
+
+#: footer.php:60
+msgid "Torna in cima"
+msgstr ""
+
+#. translators: 1: Anno, 2: Nome brand
+#. translators: 1: Anno corrente, 2: Nome del sito web
+#: footer.php:73
+#: inc/customizer.php:160
+#, php-format
+msgid "© %1$s %2$s. Tutti i diritti riservati."
+msgstr ""
+
+#: footer.php:78
+msgid "Progetto editoriale didattico GDPR Native"
+msgstr ""
+
+#: front-page.php:40
+msgid "Benvenuto su Cinephile!"
+msgstr ""
+
+#: front-page.php:42
+msgid "Il tuo magazine cinematografico è pronto. Inizia a pubblicare le prime recensioni o saggi dal pannello di amministrazione per popolare automaticamente le sezioni In Primo Piano, Focus e gli archivi."
+msgstr ""
+
+#: front-page.php:46
+msgid "✍️ Scrivi il tuo primo articolo"
+msgstr ""
+
+#: front-page.php:81
+msgid "Focus e Percorsi"
+msgstr ""
+
+#: front-page.php:114
+msgid "Dal nostro archivio"
+msgstr ""
+
+#: inc/customizer.php:39
+msgid "Cinephile"
+msgstr ""
+
+#: inc/customizer.php:44
+msgid "Rivista indipendente di analisi e approfondimento cinematografico"
+msgstr ""
+
+#: inc/customizer.php:75
+#: page-contatti.php:34
+msgid "PARLA CON LA REDAZIONE"
+msgstr ""
+
+#. translators: %s: Nome del sito web
+#: inc/customizer.php:78
+#, php-format
+msgid "%s è uno spazio editoriale aperto al dialogo e alle collaborazioni. Hai un feedback, un suggerimento o una proposta? Scrivici compilando il modulo o usa i nostri recapiti diretti."
+msgstr ""
+
+#: inc/customizer.php:81
+msgid "Redazione & Direzione"
+msgstr ""
+
+#: inc/customizer.php:82
+msgid "Coordinamento Editoriale & Stampa"
+msgstr ""
+
+#: inc/customizer.php:83
+msgid "Spazio dedicato a lettori, collaboratori e distributori per proposte di recensione, interviste ed eventi speciali."
+msgstr ""
+
+#: inc/customizer.php:86
+msgid "Email Redazione"
+msgstr ""
+
+#: inc/customizer.php:91
+msgid "Recapito Telefonico"
+msgstr ""
+
+#: inc/customizer.php:96
+#: page-contatti.php:55
+msgid "Sede Operativa"
+msgstr ""
+
+#: inc/customizer.php:97
+msgid "Via Roma 1, 00100 Roma (RM)"
+msgstr ""
+
+#: inc/customizer.php:101
+#: page-contatti.php:60
+msgid "Invia Messaggio"
+msgstr ""
+
+#: inc/customizer.php:102
+#: page-contatti.php:61
+msgid "I dati inseriti e l'indirizzo IP di connessione vengono temporaneamente elaborati per un massimo di 15 minuti al solo fine di proteggere il sistema da invii spam automatizzati."
+msgstr ""
+
+#: inc/customizer.php:105
+msgid "[Nome e Cognome / Ragione Sociale Titolare]"
+msgstr ""
+
+#: inc/customizer.php:106
+msgid "[Città / Sede Legale Titolare]"
+msgstr ""
+
+#: inc/customizer.php:108
+msgid "[Nome Fornitore Hosting]"
+msgstr ""
+
+#: inc/customizer.php:109
+msgid "[Sede Legale Fornitore Hosting]"
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "IL MANIFESTO EDITORIALE"
+msgstr ""
+
+#. translators: %s: Nome del sito web
+#: inc/customizer.php:116
+#, php-format
+msgid "%s è una rivista digitale indipendente. Nasce per offrire uno sguardo analitico, slegato da logiche commerciali, sul cinema contemporaneo, i classici del passato e i principali festival internazionali."
+msgstr ""
+
+#: inc/customizer.php:120
+msgid "Indipendenza Critica"
+msgstr ""
+
+#: inc/customizer.php:121
+msgid "Nessun condizionamento commerciale o promozionale. Analisi critiche sincere, rigorose e fondate su una visione autoriale autentica."
+msgstr ""
+
+#: inc/customizer.php:124
+msgid "Festival & Rassegne"
+msgstr ""
+
+#: inc/customizer.php:125
+msgid "Copertura capillare delle rassegne e dei festival cinematografici con diari di bordo, recensioni in anteprima e reportage speciali."
+msgstr ""
+
+#: inc/customizer.php:128
+msgid "Saggi & Approfondimenti"
+msgstr ""
+
+#: inc/customizer.php:129
+msgid "Monografie, retrospettive tematiche e saggi visivi concepiti come archivio culturale permanente pensato per durare nel tempo."
+msgstr ""
+
+#: inc/customizer.php:132
+msgid "Curatore del Progetto"
+msgstr ""
+
+#: inc/customizer.php:133
+#: page-chi-siamo.php:129
+msgid "Fondatore & Direttore Editoriale"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Critico e saggista cinematografico. Cura la linea editoriale, la selezione degli speciali e il coordinamento del comitato dei collaboratori."
+msgstr ""
+
+#: inc/customizer.php:138
+msgid "In Primo Piano"
+msgstr ""
+
+#: inc/customizer.php:139
+msgid "Ultime Recensioni & Saggi"
+msgstr ""
+
+#: inc/customizer.php:140
+msgid "Archivio Critiche & Saggi"
+msgstr ""
+
+#: inc/customizer.php:142
+msgid "Esplora per Argomento"
+msgstr ""
+
+#: inc/customizer.php:143
+msgid "Risultati della Ricerca"
+msgstr ""
+
+#: inc/customizer.php:145
+msgid "404 - Pellicola Smarrita"
+msgstr ""
+
+#: inc/customizer.php:146
+msgid "Torna alla Home"
+msgstr ""
+
+#: inc/customizer.php:164
+msgid "Rivista culturale indipendente • 100% Privacy & GDPR Native"
+msgstr ""
+
+#: inc/customizer.php:316
+msgid "Icona del Sito / Favicon"
+msgstr ""
+
+#: inc/customizer.php:317
+msgid "Compare nelle schede del browser, nei segnalibri e come icona dell'app per smartphone (consigliata immagine quadrata di almeno 512×512 pixel)."
+msgstr ""
+
+#: inc/customizer.php:326
+msgid "1. Identità del Sito, Logo & Icona"
+msgstr ""
+
+#: inc/customizer.php:328
+msgid "Definisci l'identità di base del tuo magazine: nome del sito, motto/sottotitolo, logo grafico per la testata e icona favicon per il browser."
+msgstr ""
+
+#: inc/customizer.php:333
+msgid "🏷️ Nome della Testata & Slogan"
+msgstr ""
+
+#: inc/customizer.php:346
+msgid "Nome del Sito / Testata"
+msgstr ""
+
+#: inc/customizer.php:347
+msgid "Il titolo del tuo sito. Compare nell'header, nel footer e nei titoli delle pagine."
+msgstr ""
+
+#: inc/customizer.php:360
+msgid "Motto / Sottotitolo del Sito"
+msgstr ""
+
+#: inc/customizer.php:361
+msgid "Breve frase o slogan descrittivo mostrato sotto il logo nella testata e nei motori di ricerca."
+msgstr ""
+
+#: inc/customizer.php:369
+msgid "🖼️ Logo Grafico dell'Header"
+msgstr ""
+
+#: inc/customizer.php:382
+msgid "Logo Grafico dell'Intestazione"
+msgstr ""
+
+#: inc/customizer.php:383
+msgid "Carica un'immagine PNG, SVG o WebP con sfondo trasparente. Se impostata, compare nella testata."
+msgstr ""
+
+#: inc/customizer.php:393
+msgid "2. Palette Colori del Tema (Live)"
+msgstr ""
+
+#: inc/customizer.php:395
+msgid "I 6 colori cardine del sito. Modificando i selettori, la schermata di anteprima a destra si aggiornerà istantaneamente in tempo reale prima di pubblicare."
+msgstr ""
+
+#: inc/customizer.php:399
+msgid "🎨 Palette Cromatica del Magazine"
+msgstr ""
+
+#: inc/customizer.php:400
+msgid "Colori principali di accento, sfondo, schede e testi con aggiornamento in tempo reale."
+msgstr ""
+
+#: inc/customizer.php:408
+msgid "Colore di Accento Primario (--color-accent)"
+msgstr ""
+
+#: inc/customizer.php:409
+msgid "Usato per i pulsanti principali, i link attivi, i tag e le sottolineature decorative."
+msgstr ""
+
+#: inc/customizer.php:412
+msgid "Sfondo Generale della Pagina (--bg-canvas)"
+msgstr ""
+
+#: inc/customizer.php:413
+msgid "Il colore dello sfondo visibile dietro all'intero sito web e attorno ai contenuti."
+msgstr ""
+
+#: inc/customizer.php:416
+msgid "Sfondo Schede & Riquadri (--bg-card)"
+msgstr ""
+
+#: inc/customizer.php:417
+msgid "Il colore delle singole card degli articoli, delle biografie e dei moduli."
+msgstr ""
+
+#: inc/customizer.php:420
+msgid "Colore Testo Principale (--text-main)"
+msgstr ""
+
+#: inc/customizer.php:421
+msgid "Colore ad alto contrasto per i titoli e la lettura degli articoli lunghi."
+msgstr ""
+
+#: inc/customizer.php:424
+msgid "Colore Testo Secondario (--text-muted)"
+msgstr ""
+
+#: inc/customizer.php:425
+msgid "Colore attenuato per date di pubblicazione, autore, categorie e note a piè di pagina."
+msgstr ""
+
+#: inc/customizer.php:428
+msgid "Bordi & Linee Divisorie (--border-line)"
+msgstr ""
+
+#: inc/customizer.php:429
+msgid "Colore delle linee sottili che separano le sezioni, i box e le cornici dei moduli."
+msgstr ""
+
+#: inc/customizer.php:451
+msgid "3. Caratteri & Tipografia (100% Locale)"
+msgstr ""
+
+#: inc/customizer.php:453
+msgid "Tipografia 100% GDPR-compliant e indipendente: tutti i font risiedono sul tuo server senza alcuna connessione verso Google Fonts. Puoi combinare caratteri diversi per i titoli e per la lettura, oppure caricare file font personalizzati (.woff2, .woff, .ttf)."
+msgstr ""
+
+#: inc/customizer.php:458
+msgid "Playfair Display (Serif Elegante / Editoriale)"
+msgstr ""
+
+#: inc/customizer.php:459
+msgid "Cinzel (Serif Cinematografico / Epico)"
+msgstr ""
+
+#: inc/customizer.php:460
+msgid "Lora (Serif Letterario per Saggistica)"
+msgstr ""
+
+#: inc/customizer.php:461
+msgid "Plus Jakarta Sans (Geometrico Moderno)"
+msgstr ""
+
+#: inc/customizer.php:462
+msgid "Inter (Sans Clean Minimal)"
+msgstr ""
+
+#: inc/customizer.php:463
+msgid "Outfit (Sans Contemporaneo Display)"
+msgstr ""
+
+#: inc/customizer.php:464
+msgid "Georgia / Serif Nativo OS (Zero Download)"
+msgstr ""
+
+#: inc/customizer.php:465
+#: inc/customizer.php:526
+msgid "System Sans Nativo OS (Apple, Segoe UI, Roboto)"
+msgstr ""
+
+#: inc/customizer.php:466
+#: inc/customizer.php:528
+msgid "📁 Carica File Font Personalizzato (.woff2)"
+msgstr ""
+
+#: inc/customizer.php:471
+msgid "🔤 Carattere per i Titoli (--font-title)"
+msgstr ""
+
+#: inc/customizer.php:472
+msgid "Applicato alle intestazioni h1, h2, h3, alle schede film e ai titoli degli articoli."
+msgstr ""
+
+#: inc/customizer.php:484
+msgid "Seleziona Font Titoli"
+msgstr ""
+
+#: inc/customizer.php:485
+#: inc/customizer.php:547
+msgid "Scegli uno dei font inclusi nel tema oppure seleziona l'opzione per caricare un tuo file .woff2."
+msgstr ""
+
+#: inc/customizer.php:499
+msgid "Carica File Font Titoli (.woff2, .woff, .ttf)"
+msgstr ""
+
+#: inc/customizer.php:500
+#: inc/customizer.php:562
+msgid "Necessario SOLO se sopra selezioni \"📁 Carica File Font Personalizzato\". Il file viene ospitato sul tuo server in locale (100% GDPR, zero chiamate esterne). Se hai scelto un font dall'elenco, ignora questo campo."
+msgstr ""
+
+#: inc/customizer.php:512
+msgid "Nome Famiglia Font Titoli (Solo per font personalizzato)"
+msgstr ""
+
+#: inc/customizer.php:513
+msgid "Necessario SOLO se hai caricato un file font tuo qui sopra: assegna un nome al carattere per il CSS (es. \"MioFontTitoli\" o \"Futura\"). Se usi uno dei font già inclusi nell'elenco a tendina, lascia questo campo vuoto."
+msgstr ""
+
+#: inc/customizer.php:521
+msgid "Plus Jakarta Sans (Geometrico - Massima Leggibilità)"
+msgstr ""
+
+#: inc/customizer.php:522
+msgid "Inter (Sans Clean Neutro)"
+msgstr ""
+
+#: inc/customizer.php:523
+msgid "Outfit (Sans Contemporaneo)"
+msgstr ""
+
+#: inc/customizer.php:524
+msgid "Lora (Serif Caldo per Letture Lunghe)"
+msgstr ""
+
+#: inc/customizer.php:525
+msgid "Playfair Display (Serif Classico)"
+msgstr ""
+
+#: inc/customizer.php:527
+msgid "Georgia / Serif Nativo OS"
+msgstr ""
+
+#: inc/customizer.php:533
+msgid "📄 Carattere per il Corpo del Testo (--font-body)"
+msgstr ""
+
+#: inc/customizer.php:534
+msgid "Applicato a paragrafi di lettura, recensioni, schede tecniche, biografie ed estratti."
+msgstr ""
+
+#: inc/customizer.php:546
+msgid "Seleziona Font Corpo"
+msgstr ""
+
+#: inc/customizer.php:561
+msgid "Carica File Font Corpo (.woff2, .woff, .ttf)"
+msgstr ""
+
+#: inc/customizer.php:574
+msgid "Nome Famiglia Font Corpo (Solo per font personalizzato)"
+msgstr ""
+
+#: inc/customizer.php:575
+msgid "Necessario SOLO se hai caricato un file font tuo qui sopra: assegna un nome al carattere per il CSS (es. \"MioFontCorpo\"). Se usi uno dei font già inclusi nell'elenco a tendina, lascia questo campo vuoto."
+msgstr ""
+
+#: inc/customizer.php:586
+msgid "4. Pagina Contatti & Modulo"
+msgstr ""
+
+#: inc/customizer.php:588
+msgid "Personalizza tutti i contenuti visibili nella pagina /contatti/: intestazione, profilo del referente, fino a 3 schede con icone a scelta, email di ricezione e parametri del modulo."
+msgstr ""
+
+#: inc/customizer.php:593
+msgid "📋 Intestazione & Testo dei Contatti"
+msgstr ""
+
+#: inc/customizer.php:604
+msgid "Kicker Superiore Hero"
+msgstr ""
+
+#: inc/customizer.php:605
+msgid "Piccola intestazione in maiuscolo sopra il testo introduttivo dei contatti."
+msgstr ""
+
+#: inc/customizer.php:617
+msgid "Testo Introduttivo dei Contatti"
+msgstr ""
+
+#: inc/customizer.php:618
+msgid "Paragrafo di presentazione visualizzato in cima alla pagina dei contatti (supporta formattazione html sicura)."
+msgstr ""
+
+#: inc/customizer.php:625
+msgid "👤 Profilo del Referente"
+msgstr ""
+
+#: inc/customizer.php:626
+msgid "Dati del contatto redazionale mostrati in pagina."
+msgstr ""
+
+#: inc/customizer.php:637
+msgid "Foto / Avatar del Referente"
+msgstr ""
+
+#: inc/customizer.php:638
+msgid "Immagine circolare mostrata accanto alla scheda del referente (se non impostata, viene usato Gravatar o icona generica)."
+msgstr ""
+
+#: inc/customizer.php:649
+msgid "Nome del Referente"
+msgstr ""
+
+#: inc/customizer.php:650
+msgid "Nome e cognome della persona di riferimento."
+msgstr ""
+
+#: inc/customizer.php:661
+msgid "Ruolo del Referente"
+msgstr ""
+
+#: inc/customizer.php:662
+msgid "Es. \"Fondatore & Redazione\" o \"Ufficio Stampa\"."
+msgstr ""
+
+#: inc/customizer.php:673
+msgid "Breve Descrizione / Mansioni"
+msgstr ""
+
+#: inc/customizer.php:674
+msgid "Spiega in poche righe di cosa si occupa il referente o per quali richieste contattarlo."
+msgstr ""
+
+#: inc/customizer.php:681
+msgid "📬 Schede Recapiti (Fino a 3 box)"
+msgstr ""
+
+#: inc/customizer.php:682
+msgid "Configura canali diretti con icone a scelta."
+msgstr ""
+
+#: inc/customizer.php:692
+msgid "Recapito 1: Titolo Scheda"
+msgstr ""
+
+#: inc/customizer.php:693
+msgid "Titolo del primo riquadro contatti (es. \"Email Diretta\")."
+msgstr ""
+
+#: inc/customizer.php:703
+msgid "Recapito 1: Indirizzo Email Pubblico"
+msgstr ""
+
+#: inc/customizer.php:704
+msgid "Indirizzo email mostrato pubblicamente (protetto automaticamente da antispambot contro i bot web)."
+msgstr ""
+
+#: inc/customizer.php:714
+msgid "Recapito 1: Icona"
+msgstr ""
+
+#: inc/customizer.php:718
+msgid "✉️ Busta Lettera Classica"
+msgstr ""
+
+#: inc/customizer.php:719
+msgid "📜 Lettera Certificata / PEC"
+msgstr ""
+
+#: inc/customizer.php:720
+msgid "💬 Fumetto Messaggio"
+msgstr ""
+
+#: inc/customizer.php:721
+msgid "✈️ Aeroplanino Invia"
+msgstr ""
+
+#: inc/customizer.php:731
+msgid "Mostra Recapito 2 (Secondario)"
+msgstr ""
+
+#: inc/customizer.php:732
+msgid "Spunta per visualizzare una seconda scheda recapiti accanto alla prima."
+msgstr ""
+
+#: inc/customizer.php:742
+msgid "Recapito 2: Titolo Scheda"
+msgstr ""
+
+#: inc/customizer.php:752
+msgid "Recapito 2: Testo o Numero di Telefono"
+msgstr ""
+
+#: inc/customizer.php:762
+msgid "Recapito 2: Icona"
+msgstr ""
+
+#: inc/customizer.php:766
+msgid "📞 Telefono Cornetta"
+msgstr ""
+
+#: inc/customizer.php:767
+msgid "📱 Cellulare / Chat"
+msgstr ""
+
+#: inc/customizer.php:768
+msgid "⏰ Orari & Disponibilità"
+msgstr ""
+
+#: inc/customizer.php:769
+#: inc/customizer.php:814
+msgid "📍 Posizione Geografica"
+msgstr ""
+
+#: inc/customizer.php:779
+msgid "Mostra Recapito 3 (Sede / Press)"
+msgstr ""
+
+#: inc/customizer.php:780
+msgid "Spunta per visualizzare una terza scheda informativa."
+msgstr ""
+
+#: inc/customizer.php:790
+msgid "Recapito 3: Titolo Scheda"
+msgstr ""
+
+#: inc/customizer.php:800
+msgid "Recapito 3: Indirizzo o Testo Informativo"
+msgstr ""
+
+#: inc/customizer.php:810
+msgid "Recapito 3: Icona"
+msgstr ""
+
+#: inc/customizer.php:815
+msgid "🏛️ Edificio / Redazione"
+msgstr ""
+
+#: inc/customizer.php:816
+msgid "⭐ Stella / Partnership"
+msgstr ""
+
+#: inc/customizer.php:817
+msgid "✉️ Busta Lettera"
+msgstr ""
+
+#: inc/customizer.php:823
+msgid "✉️ Modulo di Invio & Ricezione Email"
+msgstr ""
+
+#: inc/customizer.php:824
+msgid "Configura la casella di arrivo dei messaggi e i parametri del modulo."
+msgstr ""
+
+#: inc/customizer.php:834
+msgid "Email Destinatario del Modulo di Invio"
+msgstr ""
+
+#: inc/customizer.php:835
+msgid "La casella di posta a cui verranno recapitati i messaggi inviati dai visitatori (default: email amministratore)."
+msgstr ""
+
+#: inc/customizer.php:846
+msgid "Etichetta del Pulsante di Invio"
+msgstr ""
+
+#: inc/customizer.php:847
+msgid "Testo sul bottone per spedire il messaggio (es. \"Invia Messaggio\")."
+msgstr ""
+
+#: inc/customizer.php:857
+msgid "Avviso Privacy & Sicurezza Anti-Spam del Modulo"
+msgstr ""
+
+#: inc/customizer.php:858
+msgid "Dicitura informativa posta sotto il modulo che spiega la conservazione temporanea di sicurezza dell'IP per 15 minuti contro lo spam."
+msgstr ""
+
+#: inc/customizer.php:868
+msgid "5. Dati Legali, Privacy Policy & Commenti"
+msgstr ""
+
+#: inc/customizer.php:870
+msgid "Compilando questi dati, la pagina /privacy-e-cookie-policy/ viene popolata automaticamente nel rispetto del GDPR senza dover modificare file di codice. Puoi inoltre abilitare i commenti agli articoli con sincronizzazione immediata."
+msgstr ""
+
+#: inc/customizer.php:874
+msgid "⚖️ Titolare del Trattamento Dati (GDPR)"
+msgstr ""
+
+#: inc/customizer.php:875
+msgid "Dati del responsabile del sito per conformità al Regolamento UE 2016/679."
+msgstr ""
+
+#: inc/customizer.php:885
+msgid "Nome Titolare del Trattamento / Ragione Sociale"
+msgstr ""
+
+#: inc/customizer.php:886
+msgid "Nome e Cognome della persona fisica o denominazione dell'associazione/azienda titolare del sito."
+msgstr ""
+
+#: inc/customizer.php:896
+msgid "Città / Sede del Titolare"
+msgstr ""
+
+#: inc/customizer.php:897
+msgid "Comune o luogo di residenza/sede operativa del titolare (es. Firenze, Italia)."
+msgstr ""
+
+#: inc/customizer.php:907
+msgid "Email Ufficiale per Richieste Privacy (GDPR)"
+msgstr ""
+
+#: inc/customizer.php:908
+msgid "Indirizzo a cui i visitatori possono scrivere per esercitare i propri diritti GDPR (es. accesso o cancellazione)."
+msgstr ""
+
+#: inc/customizer.php:914
+msgid "🏢 Provider Hosting & Datacenter"
+msgstr ""
+
+#: inc/customizer.php:915
+msgid "Informazioni tecniche sull'infrastruttura server."
+msgstr ""
+
+#: inc/customizer.php:925
+msgid "Nome Fornitore Servizio Hosting"
+msgstr ""
+
+#: inc/customizer.php:926
+msgid "Denominazione del provider che ospita server e database del sito (es. SiteGround, Hetzner, OVH...)."
+msgstr ""
+
+#: inc/customizer.php:936
+msgid "Sede Legale del Fornitore Hosting"
+msgstr ""
+
+#: inc/customizer.php:937
+msgid "Sede legale del provider per attestare la conformità europea (es. Milano, MI, Italia - Datacenter UE)."
+msgstr ""
+
+#: inc/customizer.php:947
+msgid "Link Informativa Privacy del Fornitore Hosting"
+msgstr ""
+
+#: inc/customizer.php:948
+msgid "Indirizzo web (URL) della policy privacy ufficiale pubblicata dal tuo provider di hosting."
+msgstr ""
+
+#: inc/customizer.php:955
+msgid "💬 Commenti & Moderazione Pubblica"
+msgstr ""
+
+#: inc/customizer.php:956
+msgid "Abilitazione dei commenti agli articoli con informativa privacy integrata."
+msgstr ""
+
+#: inc/customizer.php:968
+msgid "Abilita Sistema Commenti negli Articoli"
+msgstr ""
+
+#: inc/customizer.php:969
+msgid "Se abilitato, compare l'area commenti con form anti-spam sotto gli articoli. La pagina Privacy Policy si adatta automaticamente inserendo la sezione legale specifica su dati raccolti, IP, email, moderazione e diritti GDPR (Artt. 6 e 17 GDPR)."
+msgstr ""
+
+#: inc/customizer.php:979
+msgid "6. Pagina Chi Siamo (Manifesto & Team)"
+msgstr ""
+
+#: inc/customizer.php:981
+msgid "Configura la pagina /chi-siamo/: testo introduttivo del manifesto, banner panoramico, i 3 pilastri fondanti e il profilo dell'autore/curatore."
+msgstr ""
+
+#: inc/customizer.php:986
+msgid "📝 1. Manifesto & Testo Introduttivo"
+msgstr ""
+
+#: inc/customizer.php:996
+msgid "Kicker Superiore Manifesto"
+msgstr ""
+
+#: inc/customizer.php:997
+msgid "Piccola etichetta in maiuscolo sopra il testo del manifesto."
+msgstr ""
+
+#: inc/customizer.php:1007
+msgid "Testo Introduttivo del Manifesto"
+msgstr ""
+
+#: inc/customizer.php:1008
+msgid "Presentazione della linea editoriale e dei valori del progetto."
+msgstr ""
+
+#: inc/customizer.php:1015
+msgid "🖼️ 2. Banner Panoramico di Copertina"
+msgstr ""
+
+#: inc/customizer.php:1025
+msgid "Banner Fotografico Panoramico"
+msgstr ""
+
+#: inc/customizer.php:1026
+msgid "Immagine panoramica di copertina per la pagina Chi Siamo (consigliata: 1200×350 px)."
+msgstr ""
+
+#: inc/customizer.php:1032
+msgid "🧭 Bussola / Rosa dei venti (Indipendenza)"
+msgstr ""
+
+#: inc/customizer.php:1033
+msgid "🎞️ Pellicola cinematografica (Cinema / Festival)"
+msgstr ""
+
+#: inc/customizer.php:1034
+msgid "📖 Libro (Saggi / Approfondimenti)"
+msgstr ""
+
+#: inc/customizer.php:1035
+msgid "🎬 Ciak cinematografico (Regia / Settima Arte)"
+msgstr ""
+
+#: inc/customizer.php:1036
+msgid "🎥 Cinepresa (Autori / Visione)"
+msgstr ""
+
+#: inc/customizer.php:1037
+msgid "🏆 Trofeo / Premio (Festival / Riconoscimenti)"
+msgstr ""
+
+#: inc/customizer.php:1038
+msgid "⭐ Stella (Critica d'Autore / Eccellenza)"
+msgstr ""
+
+#: inc/customizer.php:1039
+msgid "👁️ Occhio (Sguardo Critico / Analisi Visiva)"
+msgstr ""
+
+#: inc/customizer.php:1040
+msgid "✒️ Penna d'oca (Scrittura / Recensioni)"
+msgstr ""
+
+#: inc/customizer.php:1041
+msgid "🎟️ Biglietto (Sala Cinematografica)"
+msgstr ""
+
+#: inc/customizer.php:1042
+msgid "📽️ Proiettore (Storia e Memoria del Cinema)"
+msgstr ""
+
+#: inc/customizer.php:1043
+msgid "🔥 Fiamma (Passione Cinefila)"
+msgstr ""
+
+#: inc/customizer.php:1044
+msgid "❤️ Cuore (Amore per la Settima Arte)"
+msgstr ""
+
+#: inc/customizer.php:1045
+msgid "✨ Scintille (Magia del Cinema)"
+msgstr ""
+
+#: inc/customizer.php:1046
+msgid "📁 Icona Personalizzata (Usa il campo sotto)"
+msgstr ""
+
+#: inc/customizer.php:1051
+msgid "🧭 3. Primo Pilastro (Valore 1)"
+msgstr ""
+
+#: inc/customizer.php:1052
+msgid "Configura il primo box valori della griglia (es. Indipendenza Critica)."
+msgstr ""
+
+#: inc/customizer.php:1062
+msgid "Pilastro 1: Titolo"
+msgstr ""
+
+#: inc/customizer.php:1063
+msgid "Titolo della prima scheda concettuale (es. \"Indipendenza\")."
+msgstr ""
+
+#: inc/customizer.php:1073
+msgid "Pilastro 1: Descrizione"
+msgstr ""
+
+#: inc/customizer.php:1074
+msgid "Sintesi del primo valore editoriale."
+msgstr ""
+
+#: inc/customizer.php:1084
+msgid "Pilastro 1: Icona del Box"
+msgstr ""
+
+#: inc/customizer.php:1085
+#: inc/customizer.php:1137
+#: inc/customizer.php:1189
+msgid "Seleziona un'icona inclusa, oppure scegli \"📁 Icona Personalizzata\" per caricarne una tua."
+msgstr ""
+
+#: inc/customizer.php:1096
+msgid "Pilastro 1: Carica Icona Personalizzata (Opzionale)"
+msgstr ""
+
+#: inc/customizer.php:1097
+#: inc/customizer.php:1149
+#: inc/customizer.php:1201
+msgid "Opzionale: carica un'icona o immagine personalizzata. Formato consigliato: SVG (vettoriale) oppure PNG / WebP con sfondo trasparente. Dimensioni consigliate: 64×64 px quadrata (minimo 28×28 px, max 128×128 px). Se caricata, sostituisce l'icona selezionata."
+msgstr ""
+
+#: inc/customizer.php:1103
+msgid "🎞️ 4. Secondo Pilastro (Valore 2)"
+msgstr ""
+
+#: inc/customizer.php:1104
+msgid "Configura il secondo box valori della griglia (es. Festival & Rassegne)."
+msgstr ""
+
+#: inc/customizer.php:1114
+msgid "Pilastro 2: Titolo"
+msgstr ""
+
+#: inc/customizer.php:1115
+msgid "Titolo della seconda scheda (es. \"Copertura Festival\")."
+msgstr ""
+
+#: inc/customizer.php:1125
+msgid "Pilastro 2: Descrizione"
+msgstr ""
+
+#: inc/customizer.php:1126
+msgid "Sintesi del secondo valore."
+msgstr ""
+
+#: inc/customizer.php:1136
+msgid "Pilastro 2: Icona del Box"
+msgstr ""
+
+#: inc/customizer.php:1148
+msgid "Pilastro 2: Carica Icona Personalizzata (Opzionale)"
+msgstr ""
+
+#: inc/customizer.php:1155
+msgid "📖 5. Terzo Pilastro (Valore 3)"
+msgstr ""
+
+#: inc/customizer.php:1156
+msgid "Configura il terzo box valori della griglia (es. Saggi & Approfondimenti)."
+msgstr ""
+
+#: inc/customizer.php:1166
+msgid "Pilastro 3: Titolo"
+msgstr ""
+
+#: inc/customizer.php:1167
+msgid "Titolo della terza scheda (es. \"Approfondimento\")."
+msgstr ""
+
+#: inc/customizer.php:1177
+msgid "Pilastro 3: Descrizione"
+msgstr ""
+
+#: inc/customizer.php:1178
+msgid "Sintesi del terzo valore."
+msgstr ""
+
+#: inc/customizer.php:1188
+msgid "Pilastro 3: Icona del Box"
+msgstr ""
+
+#: inc/customizer.php:1200
+msgid "Pilastro 3: Carica Icona Personalizzata (Opzionale)"
+msgstr ""
+
+#: inc/customizer.php:1207
+msgid "👤 6. Profilo Fondatore / Autore"
+msgstr ""
+
+#: inc/customizer.php:1208
+msgid "Dati del curatore visualizzati nella scheda autore a fondo pagina."
+msgstr ""
+
+#: inc/customizer.php:1213
+msgid "Nome Fondatore / Autore"
+msgstr ""
+
+#: inc/customizer.php:1213
+msgid "Nome e cognome visualizzati nella scheda autore."
+msgstr ""
+
+#: inc/customizer.php:1214
+msgid "Ruolo Professionale"
+msgstr ""
+
+#: inc/customizer.php:1214
+msgid "Es. \"Fondatore & Direttore Editoriale\" o \"Critico Cinematografico\"."
+msgstr ""
+
+#: inc/customizer.php:1215
+msgid "Biografia dell'Autore"
+msgstr ""
+
+#: inc/customizer.php:1215
+msgid "Breve presentazione del percorso o degli interessi."
+msgstr ""
+
+#: inc/customizer.php:1237
+msgid "Foto Profilo dell'Autore"
+msgstr ""
+
+#: inc/customizer.php:1238
+msgid "Foto quadrata visualizzata nella scheda autore se il sito ha un solo redattore registrato."
+msgstr ""
+
+#: inc/customizer.php:1247
+msgid "7. Testi delle Pagine & Archivi"
+msgstr ""
+
+#: inc/customizer.php:1249
+msgid "Personalizza i titoli delle sezioni della Home page, le intestazioni degli archivi, i pulsanti di lettura e la schermata di errore 404."
+msgstr ""
+
+#: inc/customizer.php:1254
+msgid "🏠 Titoli & Testi della Home Page"
+msgstr ""
+
+#: inc/customizer.php:1265
+msgid "Titolo Sezione \"In Evidenza\" (Home)"
+msgstr ""
+
+#: inc/customizer.php:1266
+msgid "Titolo sopra la griglia degli articoli speciali in evidenza nella Home."
+msgstr ""
+
+#: inc/customizer.php:1277
+msgid "Titolo Sezione \"Ultime Recensioni\" (Home)"
+msgstr ""
+
+#: inc/customizer.php:1278
+msgid "Titolo sopra la griglia delle recensioni recenti in Home."
+msgstr ""
+
+#: inc/customizer.php:1285
+msgid "📂 Archivi, Ricerca & Categorie"
+msgstr ""
+
+#: inc/customizer.php:1296
+msgid "Titolo Principale della Pagina Archivio"
+msgstr ""
+
+#: inc/customizer.php:1297
+msgid "Intestazione principale nelle pagine archivio e categorie."
+msgstr ""
+
+#: inc/customizer.php:1308
+msgid "Testo del Link \"Leggi l'articolo\""
+msgstr ""
+
+#: inc/customizer.php:1309
+msgid "Etichetta del pulsante che porta alla lettura del singolo articolo."
+msgstr ""
+
+#: inc/customizer.php:1320
+msgid "Kicker Superiore Pagina Tag"
+msgstr ""
+
+#: inc/customizer.php:1321
+msgid "Piccola etichetta mostrata sopra il nome del tag selezionato."
+msgstr ""
+
+#: inc/customizer.php:1332
+msgid "Kicker Superiore Pagina Ricerca"
+msgstr ""
+
+#: inc/customizer.php:1333
+msgid "Etichetta visualizzata sopra i risultati di ricerca."
+msgstr ""
+
+#: inc/customizer.php:1344
+msgid "Badge \"Nessun Risultato Trovato\""
+msgstr ""
+
+#: inc/customizer.php:1345
+msgid "Avviso mostrato quando una ricerca non produce risultati."
+msgstr ""
+
+#: inc/customizer.php:1352
+msgid "🚫 Schermata di Errore 404"
+msgstr ""
+
+#: inc/customizer.php:1363
+msgid "Kicker Pagina Errore 404"
+msgstr ""
+
+#: inc/customizer.php:1364
+msgid "Intestazione della pagina mostrata quando un link non esiste."
+msgstr ""
+
+#: inc/customizer.php:1375
+msgid "Etichetta Pulsante Pagina 404"
+msgstr ""
+
+#: inc/customizer.php:1376
+msgid "Testo del bottone che consente di tornare alla pagina iniziale."
+msgstr ""
+
+#: inc/customizer.php:1383
+msgid "🖼️ Gestione Foto & Miniature Articoli"
+msgstr ""
+
+#: inc/customizer.php:1394
+msgid "Copertina di Riserva (Placeholder)"
+msgstr ""
+
+#: inc/customizer.php:1395
+msgid "Immagine automatica mostrata per gli articoli che non hanno una foto in evidenza assegnata."
+msgstr ""
+
+#: inc/customizer.php:1405
+msgid "Mostra Foto in Evidenza dentro l'Articolo"
+msgstr ""
+
+#: inc/customizer.php:1406
+msgid "Se disattivato, la foto in evidenza compare solo nelle griglie esterne e non all'inizio dell'articolo singolo."
+msgstr ""
+
+#: inc/customizer.php:1416
+msgid "Mostra Miniature nelle Griglie Archivio"
+msgstr ""
+
+#: inc/customizer.php:1417
+msgid "Se disattivato, mostra le griglie degli articoli solo con titoli e testi in stile minimale."
+msgstr ""
+
+#: inc/customizer.php:1427
+msgid "8. Social Network & Piè di Pagina (Footer)"
+msgstr ""
+
+#: inc/customizer.php:1429
+msgid "Collega i tuoi profili social, imposta il testo del copyright e i crediti a piè di pagina, scegli la scenografia Polaroid o ripristina il tema."
+msgstr ""
+
+#: inc/customizer.php:1434
+msgid "🌐 Canali & Profili Social Network"
+msgstr ""
+
+#: inc/customizer.php:1440
+msgid "Profilo Letterboxd"
+msgstr ""
+
+#: inc/customizer.php:1440
+msgid "Inserisci l'URL completo al tuo profilo cinefilo su Letterboxd."
+msgstr ""
+
+#: inc/customizer.php:1441
+msgid "Profilo Instagram"
+msgstr ""
+
+#: inc/customizer.php:1441
+msgid "URL completo della tua pagina o account Instagram."
+msgstr ""
+
+#: inc/customizer.php:1442
+msgid "Canale YouTube"
+msgstr ""
+
+#: inc/customizer.php:1442
+msgid "URL completo al tuo canale YouTube."
+msgstr ""
+
+#: inc/customizer.php:1443
+msgid "Profilo X (ex Twitter)"
+msgstr ""
+
+#: inc/customizer.php:1443
+msgid "URL completo del tuo profilo su X / Twitter."
+msgstr ""
+
+#: inc/customizer.php:1461
+msgid "📄 Testi di Copyright & Crediti a Piè di Pagina"
+msgstr ""
+
+#: inc/customizer.php:1472
+msgid "Testo Copyright nel Footer"
+msgstr ""
+
+#: inc/customizer.php:1473
+msgid "Dicitura legale mostrata in fondo a ogni pagina (es. \"© 2026 Nome Sito. Tutti i diritti riservati.\")."
+msgstr ""
+
+#: inc/customizer.php:1484
+msgid "Motto / Crediti nel Footer"
+msgstr ""
+
+#: inc/customizer.php:1485
+msgid "Breve frase o menzione mostrata sotto la linea di copyright."
+msgstr ""
+
+#: inc/customizer.php:1495
+msgid "Mostra Crediti nel Footer"
+msgstr ""
+
+#: inc/customizer.php:1496
+msgid "Spunta per attivare o nascondere la riga dei crediti a fondo pagina."
+msgstr ""
+
+#: inc/customizer.php:1503
+msgid "🎞️ Scenografia Cinematografica Galleria"
+msgstr ""
+
+#: inc/customizer.php:1504
+msgid "Effetti tattili con pellicole 35mm, ciak e rullini sul tavolo da lavoro."
+msgstr ""
+
+#: inc/customizer.php:1514
+msgid "Scenografia Cinematografica della Galleria"
+msgstr ""
+
+#: inc/customizer.php:1515
+msgid "Scenografia tattile del tavolo da lavoro: pellicole e guide corrono sotto le foto, mentre oggetti autentici (pizze, rullini, ciak, forbici, lenti) poggiano sopra come fermacarte."
+msgstr ""
+
+#: inc/customizer.php:1519
+msgid "🎞️ Classico Master (Pellicole + Pizze + Rullini)"
+msgstr ""
+
+#: inc/customizer.php:1520
+msgid "🎞️ Classico Var 1 (Solo Pellicole 35mm)"
+msgstr ""
+
+#: inc/customizer.php:1521
+msgid "🎞️ Classico Var 2 (Pizze & Rullini Vintage)"
+msgstr ""
+
+#: inc/customizer.php:1522
+msgid "🎞️ Classico Var 3 (Pellicola Essenziale)"
+msgstr ""
+
+#: inc/customizer.php:1523
+msgid "📣 Regia Master (Sedia XL + Megafono + Ciak + Proiettore)"
+msgstr ""
+
+#: inc/customizer.php:1524
+msgid "📣 Regia Var 1 (Sedia XL & Megafono XL)"
+msgstr ""
+
+#: inc/customizer.php:1525
+msgid "📣 Regia Var 2 (Ciak & Taccuino)"
+msgstr ""
+
+#: inc/customizer.php:1526
+msgid "📣 Regia Var 3 (Audio Boom & Ciak)"
+msgstr ""
+
+#: inc/customizer.php:1527
+msgid "✂️ Moviola Master (Guide + Forbici XL + Lente XL + Fotogrammi)"
+msgstr ""
+
+#: inc/customizer.php:1528
+msgid "✂️ Moviola Var 1 (Forbici XL & Nastro)"
+msgstr ""
+
+#: inc/customizer.php:1529
+msgid "✂️ Moviola Var 2 (Lente XL & Timecode)"
+msgstr ""
+
+#: inc/customizer.php:1530
+msgid "✂️ Moviola Var 3 (Taglio & Giunta Precisione)"
+msgstr ""
+
+#: inc/customizer.php:1531
+msgid "🚫 Nessuna Scenografia (Solo Foto Polaroid Semplice)"
+msgstr ""
+
+#: inc/customizer.php:1540
+msgid "Effetto Inclinazione Polaroid Casuale"
+msgstr ""
+
+#: inc/customizer.php:1541
+msgid "Applica una leggera rotazione vintage variabile alle foto quando vengono aperte nella galleria."
+msgstr ""
+
+#: inc/customizer.php:1548
+msgid "⚠️ Manutenzione & Ripristino di Fabbrica"
+msgstr ""
+
+#: inc/customizer.php:1559
+msgid "⚠️ Ripristina Valori di Fabbrica del Tema"
+msgstr ""
+
+#: inc/customizer.php:1560
+msgid "Spunta questa casella e fai clic su \"Pubblica\" solo se desideri cancellare tutte le personalizzazioni e ripristinare le impostazioni predefinite originali."
+msgstr ""
+
+#: inc/form-contatti.php:60
+msgid "Sessione non valida o pagina scaduta. Ricarica la pagina e riprova."
+msgstr ""
+
+#: inc/form-contatti.php:66
+msgid "Invio bloccato dal filtro di sicurezza anti-bot."
+msgstr ""
+
+#: inc/form-contatti.php:72
+msgid "Invio troppo rapido. Attendi qualche secondo prima di inviare."
+msgstr ""
+
+#: inc/form-contatti.php:80
+msgid "Limite di invii raggiunto per il tuo indirizzo IP. Riprova tra 15 minuti."
+msgstr ""
+
+#: inc/form-contatti.php:93
+msgid "Il messaggio non può contenere più di un link esterno."
+msgstr ""
+
+#: inc/form-contatti.php:98
+msgid "Compila tutti i campi obbligatori inserendo un indirizzo email valido."
+msgstr ""
+
+#. translators: 1: Nome sito, 2: Oggetto messaggio
+#: inc/form-contatti.php:107
+#, php-format
+msgid "Nuovo messaggio da %1$s: %2$s"
+msgstr ""
+
+#: inc/form-contatti.php:108
+msgid "Sito Web"
+msgstr ""
+
+#: inc/form-contatti.php:109
+msgid "Senza oggetto"
+msgstr ""
+
+#: inc/form-contatti.php:130
+msgid "Messaggio inviato con successo! Ti risponderemo al più presto."
+msgstr ""
+
+#: inc/form-contatti.php:133
+msgid "Si è verificato un errore tecnico durante l'invio. Riprova più tardi."
+msgstr ""
+
+#: inc/hide-featured-image.php:36
+msgid "Tag di servizio per nascondere l'immagine in evidenza nel singolo articolo."
+msgstr ""
+
+#: inc/image-optimization.php:65
+msgid "Foto Articolo (Standard 800px)"
+msgstr ""
+
+#: inc/image-optimization.php:66
+msgid "Foto Galleria HD (Grande 1600px)"
+msgstr ""
+
+#: inc/metabox-film.php:31
+msgid "🎬 Scheda Film & Dati Strutturati SEO"
+msgstr ""
+
+#: inc/metabox-film.php:63
+msgid "<strong>Campi Facoltativi:</strong> Se compilati, generano automaticamente la Card visibile nell'articolo e i microdati Schema.org SEO per i motori di ricerca."
+msgstr ""
+
+#: inc/metabox-film.php:68
+msgid "🎬 Regista:"
+msgstr ""
+
+#: inc/metabox-film.php:69
+msgid "Es. Christopher Nolan"
+msgstr ""
+
+#: inc/metabox-film.php:73
+msgid "📅 Anno di Uscita:"
+msgstr ""
+
+#: inc/metabox-film.php:74
+msgid "Es. 2026"
+msgstr ""
+
+#: inc/metabox-film.php:78
+msgid "⏱️ Durata (in minuti):"
+msgstr ""
+
+#: inc/metabox-film.php:79
+msgid "Es. 124"
+msgstr ""
+
+#: inc/metabox-film.php:83
+msgid "🎭 Genere:"
+msgstr ""
+
+#: inc/metabox-film.php:84
+msgid "Es. Drammatico, Fantascienza"
+msgstr ""
+
+#: inc/metabox-film.php:88
+msgid "⭐ Valutazione Film:"
+msgstr ""
+
+#: inc/metabox-film.php:90
+msgid "-- Nessun Voto --"
+msgstr ""
+
+#: inc/metabox-film.php:102
+msgid "👥 Cast Principale:"
+msgstr ""
+
+#: inc/metabox-film.php:103
+msgid "Es. Cillian Murphy, Emily Blunt"
+msgstr ""
+
+#: inc/metabox-film.php:107
+msgid "🍿 Distribuzione / Piattaforma:"
+msgstr ""
+
+#: inc/metabox-film.php:108
+msgid "Es. Cinema, Netflix, Prime Video"
+msgstr ""
+
+#: inc/metabox-gallery.php:28
+msgid "Scenografia Galleria Fotografie"
+msgstr ""
+
+#: inc/metabox-gallery.php:48
+msgid "Stile Scenografico:"
+msgstr ""
+
+#: inc/metabox-gallery.php:51
+msgid "— Predefinito da Customizer —"
+msgstr ""
+
+#: inc/metabox-gallery.php:54
+msgid "Classico Master (Tutti gli elementi)"
+msgstr ""
+
+#: inc/metabox-gallery.php:55
+msgid "Variante 1: Solo Pellicole 35mm"
+msgstr ""
+
+#: inc/metabox-gallery.php:56
+msgid "Variante 2: Pizze & Rullini"
+msgstr ""
+
+#: inc/metabox-gallery.php:57
+msgid "Variante 3: Pellicola Essenziale"
+msgstr ""
+
+#: inc/metabox-gallery.php:61
+msgid "Regia Master (Tutti gli elementi)"
+msgstr ""
+
+#: inc/metabox-gallery.php:62
+msgid "Variante 1: Sedia XL & Megafono"
+msgstr ""
+
+#: inc/metabox-gallery.php:63
+msgid "Variante 2: Ciak & Taccuino"
+msgstr ""
+
+#: inc/metabox-gallery.php:64
+msgid "Variante 3: Audio Boom & Ciak"
+msgstr ""
+
+#: inc/metabox-gallery.php:68
+msgid "Moviola Master (Tutti gli elementi)"
+msgstr ""
+
+#: inc/metabox-gallery.php:69
+msgid "Variante 1: Forbici XL & Nastro"
+msgstr ""
+
+#: inc/metabox-gallery.php:70
+msgid "Variante 2: Lente XL & Timecode"
+msgstr ""
+
+#: inc/metabox-gallery.php:71
+msgid "Variante 3: Taglio & Giunta Precisione"
+msgstr ""
+
+#: inc/metabox-gallery.php:74
+msgid "🚫 Nessuna Scenografia (Solo Foto)"
+msgstr ""
+
+#: inc/metabox-positions.php:31
+msgid "📌 Slot Home Page"
+msgstr ""
+
+#: inc/metabox-positions.php:51
+msgid "1° Sezione: In Primo Piano"
+msgstr ""
+
+#: inc/metabox-positions.php:53
+#: inc/metabox-positions.php:201
+msgid "⭐ In Primo Piano (Hero)"
+msgstr ""
+
+#: inc/metabox-positions.php:57
+msgid "2° Sezione: Focus e Percorsi"
+msgstr ""
+
+#: inc/metabox-positions.php:59
+msgid "📌 Focus & Percorsi - 1° Slot"
+msgstr ""
+
+#: inc/metabox-positions.php:60
+msgid "📌 Focus & Percorsi - 2° Slot"
+msgstr ""
+
+#: inc/metabox-positions.php:61
+msgid "📌 Focus & Percorsi - 3° Slot"
+msgstr ""
+
+#: inc/metabox-positions.php:65
+msgid "3° Sezione: Dal nostro archivio"
+msgstr ""
+
+#: inc/metabox-positions.php:67
+msgid "🔹 Archivio - 1° Slot"
+msgstr ""
+
+#: inc/metabox-positions.php:68
+msgid "🔹 Archivio - 2° Slot"
+msgstr ""
+
+#: inc/metabox-positions.php:69
+msgid "🔹 Archivio - 3° Slot"
+msgstr ""
+
+#: inc/metabox-positions.php:70
+msgid "🔹 Archivio - 4° Slot"
+msgstr ""
+
+#: inc/metabox-positions.php:76
+msgid "Assegna Slot Home:"
+msgstr ""
+
+#: inc/metabox-positions.php:78
+msgid "-- Normale (Flusso Cronologico) --"
+msgstr ""
+
+#: inc/metabox-positions.php:87
+msgid "📍 [ATTUALE]"
+msgstr ""
+
+#. translators: %s: titolo dell'articolo che occupa lo slot
+#: inc/metabox-positions.php:90
+#, php-format
+msgid "⚠️ [OCCUPATO: \"%s\"]"
+msgstr ""
+
+#: inc/metabox-positions.php:100
+msgid "Se selezioni uno slot occupato, l'articolo precedente verrà automaticamente riportato allo stato standard."
+msgstr ""
+
+#: inc/metabox-positions.php:161
+msgid "Posizione Home"
+msgstr ""
+
+#: inc/metabox-positions.php:172
+msgid "⭐ Primo Piano"
+msgstr ""
+
+#: inc/metabox-positions.php:173
+#: inc/metabox-positions.php:202
+msgid "📌 Focus 1°"
+msgstr ""
+
+#: inc/metabox-positions.php:174
+#: inc/metabox-positions.php:203
+msgid "📌 Focus 2°"
+msgstr ""
+
+#: inc/metabox-positions.php:175
+#: inc/metabox-positions.php:204
+msgid "📌 Focus 3°"
+msgstr ""
+
+#: inc/metabox-positions.php:176
+#: inc/metabox-positions.php:205
+msgid "🔹 Archivio 1°"
+msgstr ""
+
+#: inc/metabox-positions.php:177
+#: inc/metabox-positions.php:206
+msgid "🔹 Archivio 2°"
+msgstr ""
+
+#: inc/metabox-positions.php:178
+#: inc/metabox-positions.php:207
+msgid "🔹 Archivio 3°"
+msgstr ""
+
+#: inc/metabox-positions.php:179
+#: inc/metabox-positions.php:208
+msgid "🔹 Archivio 4°"
+msgstr ""
+
+#: inc/metabox-positions.php:184
+msgid "Standard"
+msgstr ""
+
+#: inc/metabox-positions.php:200
+msgid "⭐ Tutti gli articoli in Home"
+msgstr ""
+
+#: inc/metabox-positions.php:209
+msgid "⚪ Solo Articoli Standard"
+msgstr ""
+
+#: inc/metabox-positions.php:213
+msgid "-- Tutte le Posizioni Home --"
+msgstr ""
+
+#: inc/security.php:86
+msgid "Richiesta non autorizzata bloccata dal sistema di sicurezza."
+msgstr ""
+
+#: inc/security.php:87
+msgid "Accesso Negato"
+msgstr ""
+
+#: inc/security.php:125
+msgid "Accesso non autorizzato all'elenco utenti."
+msgstr ""
+
+#: inc/seo-schema.php:31
+msgid "Rivista di critica e cultura cinematografica"
+msgstr ""
+
+#. translators: %s: nome del regista
+#: inc/seo-schema.php:38
+#, php-format
+msgid "(Regia di %s)"
+msgstr ""
+
+#: inc/seo-schema.php:186
+msgid "Articoli"
+msgstr ""
+
+#: inc/seo-schema.php:196
+msgid "Home"
+msgstr ""
+
+#: inc/setup-pages.php:41
+msgid "[NOME E COGNOME / RAGIONE SOCIALE]"
+msgstr ""
+
+#: inc/setup-pages.php:42
+msgid "[CITTÀ / SEDE DEL TITOLARE]"
+msgstr ""
+
+#: inc/setup-pages.php:44
+msgid "[NOME FORNITORE HOSTING]"
+msgstr ""
+
+#: inc/setup-pages.php:45
+msgid "[SEDE LEGALE FORNITORE HOSTING]"
+msgstr ""
+
+#: inc/setup-pages.php:63
+msgid "1. Titolare del Trattamento dei Dati"
+msgstr ""
+
+#. translators: 1: Nome Titolare, 2: Sede Titolare, 3: Nome Sito, 4: URL Sito, 5: Email sicura
+#: inc/setup-pages.php:68
+#, php-format
+msgid "Il titolare del trattamento dei dati raccolti tramite questo sito web è %1$s (Sede: %2$s), gestore del sito web %3$s (%4$s). Per qualsiasi chiarimento o richiesta relativa alla protezione dei dati personali, è possibile contattare direttamente il Titolare all'indirizzo email: "
+msgstr ""
+
+#: inc/setup-pages.php:80
+msgid "2. Fornitore del Servizio di Hosting & Infrastruttura"
+msgstr ""
+
+#. translators: 1: Nome Provider Hosting, 2: Sede Provider Hosting
+#: inc/setup-pages.php:85
+#, php-format
+msgid "Il sito web, il database e il servizio di posta elettronica sono ospitati sui server del provider %1$s (%2$s). I dati di navigazione e i log di sicurezza risiedono e vengono elaborati all'interno del territorio dell'Unione Europea in piena conformità con il Regolamento UE 2016/679 (GDPR)."
+msgstr ""
+
+#: inc/setup-pages.php:93
+msgid "→ Consulta l'informativa sulla privacy del fornitore hosting"
+msgstr ""
+
+#: inc/setup-pages.php:100
+msgid "3. Tipologia di Dati Trattati e Finalità"
+msgstr ""
+
+#. translators: %s: Nome del sito web
+#: inc/setup-pages.php:105
+#, php-format
+msgid "%s è una pubblicazione digitale indipendente a prevalente consultazione libera e aperta:"
+msgstr ""
+
+#: inc/setup-pages.php:111
+msgid "Nessuna registrazione utente obbligatoria per la consultazione degli articoli e delle recensioni."
+msgstr ""
+
+#: inc/setup-pages.php:113
+msgid "Commenti agli articoli (Facoltativo):"
+msgstr ""
+
+#: inc/setup-pages.php:113
+msgid "I lettori possono facoltativamente commentare gli articoli. Vengono trattati nome/nickname, email, testo del commento, indirizzo IP e user agent per le sole finalità di moderazione e pubblicazione (disciplinato in dettaglio al punto 6)."
+msgstr ""
+
+#: inc/setup-pages.php:115
+msgid "Sistema commenti disabilitato:"
+msgstr ""
+
+#: inc/setup-pages.php:115
+msgid "La funzione commenti è disattivata su tutti i contenuti del sito. Non vengono memorizzati commenti, opinioni né dati personali o indirizzi IP di visitatori per interazioni pubbliche."
+msgstr ""
+
+#: inc/setup-pages.php:117
+msgid "Non vengono raccolti né trattati dati particolari o sensibili."
+msgstr ""
+
+#: inc/setup-pages.php:118
+msgid "Nessun dato viene ceduto a terzi per scopi promozionali, commerciali o di profilazione."
+msgstr ""
+
+#: inc/setup-pages.php:123
+msgid "4. Dati di Navigazione e Sicurezza del Server"
+msgstr ""
+
+#: inc/setup-pages.php:125
+msgid "I sistemi informatici e le procedure software preposte al funzionamento di questo sito web acquisiscono, nel corso del loro normale esercizio, alcuni dati tecnici la cui trasmissione è implicita nell'uso dei protocolli di comunicazione di Internet (es. indirizzo IP, tipo di browser, orario di richiesta, pagina visitata). Questi dati vengono trattati al solo fine di controllare il corretto funzionamento del sito, prevenire attacchi informatici ed intrusioni malevole. Base giuridica: Legittimo interesse del Titolare alla sicurezza informatica e alla continuità operativa (Art. 6, par. 1, lett. f del GDPR)."
+msgstr ""
+
+#: inc/setup-pages.php:130
+msgid "5. Gestione Cookie (Architettura Privacy Native)"
+msgstr ""
+
+#: inc/setup-pages.php:132
+msgid "Questo sito adotta una rigorosa politica di minimizzazione della raccolta dati e NON fa uso di cookie di profilazione pubblicitaria, né di tracciamento comportamentale o pixel di conversione di terze parti."
+msgstr ""
+
+#: inc/setup-pages.php:135
+msgid "Cookie tecnici essenziali di WordPress:"
+msgstr ""
+
+#: inc/setup-pages.php:135
+msgid "Vengono utilizzati esclusivamente cookie tecnici di sessione generati nativamente dalla piattaforma WordPress per consentire il funzionamento sicuro del sito e la corretta visualizzazione delle pagine. Non memorizzano informazioni personali permanenti e scadono alla chiusura della sessione del browser."
+msgstr ""
+
+#: inc/setup-pages.php:136
+msgid "Esenzione da Cookie Banner preventivo:"
+msgstr ""
+
+#: inc/setup-pages.php:136
+msgid "In conformità alle Linee Guida del Garante per la Protezione dei Dati Personali (Provvedimento del 10 giugno 2021) e all'art. 122 del Codice Privacy (D.Lgs. 196/2003 s.m.i.), per l'installazione di soli cookie tecnici e di sessione non è richiesto il consenso preventivo dell'utente tramite banner o popup invasivi."
+msgstr ""
+
+#: inc/setup-pages.php:137
+msgid "Font tipografici locali (Zero CDN terze):"
+msgstr ""
+
+#: inc/setup-pages.php:137
+msgid "I caratteri tipografici sono ospitati al 100% sul server del sito. Nessun dato di navigazione o indirizzo IP viene condiviso con Google Fonts o server esterni."
+msgstr ""
+
+#: inc/setup-pages.php:138
+msgid "Contenuti multimediali esterni e Video YouTube (Modalità Due-Clic GDPR):"
+msgstr ""
+
+#: inc/setup-pages.php:138
+msgid "Gli eventuali trailer e video di YouTube incorporati negli articoli adottano la modalità \"Doppio Clic\" (Two-Click Solution). Al caricamento della pagina non viene effettuata alcuna connessione ai server di Google né installato alcun cookie. Solo nel momento in cui l'utente clicca volontariamente sul pulsante di riproduzione (consenso granulare contestuale), viene stabilito il collegamento con la piattaforma YouTube tramite il dominio a protezione avanzata youtube-nocookie.com, preservando l'esenzione del sito dall'obbligo di banner cookie preventivi."
+msgstr ""
+
+#: inc/setup-pages.php:144
+msgid "6. Sistema Commenti agli Articoli e Moderazione (Attivo)"
+msgstr ""
+
+#: inc/setup-pages.php:146
+msgid "Sul presente sito web è attiva la facoltà per i visitatori di commentare gli articoli ed interagire con i contenuti editoriali. L'invio di un commento costituisce un'azione puramente volontaria e facoltativa."
+msgstr ""
+
+#: inc/setup-pages.php:149
+msgid "Dati Raccolti:"
+msgstr ""
+
+#: inc/setup-pages.php:149
+msgid "Nome (o pseudonimo/nickname scelto dall'utente), Indirizzo Email e Testo del commento inseriti nel modulo, nonché Indirizzo IP e identificativo del browser (User Agent) rilevati automaticamente dal server WordPress al momento dell'invio."
+msgstr ""
+
+#: inc/setup-pages.php:150
+msgid "Visibilità Pubblica vs Dati Riservati:"
+msgstr ""
+
+#: inc/setup-pages.php:150
+msgid "Il Nome/Pseudonimo e il Testo del commento sono resi pubblici sul sito web e visibili a chiunque legga l'articolo. L'Indirizzo Email e l'Indirizzo IP NON vengono mai pubblicati sul sito, non sono visibili agli altri lettori né ceduti a soggetti terzi: rimangono archiviati nel database in area ad accesso riservato, consultabili unicamente dal Titolare del trattamento per finalità di moderazione tecnica e sicurezza."
+msgstr ""
+
+#: inc/setup-pages.php:151
+msgid "Basi Giuridiche del Trattamento:"
+msgstr ""
+
+#: inc/setup-pages.php:151
+msgid "Per la pubblicazione del commento e del nome: il Consenso esplicito dell'interessato (Art. 6, par. 1, lett. a del GDPR), manifestato inequivocabilmente con l'azione positiva di invio del form. Per la memorizzazione dell'indirizzo IP e dell'email nel database di moderazione: il Legittimo Interesse del Titolare alla prevenzione di attacchi o spam (flood) e all'eventuale accertamento di responsabilità in caso di commenti ingiuriosi, diffamatori, denigratori o penalmente rilevanti (Art. 6, par. 1, lett. f del GDPR)."
+msgstr ""
+
+#: inc/setup-pages.php:152
+msgid "Tempi di Conservazione e Diritto alla Cancellazione (Art. 17 GDPR):"
+msgstr ""
+
+#: inc/setup-pages.php:152
+msgid "I commenti rimangono pubblicati per l'intera durata di permanenza online dell'articolo associato. L'utente che ha pubblicato un commento può in ogni momento revocare il consenso ed esercitare il diritto all'oblio (cancellazione o anonimizzazione integrale del messaggio) inviando una richiesta via email al Titolare del trattamento."
+msgstr ""
+
+#: inc/setup-pages.php:153
+msgid "Assenza di Cookie di Profilazione:"
+msgstr ""
+
+#: inc/setup-pages.php:153
+msgid "Il sistema di commenti non impiega cookie di profilazione o tracciamento pubblicitario. Eventuali dati tecnici di compilazione rimangono strettamente limitati alla sessione locale dell'utente."
+msgstr ""
+
+#: inc/setup-pages.php:159
+#, php-format
+msgid "%d. Modulo Contatti e Protezione Anti-Spam Temporanea"
+msgstr ""
+
+#: inc/setup-pages.php:161
+msgid "I dati inviati volontariamente compilando il modulo contatti (Nome, Indirizzo Email, Oggetto, Messaggio) vengono impiegati esclusivamente per evadere la richiesta dell'utente."
+msgstr ""
+
+#: inc/setup-pages.php:164
+msgid "Base Giuridica:"
+msgstr ""
+
+#: inc/setup-pages.php:164
+msgid "Esecuzione di misure precontrattuali o riscontro a una specifica richiesta formulata dall'interessato (Art. 6, par. 1, lett. b del GDPR). Il conferimento dei dati contrassegnati con asterisco è facoltativo, ma l'eventuale rifiuto rende tecnicamente impossibile per il Titolare rispondere al messaggio."
+msgstr ""
+
+#: inc/setup-pages.php:165
+msgid "Protezione Anti-Spam e Rate Limiting (15 minuti):"
+msgstr ""
+
+#: inc/setup-pages.php:165
+msgid "Per proteggere l'infrastruttura di posta e il server da attacchi automatizzati e invii ripetuti di spam (flood), al momento dell'invio riuscito l'indirizzo IP viene memorizzato in una tabella cache temporanea e protetta (WordPress Transient API) per un massimo di 15 minuti, trascorsi i quali viene eliminato in modo automatico ed irreversibile. Base giuridica: Legittimo interesse alla sicurezza informatica (Art. 6, par. 1, lett. f del GDPR)."
+msgstr ""
+
+#: inc/setup-pages.php:166
+msgid "Tempi di conservazione del messaggio:"
+msgstr ""
+
+#: inc/setup-pages.php:166
+msgid "I dati del messaggio rimangono nella casella di posta per il solo tempo necessario a completare la corrispondenza con il mittente e non vengono inseriti in alcuna newsletter o lista di marketing senza esplicito e separato consenso."
+msgstr ""
+
+#: inc/setup-pages.php:171
+#, php-format
+msgid "%d. Diritti dell'Interessato (Artt. 15-22 GDPR)"
+msgstr ""
+
+#. translators: %s: Email del titolare
+#: inc/setup-pages.php:176
+#, php-format
+msgid "In qualità di interessato, l'utente può esercitare in qualsiasi momento i diritti previsti dagli articoli 15 e seguenti del Regolamento UE 2016/679: diritto di accesso ai dati personali, rettifica, cancellazione (diritto all'oblio), limitazione del trattamento, portabilità e opposizione al trattamento per motivi legittimi. Per qualsiasi richiesta è possibile scrivere al Titolare all'indirizzo: %s."
+msgstr ""
+
+#: inc/setup-pages.php:182
+msgid "L'interessato ha inoltre il diritto di proporre formale reclamo all'Autorità Garante per la Protezione dei Dati Personali (Piazza Venezia 11, 00187 Roma, protocollo@gpdp.it - www.garanteprivacy.it) qualora ritenga che il trattamento dei dati violi la normativa vigente."
+msgstr ""
+
+#: inc/setup-pages.php:187
+#, php-format
+msgid "%d. Modifiche e Aggiornamenti"
+msgstr ""
+
+#: inc/setup-pages.php:189
+msgid "La presente informativa è aggiornata alla data corrente e rispecchia fedelmente le funzionalità tecniche del sito. Eventuali future modifiche normative o integrazioni ai servizi offerti saranno tempestivamente pubblicate su questa pagina."
+msgstr ""
+
+#: inc/setup-pages.php:215
+#: inc/setup-pages.php:332
+msgid "Chi sono"
+msgstr ""
+
+#: inc/setup-pages.php:222
+msgid "Benvenuti nella nostra rivista digitale. Scopri il nostro manifesto e la nostra visione critica."
+msgstr ""
+
+#: inc/setup-pages.php:229
+msgid "Compila il modulo per metterti in contatto con la nostra redazione."
+msgstr ""
+
+#: inc/setup-pages.php:234
+msgid "Privacy e Cookie Policy"
+msgstr ""
+
+#: inc/setup-pages.php:236
+msgid "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR)."
+msgstr ""
+
+#: inc/setup.php:58
+msgid "Menu Principale"
+msgstr ""
+
+#: inc/setup.php:59
+msgid "Menu Footer"
+msgstr ""
+
+#: inc/template-tags.php:176
+msgid "Icona pilastro"
+msgstr ""
+
+#: inc/video-player.php:66
+msgid "Riproduci trailer cinematografico"
+msgstr ""
+
+#: inc/video-player.php:71
+msgid "TRAILER UFFICIALE"
+msgstr ""
+
+#: inc/video-player.php:75
+msgid "Avvia riproduzione video"
+msgstr ""
+
+#: inc/video-player.php:87
+msgid "Cliccando su Play visualizzi il video tramite YouTube (youtube-nocookie.com)"
+msgstr ""
+
+#: inc/video-player.php:93
+msgid "Riproduttore video YouTube"
+msgstr ""
+
+#: index.php:28
+msgid "Ultimi Articoli"
+msgstr ""
+
+#: index.php:77
+msgid "Nessun contenuto disponibile."
+msgstr ""
+
+#: index.php:78
+msgid "Sembra che non ci siano articoli da mostrare in questa sezione."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Chi Siamo"
+msgstr ""
+
+#: page-chi-siamo.php:28
+msgid "IL PROGETTO EDITORIALE"
+msgstr ""
+
+#: page-chi-siamo.php:29
+#, php-format
+msgid "%s è una rivista digitale indipendente. Nasce per offrire uno sguardo analitico, slegato da logiche commerciali, sul cinema di oggi, di ieri e sui principali festival."
+msgstr ""
+
+#: page-chi-siamo.php:39
+msgid "Indipendenza"
+msgstr ""
+
+#: page-chi-siamo.php:40
+msgid "Nessun condizionamento commerciale. Analisi critiche dirette, sincere e imparziali."
+msgstr ""
+
+#: page-chi-siamo.php:44
+msgid "Copertura Festival"
+msgstr ""
+
+#: page-chi-siamo.php:45
+msgid "Presenza costante nelle principali rassegne cinematografiche nazionali ed internazionali."
+msgstr ""
+
+#: page-chi-siamo.php:49
+msgid "Approfondimento"
+msgstr ""
+
+#: page-chi-siamo.php:50
+msgid "Saggi, monografie e percorsi tematici pensati per durare nel tempo."
+msgstr ""
+
+#: page-chi-siamo.php:74
+msgid "I Nostri Pilastri"
+msgstr ""
+
+#: page-chi-siamo.php:112
+msgid "Gli Autori"
+msgstr ""
+
+#: page-chi-siamo.php:112
+msgid "L'Autore"
+msgstr ""
+
+#: page-chi-siamo.php:130
+msgid "Curatore del progetto e della linea editoriale."
+msgstr ""
+
+#: page-contatti.php:37
+msgid "La Redazione"
+msgstr ""
+
+#: page-contatti.php:38
+msgid "Fondatore & Redazione"
+msgstr ""
+
+#: page-contatti.php:39
+msgid "Gestione dei contenuti, cura editoriale e contatti con la stampa e il pubblico."
+msgstr ""
+
+#: page-contatti.php:43
+msgid "Email Diretta"
+msgstr ""
+
+#: page-contatti.php:49
+msgid "Telefono / WhatsApp"
+msgstr ""
+
+#. translators: 1: Nome sito, 2: Nome autore/redazione
+#: page-contatti.php:82
+#, php-format
+msgid "%1$s è curato da %2$s. Hai un feedback, un suggerimento o una proposta di collaborazione? Scrivi direttamente."
+msgstr ""
+
+#: page-contatti.php:208
+msgid "Il tuo nome *"
+msgstr ""
+
+#: page-contatti.php:209
+msgid "Es. Mario Rossi"
+msgstr ""
+
+#: page-contatti.php:213
+msgid "Indirizzo Email *"
+msgstr ""
+
+#: page-contatti.php:214
+msgid "nome@dominio.it"
+msgstr ""
+
+#: page-contatti.php:218
+msgid "Oggetto"
+msgstr ""
+
+#: page-contatti.php:219
+msgid "Richiesta info, collaborazione, press..."
+msgstr ""
+
+#: page-contatti.php:223
+msgid "Messaggio *"
+msgstr ""
+
+#: page-contatti.php:224
+msgid "Scrivi qui il tuo messaggio..."
+msgstr ""
+
+#: search.php:27
+msgid "ARCHIVIO RICERCA"
+msgstr ""
+
+#: search.php:28
+msgid "FUORI PROGRAMMA"
+msgstr ""
+
+#: search.php:31
+msgid "Io ne ho viste cose che voi umani... ma questo non c'è in archivio!"
+msgstr ""
+
+#: search.php:32
+msgid "Ho setacciato ogni singolo fotogramma: di questo titolo non c'è traccia."
+msgstr ""
+
+#: search.php:33
+msgid "Cercare l'introvabile è il nostro mestiere, ma qui neanche la pellicola ne ha memoria."
+msgstr ""
+
+#: search.php:34
+msgid "Abbiamo cercato in lungo e in largo, ma la proiezione per questa parola chiave è annullata."
+msgstr ""
+
+#: search.php:35
+msgid "Cercavamo un capolavoro, ma ci siamo trovati di fronte a una pellicola bianca."
+msgstr ""
+
+#: search.php:36
+msgid "Elementare: quello che cerchi non è ancora stato scritto nei nostri archivi."
+msgstr ""
+
+#: search.php:52
+msgid "Risultati per:"
+msgstr ""
+
+#: search.php:106
+msgid "Nessun contenuto trovato per"
+msgstr ""
+
+#: search.php:107
+msgid "Verifica l'ortografia oppure riprova con parole chiave più brevi."
+msgstr ""
+
+#: search.php:111
+msgid "Riprova con un'altra parola chiave:"
+msgstr ""
+
+#: search.php:135
+msgid "Ecco 3 spunti di lettura dal nostro archivio:"
+msgstr ""
+
+#: searchform.php:27
+msgid "Cerca nel sito..."
+msgstr ""
+
+#: searchform.php:28
+msgid "Cerca"
+msgstr ""
+
+#: single.php:42
+msgid "Pubblicato il"
+msgstr ""
+
+#: single.php:44
+msgid "Lettura:"
+msgstr ""
+
+#: single.php:44
+#: single.php:87
+#: tag.php:144
+msgid "min"
+msgstr ""
+
+#: single.php:68
+msgid "Scheda Tecnica"
+msgstr ""
+
+#: single.php:79
+#: tag.php:180
+#: tag.php:229
+msgid "Regia:"
+msgstr ""
+
+#: single.php:83
+msgid "Anno:"
+msgstr ""
+
+#: single.php:87
+msgid "Durata:"
+msgstr ""
+
+#: single.php:91
+msgid "Genere:"
+msgstr ""
+
+#: single.php:99
+msgid "Cast:"
+msgstr ""
+
+#: single.php:106
+msgid "Dove vederlo:"
+msgstr ""
+
+#: single.php:140
+msgid "Temi & Tag:"
+msgstr ""
+
+#: single.php:157
+msgid "A cura di"
+msgstr ""
+
+#: single.php:219
+msgid "Consigli di lettura"
+msgstr ""
+
+#: single.php:220
+msgid "Potrebbero interessarti anche:"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Bento Tag Archive"
+msgstr ""
+
+#: tag.php:32
+msgid "DOSSIER TEMATICO"
+msgstr ""
+
+#: tag.php:40
+msgid "ARTICOLO"
+msgstr ""
+
+#: tag.php:40
+msgid "ARTICOLI"
+msgstr ""
+
+#: tag.php:52
+msgid "Tutti gli articoli, i saggi e le analisi critiche dedicati a questo tema."
+msgstr ""
+
+#: tag.php:100
+msgid "Regia di"
+msgstr ""
+
+#: tag.php:106
+msgid "min lettura"
+msgstr ""
+
+#: tag.php:145
+msgid "Leggi"
+msgstr ""
+
+#: tag.php:158
+msgid "Altri titoli in questo percorso"
+msgstr ""
+
+#: tag.php:254
+msgid "Nessun contenuto trovato per questo tag"
+msgstr ""
+
+#: tag.php:255
+msgid "Non ci sono ancora articoli associati a questo tema."
+msgstr ""

@@ -150,12 +150,14 @@ $show_thumb = get_theme_mod( 'single_show_featured_image', true );
 
             <footer class="entry-footer author-signature-wrapper">
                 <div class="author-signature-badge">
-                    <div class="author-avatar">
+                    <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" class="author-avatar-link" title="<?php printf( esc_attr__( 'Tutte le recensioni di %s', 'cinephile' ), esc_attr( get_the_author() ) ); ?>">
                         <?php echo wp_kses_post( get_avatar( get_the_author_meta( 'ID' ), 88, '', esc_attr( get_the_author() ) ) ); ?>
-                    </div>
+                    </a>
                     <div class="author-details">
                         <span class="author-label"><?php esc_html_e( 'A cura di', 'cinephile' ); ?></span>
-                        <span class="author-name"><?php echo esc_html( get_the_author() ); ?></span>
+                        <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" class="author-name-link">
+                            <span class="author-name"><?php echo esc_html( get_the_author() ); ?></span>
+                        </a>
                     </div>
                 </div>
             </footer>

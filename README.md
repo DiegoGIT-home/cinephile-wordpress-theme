@@ -42,11 +42,12 @@ cinephile-theme/
 ├── 404.php                     # Pagina errore 404 in stile cinema noir
 ├── archive.php                 # Layout archivio recensioni con griglia bento
 ├── assets/
-│   ├── css/                    # Fogli di stile lightbox e admin
+│   ├── css/                    # Fogli di stile lightbox, admin ed editor-style (WYSIWYG)
 │   ├── fonts/                  # Font locali WOFF2 (Cinzel, Inter, Lora, Outfit, Playfair)
 │   ├── icons/                  # Icone vettoriali SVG inline nitide
 │   ├── img/                    # Artwork, logo trasparente, favicon e banner widescreen
 │   └── js/                     # Vanilla JS modulare (lightbox, video-player, customizer, nav)
+├── author.php                  # Scheda profilo del critico cinematografico e sue recensioni
 ├── category.php                # Template categorie con architettura visiva
 ├── comments.php                # Sistema commenti accessibile e conforme privacy
 ├── footer.php                  # Footer semantico con menu e copyright
@@ -72,6 +73,8 @@ cinephile-theme/
 │   ├── template-tags.php       # Tempo di lettura, badge e formattatori editoriali
 │   └── video-player.php        # Player video cinematografico (Lite Facade & Due Clic GDPR)
 ├── index.php                   # Fallback loop standard WordPress
+├── languages/
+│   └── cinephile.pot           # File master di traduzione e localizzazione con 2.400+ stringhe
 ├── page-chi-siamo.php          # Pagina manifesto con banner 2.35:1 e transient cache autori
 ├── page-contatti.php           # Template pagina contatti sicura
 ├── page.php                    # Layout pagina generica pulita
@@ -349,11 +352,12 @@ cinephile-theme/
 ├── 404.php                     # Hero-styled custom 404 page in noir cinema aesthetic
 ├── archive.php                 # Categorized reviews archive with cinema bento grid
 ├── assets/
-│   ├── css/                    # Lightbox & admin styles
+│   ├── css/                    # Lightbox, admin styles & editor-style (WYSIWYG)
 │   ├── fonts/                  # 100% Local WOFF2 fonts (Cinzel, Inter, Lora, Outfit, Playfair)
 │   ├── icons/                  # Crisp inline SVG icons
 │   ├── img/                    # Artwork, transparent logo, native favicon set & widescreen banners
 │   └── js/                     # Modular vanilla JS (lightbox, video-player, customizer, nav)
+├── author.php                  # Film critic profile template & published reviews catalogue
 ├── category.php                # Category template with bento grid
 ├── comments.php                # Clean, accessible threaded comments
 ├── footer.php                  # Semantic footer with navigation & copyright
@@ -379,6 +383,8 @@ cinephile-theme/
 │   ├── template-tags.php       # Reading time counter, pill badges, and formatters
 │   └── video-player.php        # Cinematic Video Player (Lite Facade & GDPR Two-Click)
 ├── index.php                   # Fallback loop standard WordPress
+├── languages/
+│   └── cinephile.pot           # Master localization template file with 2,400+ indexed strings
 ├── page-chi-siamo.php          # Editorial "About Us" magazine layout with 2.35:1 banner
 ├── page-contatti.php           # Native contact page template
 ├── page.php                    # Default clean page layout
