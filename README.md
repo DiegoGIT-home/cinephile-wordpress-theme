@@ -61,6 +61,7 @@ cinephile-theme/
 ├── footer.php                  # Footer semantico con menu e copyright
 ├── front-page.php              # Homepage con slot editoriali e scheda benvenuto empty-state
 ├── functions.php               # Orchestratore principale e caricamento moduli inc/
+├── GUIDA-IMMAGINI.md           # Guida completa a formati, risoluzioni e compressione immagini
 ├── header.php                  # Testata ad alte prestazioni, logo trasparente e navigazione
 ├── inc/
 │   ├── customizer.php          # Controlli Customizer live e iniezione variabili CSS
@@ -134,6 +135,24 @@ Le recensioni di film competono quotidianamente sui motori di ricerca contro col
 4. **Scrivi un Estratto Accattivante**: Nel pannello laterale dell'articolo compila il campo **"Estratto"** con 1-2 frasi incisive (140–160 caratteri). Diventerà la meta-descrizione su Google e il testo d'anteprima su WhatsApp e social.
 5. **Immagine in Evidenza & Testo ALT**: Carica foto orizzontali ad alta definizione e compila sempre il **"Testo alternativo (ALT)"** descrivendo l'immagine (es. *Scena del film con protagonista nel deserto*).
 6. **Sottotitoli nel Testo (H2, H3)**: Non pubblicare muri di testo unici; dividi l'analisi con titoli H2 (es. *La regia e la messa in scena*, *Le interpretazioni del cast*, *Giudizio finale*).
+
+---
+
+## 📸 Guida Rapida ai Formati Immagine e Risoluzioni
+
+Per mantenere il sito velocissimo (**100/100 sui Core Web Vitals di Google**), evitare di sprecare spazio disco sull'hosting economico e impedire tagli sgradevoli o immagini sgranate, la redazione dovrebbe attenersi a queste risoluzioni consigliate:
+
+| Tipologia Immagine | Risoluzione Ottimale | Ratio | Formato Consigliato | Peso Massimo Target |
+| :--- | :--- | :--- | :--- | :--- |
+| **Immagine in Evidenza (Hero & Home)** | **1200 × 675 px** *(o 1200×630)* | 16:9 | **WebP** *(o JPEG compresso)* | **< 150–200 KB** |
+| **Foto nel Corpo Articolo** | **Larghezza 800–1000 px** | Libero | **WebP** *(o JPEG compresso)* | **< 80–120 KB** |
+| **Galleria & Lightbox Polaroid** | Lato lungo max **1600 px** | 16:9 / 3:2 | **WebP** *(o JPEG compresso)* | **< 200–250 KB** |
+| **Logo del Sito (Header)** | Larghezza **600–800 px** | Orizzontale | **SVG** *(ideale)* o **PNG** trasparente | **< 30–50 KB** |
+| **Favicon / Icona Sito** | **512 × 512 px** | 1:1 Quadrato | **PNG** trasparente | **< 30 KB** |
+| **Foto Profilo Critico / Autore** | **300 × 300 px** | 1:1 Quadrato | **WebP** o **JPEG** | **< 40–50 KB** |
+| **Banner "Chi Siamo"** | **1200 × 350 px** | Panoramico | **WebP** *(o JPEG compresso)* | **< 150 KB** |
+
+> 💡 **Guida Completa & Tool Gratuiti**: Il tema integra già un motore di conversione automatica in WebP in [`inc/image-optimization.php`](inc/image-optimization.php). Per scoprire i software gratuiti (come [Squoosh.app](https://squoosh.app/) di Google), i passaggi in 3 click e gli errori da evitare, consulta il documento dedicato: **[`GUIDA-IMMAGINI.md`](GUIDA-IMMAGINI.md)**.
 
 ---
 
@@ -383,6 +402,7 @@ cinephile-theme/
 ├── footer.php                  # Semantic footer with navigation & copyright
 ├── front-page.php              # Curated magazine homepage with editorial slots & empty state
 ├── functions.php               # Core orchestrator loading inc/ modules
+├── GUIDA-IMMAGINI.md           # Comprehensive image formats, resolutions & optimization guide
 ├── header.php                  # High-performance header with navigation & search modal
 ├── inc/
 │   ├── customizer.php          # Live Customizer controls & dynamic CSS injection
@@ -459,6 +479,24 @@ Film reviews face intense competition on Google from industry giants (IMDb, Rott
 4. **Write a Custom Excerpt**: Fill the "Excerpt" field in the post editor with 1-2 compelling sentences (140–160 characters). This automatically becomes your Google meta description and social media summary.
 5. **Featured Image with Alt Text**: Upload high-resolution horizontal stills and **always fill in the "Alternative Text" (ALT)** describing the image content (e.g., *Cillian Murphy in Oppenheimer*).
 6. **Subheadings (H2, H3)**: Break your critique into readable sections using H2 and H3 tags (e.g., *Directorial Style & Cinematography*, *Performances & Casting*, *Verdict*).
+
+---
+
+## 📸 Image Formats, Resolutions & Optimization Guide
+
+To preserve maximum performance (**100/100 Google PageSpeed & Core Web Vitals**), prevent budget hosting disk quota exhaustion, and eliminate awkwardly cropped or blurry visuals, editors should follow these golden standards:
+
+| Image Type | Target Resolution | Aspect Ratio | Preferred Format | Target Max File Size |
+| :--- | :--- | :--- | :--- | :--- |
+| **Featured Image (Hero & Home)** | **1200 × 675 px** *(or 1200×630)* | 16:9 | **WebP** *(or compressed JPEG)* | **< 150–200 KB** |
+| **In-Article Content Photos** | Width **800–1000 px** | Flexible | **WebP** *(or compressed JPEG)* | **< 80–120 KB** |
+| **Polaroid Gallery & Lightbox HD**| Max long side **1600 px** | 16:9 / 3:2 | **WebP** *(or compressed JPEG)* | **< 200–250 KB** |
+| **Site Logo (Header)** | Width **600–800 px** | Horizontal | **SVG** *(preferred)* or **PNG** transparent | **< 30–50 KB** |
+| **Site Icon / Favicon** | **512 × 512 px** | 1:1 Square | **PNG** transparent | **< 30 KB** |
+| **Author Profile / Critic Avatar** | **300 × 300 px** | 1:1 Square | **WebP** or **JPEG** | **< 40–50 KB** |
+| **"About Us" Cover Banner** | **1200 × 350 px** | Panoramic | **WebP** *(or compressed JPEG)* | **< 150 KB** |
+
+> 💡 **Comprehensive Handbook**: Cinephile features built-in WebP generation via [`inc/image-optimization.php`](inc/image-optimization.php). For step-by-step conversion tutorials using free browser tools like [Squoosh.app](https://squoosh.app/) and common pitfalls to avoid, see the dedicated handbook: **[`GUIDA-IMMAGINI.md`](GUIDA-IMMAGINI.md)**.
 
 ---
 
