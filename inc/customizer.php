@@ -116,7 +116,7 @@ function cinephile_get_customizer_defaults() {
 			__( '%s è una rivista digitale indipendente. Nasce per offrire uno sguardo analitico, slegato da logiche commerciali, sul cinema contemporaneo, i classici del passato e i principali festival internazionali.', 'cinephile' ),
 			'<strong>' . esc_html( $site_name ) . '</strong>'
 		),
-		'about_cover_image'          => '',
+		'about_cover_image'          => get_theme_file_uri( '/assets/img/about-hero-banner.webp' ),
 		'about_pillar1_title'        => __( 'Indipendenza Critica', 'cinephile' ),
 		'about_pillar1_desc'         => __( 'Nessun condizionamento commerciale o promozionale. Analisi critiche sincere, rigorose e fondate su una visione autoriale autentica.', 'cinephile' ),
 		'about_pillar1_icon'         => 'compass',

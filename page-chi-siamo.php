@@ -28,6 +28,12 @@ get_header();
 $kicker      = get_theme_mod( 'about_hero_kicker', __( 'IL PROGETTO EDITORIALE', 'cinephile' ) );
 $intro_text  = get_theme_mod( 'about_hero_intro', sprintf( __( '%s è una rivista digitale indipendente. Nasce per offrire uno sguardo analitico, slegato da logiche commerciali, sul cinema di oggi, di ieri e sui principali festival.', 'cinephile' ), '<strong>' . esc_html( get_bloginfo( 'name' ) ) . '</strong>' ) );
 $cover_img   = get_theme_mod( 'about_cover_image', '' );
+if ( empty( $cover_img ) && has_post_thumbnail() ) {
+	$cover_img = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+}
+if ( empty( $cover_img ) ) {
+	$cover_img = get_theme_file_uri( '/assets/img/about-hero-banner.webp' );
+}
 
 // Pilastri
 $pillar1_title  = get_theme_mod( 'about_pillar1_title', __( 'Indipendenza', 'cinephile' ) );
