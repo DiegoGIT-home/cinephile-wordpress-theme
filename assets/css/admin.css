@@ -1,0 +1,93 @@
+/**
+ * Stili di Amministrazione Backend e Metabox
+ *
+ * Gestione layout compatto per campi scheda tecnica film e selettori editor.
+ *
+ * Tema: Cinephile - Editorial Cinema Magazine
+ * Ideatore: Diego Costanzo (Firenze, Italia)
+ * Autore & Sviluppo: Antigravity & Gemini (Google DeepMind)
+ * Realizzato con l'ausilio di Intelligenza Artificiale (AI)
+ * Versione: 1.0.0 - Settembre 2026
+ * Licenza: GNU General Public License v2 or later (Open Source)
+ *
+ * @package Cinephile
+ */
+
+/* Metabox Galleria Scenografica */
+.mb-gallery-label-wrap {
+    margin-bottom: 8px;
+}
+
+/* Metabox Posizioni Home */
+.slot-metabox-container .slot-select {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.slot-metabox-container .slot-description {
+    margin-top: 8px;
+}
+
+.slot-status-standard {
+    color: #94a3b8;
+}
+
+/* ==========================================================================
+   Metabox Scheda Tecnica Film
+   ========================================================================== */
+.film-metabox-wrapper {
+    padding: 8px 2px;
+}
+
+.film-metabox-notice {
+    background: #f8fafc;
+    border-left: 4px solid #0284c7;
+    padding: 10px 14px;
+    margin-bottom: 18px;
+    font-size: 13px;
+    color: #334155;
+}
+
+.film-metabox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.film-meta-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.film-meta-field label {
+    font-weight: 600;
+    font-size: 13px;
+    color: #0f172a;
+}
+
+.film-meta-field input,
+.film-meta-field select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.film-meta-field input:focus,
+.film-meta-field select:focus {
+    border-color: #0284c7;
+    outline: none;
+}
+
+.film-meta-full {
+    margin-bottom: 16px;
+}
+
+@media (max-width: 782px) {
+    .film-metabox-grid {
+        grid-template-columns: 1fr;
+    }
+}

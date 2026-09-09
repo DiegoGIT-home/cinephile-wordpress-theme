@@ -1,0 +1,9 @@
+# Forza il tipo MIME corretto per i file SVG scenografici del tema
+<IfModule mod_mime.c>
+    AddType image/svg+xml .svg
+</IfModule>
+
+# Disabilita l'esecuzione di script PHP in questa directory (misura di sicurezza)
+<FilesMatch "\.(php|php5|phtml|pht|pl|py|cgi)$">
+    Require all denied
+</FilesMatch>

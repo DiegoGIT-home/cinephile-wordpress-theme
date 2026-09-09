@@ -1,0 +1,72 @@
+/**
+ * Fogli di Stile Font Locali (100% GDPR Native)
+ *
+ * Definizioni @font-face locali per Playfair Display, Lora, Plus Jakarta Sans, Inter, Outfit e Cinzel. Zero CDN terze.
+ *
+ * Tema: Cinephile - Editorial Cinema Magazine
+ * Ideatore: Diego Costanzo (Firenze, Italia)
+ * Autore & Sviluppo: Antigravity & Gemini (Google DeepMind)
+ * Realizzato con l'ausilio di Intelligenza Artificiale (AI)
+ * Versione: 1.0.0 - Settembre 2026
+ * Licenza: GNU General Public License v2 or later (Open Source)
+ *
+ * @package Cinephile
+ */
+
+/* ==========================================================================
+   1. PRESET EDITORIAL (Default - Titoli Serif / Corpo Sans)
+   ========================================================================== */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./playfair-display-v40-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./lora-v37-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./plus-jakarta-sans-v12-latin-regular.woff2') format('woff2');
+}
+
+/* ==========================================================================
+   2. PRESET CONTEMPORANEO & MINIMAL
+   ========================================================================== */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./inter-v20-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./outfit-v15-latin-regular.woff2') format('woff2');
+}
+
+/* ==========================================================================
+   3. PRESET CINEMATOGRAFICO & EPIKO
+   ========================================================================== */
+@font-face {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./cinzel-v26-latin-regular.woff2') format('woff2');
+}
+
