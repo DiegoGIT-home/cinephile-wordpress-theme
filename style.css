@@ -1414,6 +1414,7 @@ button.btn-return-home:hover {
     padding: 6px 20px 6px 8px;
     border-radius: 35px;
     transition: var(--transition);
+    text-decoration: none;
 }
 
 .author-signature-badge:hover {

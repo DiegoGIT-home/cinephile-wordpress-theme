@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-09T21:35:24+00:00\n"
+"POT-Creation-Date: 2026-09-09T21:54:15+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: cinephile\n"
@@ -116,18 +116,20 @@ msgid "Invece di tornare a mani vuote, lasciati ispirare dall'archivio:"
 msgstr ""
 
 #: 404.php:135
-#: single.php:251
+#: single.php:263
 #: tag.php:107
 msgid "Leggi l'articolo"
 msgstr ""
 
 #: archive.php:27
+#: author.php:38
 #: front-page.php:69
 #: inc/customizer.php:141
 msgid "Leggi articolo"
 msgstr ""
 
 #: archive.php:71
+#: author.php:114
 #: category.php:75
 #: index.php:68
 #: search.php:82
@@ -136,6 +138,7 @@ msgid "Precedenti"
 msgstr ""
 
 #: archive.php:72
+#: author.php:115
 #: category.php:76
 #: index.php:69
 #: search.php:83
@@ -145,6 +148,31 @@ msgstr ""
 
 #: archive.php:78
 msgid "Nessun articolo trovato per questo archivio."
+msgstr ""
+
+#: author.php:58
+msgid "Critico & Autore"
+msgstr ""
+
+#: author.php:59
+#, php-format
+msgid "%s Recensione Pubblicata"
+msgid_plural "%s Recensioni Pubblicate"
+msgstr[0] ""
+msgstr[1] ""
+
+#: author.php:65
+msgid "Redattore e critico per la rivista."
+msgstr ""
+
+#. translators: %s: Nome autore
+#: author.php:76
+#, php-format
+msgid "Tutti gli articoli a cura di %s"
+msgstr ""
+
+#: author.php:121
+msgid "Nessun articolo pubblicato da questo autore."
 msgstr ""
 
 #: category.php:85
@@ -245,7 +273,7 @@ msgstr ""
 #. translators: 1: Anno, 2: Nome brand
 #. translators: 1: Anno corrente, 2: Nome del sito web
 #: footer.php:73
-#: inc/customizer.php:160
+#: inc/customizer.php:161
 #, php-format
 msgid "© %1$s %2$s. Tutti i diritti riservati."
 msgstr ""
@@ -423,1076 +451,1088 @@ msgstr ""
 msgid "Torna alla Home"
 msgstr ""
 
-#: inc/customizer.php:164
+#: inc/customizer.php:165
 msgid "Rivista culturale indipendente • 100% Privacy & GDPR Native"
 msgstr ""
 
-#: inc/customizer.php:316
+#: inc/customizer.php:317
 msgid "Icona del Sito / Favicon"
 msgstr ""
 
-#: inc/customizer.php:317
+#: inc/customizer.php:318
 msgid "Compare nelle schede del browser, nei segnalibri e come icona dell'app per smartphone (consigliata immagine quadrata di almeno 512×512 pixel)."
 msgstr ""
 
-#: inc/customizer.php:326
+#: inc/customizer.php:327
 msgid "1. Identità del Sito, Logo & Icona"
 msgstr ""
 
-#: inc/customizer.php:328
+#: inc/customizer.php:329
 msgid "Definisci l'identità di base del tuo magazine: nome del sito, motto/sottotitolo, logo grafico per la testata e icona favicon per il browser."
 msgstr ""
 
-#: inc/customizer.php:333
+#: inc/customizer.php:334
 msgid "🏷️ Nome della Testata & Slogan"
 msgstr ""
 
-#: inc/customizer.php:346
+#: inc/customizer.php:347
 msgid "Nome del Sito / Testata"
 msgstr ""
 
-#: inc/customizer.php:347
+#: inc/customizer.php:348
 msgid "Il titolo del tuo sito. Compare nell'header, nel footer e nei titoli delle pagine."
 msgstr ""
 
-#: inc/customizer.php:360
+#: inc/customizer.php:361
 msgid "Motto / Sottotitolo del Sito"
 msgstr ""
 
-#: inc/customizer.php:361
+#: inc/customizer.php:362
 msgid "Breve frase o slogan descrittivo mostrato sotto il logo nella testata e nei motori di ricerca."
 msgstr ""
 
-#: inc/customizer.php:369
+#: inc/customizer.php:370
 msgid "🖼️ Logo Grafico dell'Header"
 msgstr ""
 
-#: inc/customizer.php:382
+#: inc/customizer.php:383
 msgid "Logo Grafico dell'Intestazione"
 msgstr ""
 
-#: inc/customizer.php:383
+#: inc/customizer.php:384
 msgid "Carica un'immagine PNG, SVG o WebP con sfondo trasparente. Se impostata, compare nella testata."
 msgstr ""
 
-#: inc/customizer.php:393
+#: inc/customizer.php:394
 msgid "2. Palette Colori del Tema (Live)"
 msgstr ""
 
-#: inc/customizer.php:395
+#: inc/customizer.php:396
 msgid "I 6 colori cardine del sito. Modificando i selettori, la schermata di anteprima a destra si aggiornerà istantaneamente in tempo reale prima di pubblicare."
 msgstr ""
 
-#: inc/customizer.php:399
+#: inc/customizer.php:400
 msgid "🎨 Palette Cromatica del Magazine"
 msgstr ""
 
-#: inc/customizer.php:400
+#: inc/customizer.php:401
 msgid "Colori principali di accento, sfondo, schede e testi con aggiornamento in tempo reale."
 msgstr ""
 
-#: inc/customizer.php:408
+#: inc/customizer.php:409
 msgid "Colore di Accento Primario (--color-accent)"
 msgstr ""
 
-#: inc/customizer.php:409
+#: inc/customizer.php:410
 msgid "Usato per i pulsanti principali, i link attivi, i tag e le sottolineature decorative."
 msgstr ""
 
-#: inc/customizer.php:412
+#: inc/customizer.php:413
 msgid "Sfondo Generale della Pagina (--bg-canvas)"
 msgstr ""
 
-#: inc/customizer.php:413
+#: inc/customizer.php:414
 msgid "Il colore dello sfondo visibile dietro all'intero sito web e attorno ai contenuti."
 msgstr ""
 
-#: inc/customizer.php:416
+#: inc/customizer.php:417
 msgid "Sfondo Schede & Riquadri (--bg-card)"
 msgstr ""
 
-#: inc/customizer.php:417
+#: inc/customizer.php:418
 msgid "Il colore delle singole card degli articoli, delle biografie e dei moduli."
 msgstr ""
 
-#: inc/customizer.php:420
+#: inc/customizer.php:421
 msgid "Colore Testo Principale (--text-main)"
 msgstr ""
 
-#: inc/customizer.php:421
+#: inc/customizer.php:422
 msgid "Colore ad alto contrasto per i titoli e la lettura degli articoli lunghi."
 msgstr ""
 
-#: inc/customizer.php:424
+#: inc/customizer.php:425
 msgid "Colore Testo Secondario (--text-muted)"
 msgstr ""
 
-#: inc/customizer.php:425
+#: inc/customizer.php:426
 msgid "Colore attenuato per date di pubblicazione, autore, categorie e note a piè di pagina."
 msgstr ""
 
-#: inc/customizer.php:428
+#: inc/customizer.php:429
 msgid "Bordi & Linee Divisorie (--border-line)"
 msgstr ""
 
-#: inc/customizer.php:429
+#: inc/customizer.php:430
 msgid "Colore delle linee sottili che separano le sezioni, i box e le cornici dei moduli."
 msgstr ""
 
-#: inc/customizer.php:451
+#: inc/customizer.php:452
 msgid "3. Caratteri & Tipografia (100% Locale)"
 msgstr ""
 
-#: inc/customizer.php:453
+#: inc/customizer.php:454
 msgid "Tipografia 100% GDPR-compliant e indipendente: tutti i font risiedono sul tuo server senza alcuna connessione verso Google Fonts. Puoi combinare caratteri diversi per i titoli e per la lettura, oppure caricare file font personalizzati (.woff2, .woff, .ttf)."
 msgstr ""
 
-#: inc/customizer.php:458
+#: inc/customizer.php:459
 msgid "Playfair Display (Serif Elegante / Editoriale)"
 msgstr ""
 
-#: inc/customizer.php:459
+#: inc/customizer.php:460
 msgid "Cinzel (Serif Cinematografico / Epico)"
 msgstr ""
 
-#: inc/customizer.php:460
+#: inc/customizer.php:461
 msgid "Lora (Serif Letterario per Saggistica)"
 msgstr ""
 
-#: inc/customizer.php:461
+#: inc/customizer.php:462
 msgid "Plus Jakarta Sans (Geometrico Moderno)"
 msgstr ""
 
-#: inc/customizer.php:462
+#: inc/customizer.php:463
 msgid "Inter (Sans Clean Minimal)"
 msgstr ""
 
-#: inc/customizer.php:463
+#: inc/customizer.php:464
 msgid "Outfit (Sans Contemporaneo Display)"
 msgstr ""
 
-#: inc/customizer.php:464
+#: inc/customizer.php:465
 msgid "Georgia / Serif Nativo OS (Zero Download)"
 msgstr ""
 
-#: inc/customizer.php:465
-#: inc/customizer.php:526
+#: inc/customizer.php:466
+#: inc/customizer.php:527
 msgid "System Sans Nativo OS (Apple, Segoe UI, Roboto)"
 msgstr ""
 
-#: inc/customizer.php:466
-#: inc/customizer.php:528
+#: inc/customizer.php:467
+#: inc/customizer.php:529
 msgid "📁 Carica File Font Personalizzato (.woff2)"
 msgstr ""
 
-#: inc/customizer.php:471
+#: inc/customizer.php:472
 msgid "🔤 Carattere per i Titoli (--font-title)"
 msgstr ""
 
-#: inc/customizer.php:472
+#: inc/customizer.php:473
 msgid "Applicato alle intestazioni h1, h2, h3, alle schede film e ai titoli degli articoli."
 msgstr ""
 
-#: inc/customizer.php:484
+#: inc/customizer.php:485
 msgid "Seleziona Font Titoli"
 msgstr ""
 
-#: inc/customizer.php:485
-#: inc/customizer.php:547
+#: inc/customizer.php:486
+#: inc/customizer.php:548
 msgid "Scegli uno dei font inclusi nel tema oppure seleziona l'opzione per caricare un tuo file .woff2."
 msgstr ""
 
-#: inc/customizer.php:499
+#: inc/customizer.php:500
 msgid "Carica File Font Titoli (.woff2, .woff, .ttf)"
 msgstr ""
 
-#: inc/customizer.php:500
-#: inc/customizer.php:562
+#: inc/customizer.php:501
+#: inc/customizer.php:563
 msgid "Necessario SOLO se sopra selezioni \"📁 Carica File Font Personalizzato\". Il file viene ospitato sul tuo server in locale (100% GDPR, zero chiamate esterne). Se hai scelto un font dall'elenco, ignora questo campo."
 msgstr ""
 
-#: inc/customizer.php:512
+#: inc/customizer.php:513
 msgid "Nome Famiglia Font Titoli (Solo per font personalizzato)"
 msgstr ""
 
-#: inc/customizer.php:513
+#: inc/customizer.php:514
 msgid "Necessario SOLO se hai caricato un file font tuo qui sopra: assegna un nome al carattere per il CSS (es. \"MioFontTitoli\" o \"Futura\"). Se usi uno dei font già inclusi nell'elenco a tendina, lascia questo campo vuoto."
 msgstr ""
 
-#: inc/customizer.php:521
+#: inc/customizer.php:522
 msgid "Plus Jakarta Sans (Geometrico - Massima Leggibilità)"
 msgstr ""
 
-#: inc/customizer.php:522
+#: inc/customizer.php:523
 msgid "Inter (Sans Clean Neutro)"
 msgstr ""
 
-#: inc/customizer.php:523
+#: inc/customizer.php:524
 msgid "Outfit (Sans Contemporaneo)"
 msgstr ""
 
-#: inc/customizer.php:524
+#: inc/customizer.php:525
 msgid "Lora (Serif Caldo per Letture Lunghe)"
 msgstr ""
 
-#: inc/customizer.php:525
+#: inc/customizer.php:526
 msgid "Playfair Display (Serif Classico)"
 msgstr ""
 
-#: inc/customizer.php:527
+#: inc/customizer.php:528
 msgid "Georgia / Serif Nativo OS"
 msgstr ""
 
-#: inc/customizer.php:533
+#: inc/customizer.php:534
 msgid "📄 Carattere per il Corpo del Testo (--font-body)"
 msgstr ""
 
-#: inc/customizer.php:534
+#: inc/customizer.php:535
 msgid "Applicato a paragrafi di lettura, recensioni, schede tecniche, biografie ed estratti."
 msgstr ""
 
-#: inc/customizer.php:546
+#: inc/customizer.php:547
 msgid "Seleziona Font Corpo"
 msgstr ""
 
-#: inc/customizer.php:561
+#: inc/customizer.php:562
 msgid "Carica File Font Corpo (.woff2, .woff, .ttf)"
 msgstr ""
 
-#: inc/customizer.php:574
+#: inc/customizer.php:575
 msgid "Nome Famiglia Font Corpo (Solo per font personalizzato)"
 msgstr ""
 
-#: inc/customizer.php:575
+#: inc/customizer.php:576
 msgid "Necessario SOLO se hai caricato un file font tuo qui sopra: assegna un nome al carattere per il CSS (es. \"MioFontCorpo\"). Se usi uno dei font già inclusi nell'elenco a tendina, lascia questo campo vuoto."
 msgstr ""
 
-#: inc/customizer.php:586
+#: inc/customizer.php:587
 msgid "4. Pagina Contatti & Modulo"
 msgstr ""
 
-#: inc/customizer.php:588
+#: inc/customizer.php:589
 msgid "Personalizza tutti i contenuti visibili nella pagina /contatti/: intestazione, profilo del referente, fino a 3 schede con icone a scelta, email di ricezione e parametri del modulo."
 msgstr ""
 
-#: inc/customizer.php:593
+#: inc/customizer.php:594
 msgid "📋 Intestazione & Testo dei Contatti"
 msgstr ""
 
-#: inc/customizer.php:604
+#: inc/customizer.php:605
 msgid "Kicker Superiore Hero"
 msgstr ""
 
-#: inc/customizer.php:605
+#: inc/customizer.php:606
 msgid "Piccola intestazione in maiuscolo sopra il testo introduttivo dei contatti."
 msgstr ""
 
-#: inc/customizer.php:617
+#: inc/customizer.php:618
 msgid "Testo Introduttivo dei Contatti"
 msgstr ""
 
-#: inc/customizer.php:618
+#: inc/customizer.php:619
 msgid "Paragrafo di presentazione visualizzato in cima alla pagina dei contatti (supporta formattazione html sicura)."
 msgstr ""
 
-#: inc/customizer.php:625
+#: inc/customizer.php:626
 msgid "👤 Profilo del Referente"
 msgstr ""
 
-#: inc/customizer.php:626
+#: inc/customizer.php:627
 msgid "Dati del contatto redazionale mostrati in pagina."
 msgstr ""
 
-#: inc/customizer.php:637
+#: inc/customizer.php:638
 msgid "Foto / Avatar del Referente"
 msgstr ""
 
-#: inc/customizer.php:638
+#: inc/customizer.php:639
 msgid "Immagine circolare mostrata accanto alla scheda del referente (se non impostata, viene usato Gravatar o icona generica)."
 msgstr ""
 
-#: inc/customizer.php:649
+#: inc/customizer.php:650
 msgid "Nome del Referente"
 msgstr ""
 
-#: inc/customizer.php:650
+#: inc/customizer.php:651
 msgid "Nome e cognome della persona di riferimento."
 msgstr ""
 
-#: inc/customizer.php:661
+#: inc/customizer.php:662
 msgid "Ruolo del Referente"
 msgstr ""
 
-#: inc/customizer.php:662
+#: inc/customizer.php:663
 msgid "Es. \"Fondatore & Redazione\" o \"Ufficio Stampa\"."
 msgstr ""
 
-#: inc/customizer.php:673
+#: inc/customizer.php:674
 msgid "Breve Descrizione / Mansioni"
 msgstr ""
 
-#: inc/customizer.php:674
+#: inc/customizer.php:675
 msgid "Spiega in poche righe di cosa si occupa il referente o per quali richieste contattarlo."
 msgstr ""
 
-#: inc/customizer.php:681
+#: inc/customizer.php:682
 msgid "📬 Schede Recapiti (Fino a 3 box)"
 msgstr ""
 
-#: inc/customizer.php:682
+#: inc/customizer.php:683
 msgid "Configura canali diretti con icone a scelta."
 msgstr ""
 
-#: inc/customizer.php:692
+#: inc/customizer.php:693
 msgid "Recapito 1: Titolo Scheda"
 msgstr ""
 
-#: inc/customizer.php:693
+#: inc/customizer.php:694
 msgid "Titolo del primo riquadro contatti (es. \"Email Diretta\")."
 msgstr ""
 
-#: inc/customizer.php:703
+#: inc/customizer.php:704
 msgid "Recapito 1: Indirizzo Email Pubblico"
 msgstr ""
 
-#: inc/customizer.php:704
+#: inc/customizer.php:705
 msgid "Indirizzo email mostrato pubblicamente (protetto automaticamente da antispambot contro i bot web)."
 msgstr ""
 
-#: inc/customizer.php:714
+#: inc/customizer.php:715
 msgid "Recapito 1: Icona"
 msgstr ""
 
-#: inc/customizer.php:718
+#: inc/customizer.php:719
 msgid "✉️ Busta Lettera Classica"
 msgstr ""
 
-#: inc/customizer.php:719
+#: inc/customizer.php:720
 msgid "📜 Lettera Certificata / PEC"
 msgstr ""
 
-#: inc/customizer.php:720
+#: inc/customizer.php:721
 msgid "💬 Fumetto Messaggio"
 msgstr ""
 
-#: inc/customizer.php:721
+#: inc/customizer.php:722
 msgid "✈️ Aeroplanino Invia"
 msgstr ""
 
-#: inc/customizer.php:731
+#: inc/customizer.php:732
 msgid "Mostra Recapito 2 (Secondario)"
 msgstr ""
 
-#: inc/customizer.php:732
+#: inc/customizer.php:733
 msgid "Spunta per visualizzare una seconda scheda recapiti accanto alla prima."
 msgstr ""
 
-#: inc/customizer.php:742
+#: inc/customizer.php:743
 msgid "Recapito 2: Titolo Scheda"
 msgstr ""
 
-#: inc/customizer.php:752
+#: inc/customizer.php:753
 msgid "Recapito 2: Testo o Numero di Telefono"
 msgstr ""
 
-#: inc/customizer.php:762
+#: inc/customizer.php:763
 msgid "Recapito 2: Icona"
 msgstr ""
 
-#: inc/customizer.php:766
+#: inc/customizer.php:767
 msgid "📞 Telefono Cornetta"
 msgstr ""
 
-#: inc/customizer.php:767
+#: inc/customizer.php:768
 msgid "📱 Cellulare / Chat"
 msgstr ""
 
-#: inc/customizer.php:768
+#: inc/customizer.php:769
 msgid "⏰ Orari & Disponibilità"
 msgstr ""
 
-#: inc/customizer.php:769
-#: inc/customizer.php:814
+#: inc/customizer.php:770
+#: inc/customizer.php:815
 msgid "📍 Posizione Geografica"
 msgstr ""
 
-#: inc/customizer.php:779
+#: inc/customizer.php:780
 msgid "Mostra Recapito 3 (Sede / Press)"
 msgstr ""
 
-#: inc/customizer.php:780
+#: inc/customizer.php:781
 msgid "Spunta per visualizzare una terza scheda informativa."
 msgstr ""
 
-#: inc/customizer.php:790
+#: inc/customizer.php:791
 msgid "Recapito 3: Titolo Scheda"
 msgstr ""
 
-#: inc/customizer.php:800
+#: inc/customizer.php:801
 msgid "Recapito 3: Indirizzo o Testo Informativo"
 msgstr ""
 
-#: inc/customizer.php:810
+#: inc/customizer.php:811
 msgid "Recapito 3: Icona"
 msgstr ""
 
-#: inc/customizer.php:815
+#: inc/customizer.php:816
 msgid "🏛️ Edificio / Redazione"
 msgstr ""
 
-#: inc/customizer.php:816
+#: inc/customizer.php:817
 msgid "⭐ Stella / Partnership"
 msgstr ""
 
-#: inc/customizer.php:817
+#: inc/customizer.php:818
 msgid "✉️ Busta Lettera"
 msgstr ""
 
-#: inc/customizer.php:823
+#: inc/customizer.php:824
 msgid "✉️ Modulo di Invio & Ricezione Email"
 msgstr ""
 
-#: inc/customizer.php:824
+#: inc/customizer.php:825
 msgid "Configura la casella di arrivo dei messaggi e i parametri del modulo."
 msgstr ""
 
-#: inc/customizer.php:834
+#: inc/customizer.php:835
 msgid "Email Destinatario del Modulo di Invio"
 msgstr ""
 
-#: inc/customizer.php:835
+#: inc/customizer.php:836
 msgid "La casella di posta a cui verranno recapitati i messaggi inviati dai visitatori (default: email amministratore)."
 msgstr ""
 
-#: inc/customizer.php:846
+#: inc/customizer.php:847
 msgid "Etichetta del Pulsante di Invio"
 msgstr ""
 
-#: inc/customizer.php:847
+#: inc/customizer.php:848
 msgid "Testo sul bottone per spedire il messaggio (es. \"Invia Messaggio\")."
 msgstr ""
 
-#: inc/customizer.php:857
+#: inc/customizer.php:858
 msgid "Avviso Privacy & Sicurezza Anti-Spam del Modulo"
 msgstr ""
 
-#: inc/customizer.php:858
+#: inc/customizer.php:859
 msgid "Dicitura informativa posta sotto il modulo che spiega la conservazione temporanea di sicurezza dell'IP per 15 minuti contro lo spam."
 msgstr ""
 
-#: inc/customizer.php:868
+#: inc/customizer.php:869
 msgid "5. Dati Legali, Privacy Policy & Commenti"
 msgstr ""
 
-#: inc/customizer.php:870
+#: inc/customizer.php:871
 msgid "Compilando questi dati, la pagina /privacy-e-cookie-policy/ viene popolata automaticamente nel rispetto del GDPR senza dover modificare file di codice. Puoi inoltre abilitare i commenti agli articoli con sincronizzazione immediata."
 msgstr ""
 
-#: inc/customizer.php:874
+#: inc/customizer.php:875
 msgid "⚖️ Titolare del Trattamento Dati (GDPR)"
 msgstr ""
 
-#: inc/customizer.php:875
+#: inc/customizer.php:876
 msgid "Dati del responsabile del sito per conformità al Regolamento UE 2016/679."
 msgstr ""
 
-#: inc/customizer.php:885
+#: inc/customizer.php:886
 msgid "Nome Titolare del Trattamento / Ragione Sociale"
 msgstr ""
 
-#: inc/customizer.php:886
+#: inc/customizer.php:887
 msgid "Nome e Cognome della persona fisica o denominazione dell'associazione/azienda titolare del sito."
 msgstr ""
 
-#: inc/customizer.php:896
+#: inc/customizer.php:897
 msgid "Città / Sede del Titolare"
 msgstr ""
 
-#: inc/customizer.php:897
+#: inc/customizer.php:898
 msgid "Comune o luogo di residenza/sede operativa del titolare (es. Firenze, Italia)."
 msgstr ""
 
-#: inc/customizer.php:907
+#: inc/customizer.php:908
 msgid "Email Ufficiale per Richieste Privacy (GDPR)"
 msgstr ""
 
-#: inc/customizer.php:908
+#: inc/customizer.php:909
 msgid "Indirizzo a cui i visitatori possono scrivere per esercitare i propri diritti GDPR (es. accesso o cancellazione)."
 msgstr ""
 
-#: inc/customizer.php:914
+#: inc/customizer.php:915
 msgid "🏢 Provider Hosting & Datacenter"
 msgstr ""
 
-#: inc/customizer.php:915
+#: inc/customizer.php:916
 msgid "Informazioni tecniche sull'infrastruttura server."
 msgstr ""
 
-#: inc/customizer.php:925
+#: inc/customizer.php:926
 msgid "Nome Fornitore Servizio Hosting"
 msgstr ""
 
-#: inc/customizer.php:926
+#: inc/customizer.php:927
 msgid "Denominazione del provider che ospita server e database del sito (es. SiteGround, Hetzner, OVH...)."
 msgstr ""
 
-#: inc/customizer.php:936
+#: inc/customizer.php:937
 msgid "Sede Legale del Fornitore Hosting"
 msgstr ""
 
-#: inc/customizer.php:937
+#: inc/customizer.php:938
 msgid "Sede legale del provider per attestare la conformità europea (es. Milano, MI, Italia - Datacenter UE)."
 msgstr ""
 
-#: inc/customizer.php:947
+#: inc/customizer.php:948
 msgid "Link Informativa Privacy del Fornitore Hosting"
 msgstr ""
 
-#: inc/customizer.php:948
+#: inc/customizer.php:949
 msgid "Indirizzo web (URL) della policy privacy ufficiale pubblicata dal tuo provider di hosting."
 msgstr ""
 
-#: inc/customizer.php:955
+#: inc/customizer.php:956
 msgid "💬 Commenti & Moderazione Pubblica"
 msgstr ""
 
-#: inc/customizer.php:956
+#: inc/customizer.php:957
 msgid "Abilitazione dei commenti agli articoli con informativa privacy integrata."
 msgstr ""
 
-#: inc/customizer.php:968
+#: inc/customizer.php:969
 msgid "Abilita Sistema Commenti negli Articoli"
 msgstr ""
 
-#: inc/customizer.php:969
+#: inc/customizer.php:970
 msgid "Se abilitato, compare l'area commenti con form anti-spam sotto gli articoli. La pagina Privacy Policy si adatta automaticamente inserendo la sezione legale specifica su dati raccolti, IP, email, moderazione e diritti GDPR (Artt. 6 e 17 GDPR)."
 msgstr ""
 
-#: inc/customizer.php:979
+#: inc/customizer.php:980
 msgid "6. Pagina Chi Siamo (Manifesto & Team)"
 msgstr ""
 
-#: inc/customizer.php:981
+#: inc/customizer.php:982
 msgid "Configura la pagina /chi-siamo/: testo introduttivo del manifesto, banner panoramico, i 3 pilastri fondanti e il profilo dell'autore/curatore."
 msgstr ""
 
-#: inc/customizer.php:986
+#: inc/customizer.php:987
 msgid "📝 1. Manifesto & Testo Introduttivo"
 msgstr ""
 
-#: inc/customizer.php:996
+#: inc/customizer.php:997
 msgid "Kicker Superiore Manifesto"
 msgstr ""
 
-#: inc/customizer.php:997
+#: inc/customizer.php:998
 msgid "Piccola etichetta in maiuscolo sopra il testo del manifesto."
 msgstr ""
 
-#: inc/customizer.php:1007
+#: inc/customizer.php:1008
 msgid "Testo Introduttivo del Manifesto"
 msgstr ""
 
-#: inc/customizer.php:1008
+#: inc/customizer.php:1009
 msgid "Presentazione della linea editoriale e dei valori del progetto."
 msgstr ""
 
-#: inc/customizer.php:1015
+#: inc/customizer.php:1016
 msgid "🖼️ 2. Banner Panoramico di Copertina"
 msgstr ""
 
-#: inc/customizer.php:1025
+#: inc/customizer.php:1026
 msgid "Banner Fotografico Panoramico"
 msgstr ""
 
-#: inc/customizer.php:1026
+#: inc/customizer.php:1027
 msgid "Immagine panoramica di copertina per la pagina Chi Siamo (consigliata: 1200×350 px)."
 msgstr ""
 
-#: inc/customizer.php:1032
+#: inc/customizer.php:1033
 msgid "🧭 Bussola / Rosa dei venti (Indipendenza)"
 msgstr ""
 
-#: inc/customizer.php:1033
+#: inc/customizer.php:1034
 msgid "🎞️ Pellicola cinematografica (Cinema / Festival)"
 msgstr ""
 
-#: inc/customizer.php:1034
+#: inc/customizer.php:1035
 msgid "📖 Libro (Saggi / Approfondimenti)"
 msgstr ""
 
-#: inc/customizer.php:1035
+#: inc/customizer.php:1036
 msgid "🎬 Ciak cinematografico (Regia / Settima Arte)"
 msgstr ""
 
-#: inc/customizer.php:1036
+#: inc/customizer.php:1037
 msgid "🎥 Cinepresa (Autori / Visione)"
 msgstr ""
 
-#: inc/customizer.php:1037
+#: inc/customizer.php:1038
 msgid "🏆 Trofeo / Premio (Festival / Riconoscimenti)"
 msgstr ""
 
-#: inc/customizer.php:1038
+#: inc/customizer.php:1039
 msgid "⭐ Stella (Critica d'Autore / Eccellenza)"
 msgstr ""
 
-#: inc/customizer.php:1039
+#: inc/customizer.php:1040
 msgid "👁️ Occhio (Sguardo Critico / Analisi Visiva)"
 msgstr ""
 
-#: inc/customizer.php:1040
+#: inc/customizer.php:1041
 msgid "✒️ Penna d'oca (Scrittura / Recensioni)"
 msgstr ""
 
-#: inc/customizer.php:1041
+#: inc/customizer.php:1042
 msgid "🎟️ Biglietto (Sala Cinematografica)"
 msgstr ""
 
-#: inc/customizer.php:1042
+#: inc/customizer.php:1043
 msgid "📽️ Proiettore (Storia e Memoria del Cinema)"
 msgstr ""
 
-#: inc/customizer.php:1043
+#: inc/customizer.php:1044
 msgid "🔥 Fiamma (Passione Cinefila)"
 msgstr ""
 
-#: inc/customizer.php:1044
+#: inc/customizer.php:1045
 msgid "❤️ Cuore (Amore per la Settima Arte)"
 msgstr ""
 
-#: inc/customizer.php:1045
+#: inc/customizer.php:1046
 msgid "✨ Scintille (Magia del Cinema)"
 msgstr ""
 
-#: inc/customizer.php:1046
+#: inc/customizer.php:1047
 msgid "📁 Icona Personalizzata (Usa il campo sotto)"
 msgstr ""
 
-#: inc/customizer.php:1051
+#: inc/customizer.php:1052
 msgid "🧭 3. Primo Pilastro (Valore 1)"
 msgstr ""
 
-#: inc/customizer.php:1052
+#: inc/customizer.php:1053
 msgid "Configura il primo box valori della griglia (es. Indipendenza Critica)."
 msgstr ""
 
-#: inc/customizer.php:1062
+#: inc/customizer.php:1063
 msgid "Pilastro 1: Titolo"
 msgstr ""
 
-#: inc/customizer.php:1063
+#: inc/customizer.php:1064
 msgid "Titolo della prima scheda concettuale (es. \"Indipendenza\")."
 msgstr ""
 
-#: inc/customizer.php:1073
+#: inc/customizer.php:1074
 msgid "Pilastro 1: Descrizione"
 msgstr ""
 
-#: inc/customizer.php:1074
+#: inc/customizer.php:1075
 msgid "Sintesi del primo valore editoriale."
 msgstr ""
 
-#: inc/customizer.php:1084
+#: inc/customizer.php:1085
 msgid "Pilastro 1: Icona del Box"
 msgstr ""
 
-#: inc/customizer.php:1085
-#: inc/customizer.php:1137
-#: inc/customizer.php:1189
+#: inc/customizer.php:1086
+#: inc/customizer.php:1138
+#: inc/customizer.php:1190
 msgid "Seleziona un'icona inclusa, oppure scegli \"📁 Icona Personalizzata\" per caricarne una tua."
 msgstr ""
 
-#: inc/customizer.php:1096
+#: inc/customizer.php:1097
 msgid "Pilastro 1: Carica Icona Personalizzata (Opzionale)"
 msgstr ""
 
-#: inc/customizer.php:1097
-#: inc/customizer.php:1149
-#: inc/customizer.php:1201
+#: inc/customizer.php:1098
+#: inc/customizer.php:1150
+#: inc/customizer.php:1202
 msgid "Opzionale: carica un'icona o immagine personalizzata. Formato consigliato: SVG (vettoriale) oppure PNG / WebP con sfondo trasparente. Dimensioni consigliate: 64×64 px quadrata (minimo 28×28 px, max 128×128 px). Se caricata, sostituisce l'icona selezionata."
 msgstr ""
 
-#: inc/customizer.php:1103
+#: inc/customizer.php:1104
 msgid "🎞️ 4. Secondo Pilastro (Valore 2)"
 msgstr ""
 
-#: inc/customizer.php:1104
+#: inc/customizer.php:1105
 msgid "Configura il secondo box valori della griglia (es. Festival & Rassegne)."
 msgstr ""
 
-#: inc/customizer.php:1114
+#: inc/customizer.php:1115
 msgid "Pilastro 2: Titolo"
 msgstr ""
 
-#: inc/customizer.php:1115
+#: inc/customizer.php:1116
 msgid "Titolo della seconda scheda (es. \"Copertura Festival\")."
 msgstr ""
 
-#: inc/customizer.php:1125
+#: inc/customizer.php:1126
 msgid "Pilastro 2: Descrizione"
 msgstr ""
 
-#: inc/customizer.php:1126
+#: inc/customizer.php:1127
 msgid "Sintesi del secondo valore."
 msgstr ""
 
-#: inc/customizer.php:1136
+#: inc/customizer.php:1137
 msgid "Pilastro 2: Icona del Box"
 msgstr ""
 
-#: inc/customizer.php:1148
+#: inc/customizer.php:1149
 msgid "Pilastro 2: Carica Icona Personalizzata (Opzionale)"
 msgstr ""
 
-#: inc/customizer.php:1155
+#: inc/customizer.php:1156
 msgid "📖 5. Terzo Pilastro (Valore 3)"
 msgstr ""
 
-#: inc/customizer.php:1156
+#: inc/customizer.php:1157
 msgid "Configura il terzo box valori della griglia (es. Saggi & Approfondimenti)."
 msgstr ""
 
-#: inc/customizer.php:1166
+#: inc/customizer.php:1167
 msgid "Pilastro 3: Titolo"
 msgstr ""
 
-#: inc/customizer.php:1167
+#: inc/customizer.php:1168
 msgid "Titolo della terza scheda (es. \"Approfondimento\")."
 msgstr ""
 
-#: inc/customizer.php:1177
+#: inc/customizer.php:1178
 msgid "Pilastro 3: Descrizione"
 msgstr ""
 
-#: inc/customizer.php:1178
+#: inc/customizer.php:1179
 msgid "Sintesi del terzo valore."
 msgstr ""
 
-#: inc/customizer.php:1188
+#: inc/customizer.php:1189
 msgid "Pilastro 3: Icona del Box"
 msgstr ""
 
-#: inc/customizer.php:1200
+#: inc/customizer.php:1201
 msgid "Pilastro 3: Carica Icona Personalizzata (Opzionale)"
 msgstr ""
 
-#: inc/customizer.php:1207
+#: inc/customizer.php:1208
 msgid "👤 6. Profilo Fondatore / Autore"
 msgstr ""
 
-#: inc/customizer.php:1208
+#: inc/customizer.php:1209
 msgid "Dati del curatore visualizzati nella scheda autore a fondo pagina."
 msgstr ""
 
-#: inc/customizer.php:1213
+#: inc/customizer.php:1214
 msgid "Nome Fondatore / Autore"
 msgstr ""
 
-#: inc/customizer.php:1213
+#: inc/customizer.php:1214
 msgid "Nome e cognome visualizzati nella scheda autore."
 msgstr ""
 
-#: inc/customizer.php:1214
+#: inc/customizer.php:1215
 msgid "Ruolo Professionale"
 msgstr ""
 
-#: inc/customizer.php:1214
+#: inc/customizer.php:1215
 msgid "Es. \"Fondatore & Direttore Editoriale\" o \"Critico Cinematografico\"."
 msgstr ""
 
-#: inc/customizer.php:1215
+#: inc/customizer.php:1216
 msgid "Biografia dell'Autore"
 msgstr ""
 
-#: inc/customizer.php:1215
+#: inc/customizer.php:1216
 msgid "Breve presentazione del percorso o degli interessi."
 msgstr ""
 
-#: inc/customizer.php:1237
+#: inc/customizer.php:1238
 msgid "Foto Profilo dell'Autore"
 msgstr ""
 
-#: inc/customizer.php:1238
+#: inc/customizer.php:1239
 msgid "Foto quadrata visualizzata nella scheda autore se il sito ha un solo redattore registrato."
 msgstr ""
 
-#: inc/customizer.php:1247
+#: inc/customizer.php:1248
 msgid "7. Testi delle Pagine & Archivi"
 msgstr ""
 
-#: inc/customizer.php:1249
+#: inc/customizer.php:1250
 msgid "Personalizza i titoli delle sezioni della Home page, le intestazioni degli archivi, i pulsanti di lettura e la schermata di errore 404."
 msgstr ""
 
-#: inc/customizer.php:1254
+#: inc/customizer.php:1255
 msgid "🏠 Titoli & Testi della Home Page"
 msgstr ""
 
-#: inc/customizer.php:1265
+#: inc/customizer.php:1266
 msgid "Titolo Sezione \"In Evidenza\" (Home)"
 msgstr ""
 
-#: inc/customizer.php:1266
+#: inc/customizer.php:1267
 msgid "Titolo sopra la griglia degli articoli speciali in evidenza nella Home."
 msgstr ""
 
-#: inc/customizer.php:1277
+#: inc/customizer.php:1278
 msgid "Titolo Sezione \"Ultime Recensioni\" (Home)"
 msgstr ""
 
-#: inc/customizer.php:1278
+#: inc/customizer.php:1279
 msgid "Titolo sopra la griglia delle recensioni recenti in Home."
 msgstr ""
 
-#: inc/customizer.php:1285
+#: inc/customizer.php:1286
 msgid "📂 Archivi, Ricerca & Categorie"
 msgstr ""
 
-#: inc/customizer.php:1296
+#: inc/customizer.php:1297
 msgid "Titolo Principale della Pagina Archivio"
 msgstr ""
 
-#: inc/customizer.php:1297
+#: inc/customizer.php:1298
 msgid "Intestazione principale nelle pagine archivio e categorie."
 msgstr ""
 
-#: inc/customizer.php:1308
+#: inc/customizer.php:1309
 msgid "Testo del Link \"Leggi l'articolo\""
 msgstr ""
 
-#: inc/customizer.php:1309
+#: inc/customizer.php:1310
 msgid "Etichetta del pulsante che porta alla lettura del singolo articolo."
 msgstr ""
 
-#: inc/customizer.php:1320
+#: inc/customizer.php:1321
 msgid "Kicker Superiore Pagina Tag"
 msgstr ""
 
-#: inc/customizer.php:1321
+#: inc/customizer.php:1322
 msgid "Piccola etichetta mostrata sopra il nome del tag selezionato."
 msgstr ""
 
-#: inc/customizer.php:1332
+#: inc/customizer.php:1333
 msgid "Kicker Superiore Pagina Ricerca"
 msgstr ""
 
-#: inc/customizer.php:1333
+#: inc/customizer.php:1334
 msgid "Etichetta visualizzata sopra i risultati di ricerca."
 msgstr ""
 
-#: inc/customizer.php:1344
+#: inc/customizer.php:1345
 msgid "Badge \"Nessun Risultato Trovato\""
 msgstr ""
 
-#: inc/customizer.php:1345
+#: inc/customizer.php:1346
 msgid "Avviso mostrato quando una ricerca non produce risultati."
 msgstr ""
 
-#: inc/customizer.php:1352
+#: inc/customizer.php:1353
 msgid "🚫 Schermata di Errore 404"
 msgstr ""
 
-#: inc/customizer.php:1363
+#: inc/customizer.php:1364
 msgid "Kicker Pagina Errore 404"
 msgstr ""
 
-#: inc/customizer.php:1364
+#: inc/customizer.php:1365
 msgid "Intestazione della pagina mostrata quando un link non esiste."
 msgstr ""
 
-#: inc/customizer.php:1375
+#: inc/customizer.php:1376
 msgid "Etichetta Pulsante Pagina 404"
 msgstr ""
 
-#: inc/customizer.php:1376
+#: inc/customizer.php:1377
 msgid "Testo del bottone che consente di tornare alla pagina iniziale."
 msgstr ""
 
-#: inc/customizer.php:1383
+#: inc/customizer.php:1384
 msgid "🖼️ Gestione Foto & Miniature Articoli"
 msgstr ""
 
-#: inc/customizer.php:1394
+#: inc/customizer.php:1395
 msgid "Copertina di Riserva (Placeholder)"
 msgstr ""
 
-#: inc/customizer.php:1395
+#: inc/customizer.php:1396
 msgid "Immagine automatica mostrata per gli articoli che non hanno una foto in evidenza assegnata."
 msgstr ""
 
-#: inc/customizer.php:1405
+#: inc/customizer.php:1406
 msgid "Mostra Foto in Evidenza dentro l'Articolo"
 msgstr ""
 
-#: inc/customizer.php:1406
+#: inc/customizer.php:1407
 msgid "Se disattivato, la foto in evidenza compare solo nelle griglie esterne e non all'inizio dell'articolo singolo."
 msgstr ""
 
-#: inc/customizer.php:1416
+#: inc/customizer.php:1417
 msgid "Mostra Miniature nelle Griglie Archivio"
 msgstr ""
 
-#: inc/customizer.php:1417
+#: inc/customizer.php:1418
 msgid "Se disattivato, mostra le griglie degli articoli solo con titoli e testi in stile minimale."
 msgstr ""
 
-#: inc/customizer.php:1427
+#: inc/customizer.php:1425
+msgid "👤 Scheda Autore & Profilo Critico"
+msgstr ""
+
+#: inc/customizer.php:1436
+msgid "Abilita Pagina Profilo Autore & Link nella Firma"
+msgstr ""
+
+#: inc/customizer.php:1437
+msgid "Se disattivato (consigliato per siti mono-autore o all'avvio), la firma a fondo articolo rimane un badge grafico statico e i link sono disattivati. Se attivato, cliccando sull'autore si apre la sua pagina biografica con tutte le sue recensioni."
+msgstr ""
+
+#: inc/customizer.php:1447
 msgid "8. Social Network & Piè di Pagina (Footer)"
 msgstr ""
 
-#: inc/customizer.php:1429
+#: inc/customizer.php:1449
 msgid "Collega i tuoi profili social, imposta il testo del copyright e i crediti a piè di pagina, scegli la scenografia Polaroid o ripristina il tema."
 msgstr ""
 
-#: inc/customizer.php:1434
+#: inc/customizer.php:1454
 msgid "🌐 Canali & Profili Social Network"
 msgstr ""
 
-#: inc/customizer.php:1440
+#: inc/customizer.php:1460
 msgid "Profilo Letterboxd"
 msgstr ""
 
-#: inc/customizer.php:1440
+#: inc/customizer.php:1460
 msgid "Inserisci l'URL completo al tuo profilo cinefilo su Letterboxd."
 msgstr ""
 
-#: inc/customizer.php:1441
+#: inc/customizer.php:1461
 msgid "Profilo Instagram"
 msgstr ""
 
-#: inc/customizer.php:1441
+#: inc/customizer.php:1461
 msgid "URL completo della tua pagina o account Instagram."
 msgstr ""
 
-#: inc/customizer.php:1442
+#: inc/customizer.php:1462
 msgid "Canale YouTube"
 msgstr ""
 
-#: inc/customizer.php:1442
+#: inc/customizer.php:1462
 msgid "URL completo al tuo canale YouTube."
 msgstr ""
 
-#: inc/customizer.php:1443
+#: inc/customizer.php:1463
 msgid "Profilo X (ex Twitter)"
 msgstr ""
 
-#: inc/customizer.php:1443
+#: inc/customizer.php:1463
 msgid "URL completo del tuo profilo su X / Twitter."
 msgstr ""
 
-#: inc/customizer.php:1461
+#: inc/customizer.php:1481
 msgid "📄 Testi di Copyright & Crediti a Piè di Pagina"
 msgstr ""
 
-#: inc/customizer.php:1472
+#: inc/customizer.php:1492
 msgid "Testo Copyright nel Footer"
 msgstr ""
 
-#: inc/customizer.php:1473
+#: inc/customizer.php:1493
 msgid "Dicitura legale mostrata in fondo a ogni pagina (es. \"© 2026 Nome Sito. Tutti i diritti riservati.\")."
 msgstr ""
 
-#: inc/customizer.php:1484
+#: inc/customizer.php:1504
 msgid "Motto / Crediti nel Footer"
 msgstr ""
 
-#: inc/customizer.php:1485
+#: inc/customizer.php:1505
 msgid "Breve frase o menzione mostrata sotto la linea di copyright."
 msgstr ""
 
-#: inc/customizer.php:1495
+#: inc/customizer.php:1515
 msgid "Mostra Crediti nel Footer"
 msgstr ""
 
-#: inc/customizer.php:1496
+#: inc/customizer.php:1516
 msgid "Spunta per attivare o nascondere la riga dei crediti a fondo pagina."
 msgstr ""
 
-#: inc/customizer.php:1503
+#: inc/customizer.php:1523
 msgid "🎞️ Scenografia Cinematografica Galleria"
 msgstr ""
 
-#: inc/customizer.php:1504
+#: inc/customizer.php:1524
 msgid "Effetti tattili con pellicole 35mm, ciak e rullini sul tavolo da lavoro."
 msgstr ""
 
-#: inc/customizer.php:1514
+#: inc/customizer.php:1534
 msgid "Scenografia Cinematografica della Galleria"
 msgstr ""
 
-#: inc/customizer.php:1515
+#: inc/customizer.php:1535
 msgid "Scenografia tattile del tavolo da lavoro: pellicole e guide corrono sotto le foto, mentre oggetti autentici (pizze, rullini, ciak, forbici, lenti) poggiano sopra come fermacarte."
 msgstr ""
 
-#: inc/customizer.php:1519
+#: inc/customizer.php:1539
 msgid "🎞️ Classico Master (Pellicole + Pizze + Rullini)"
 msgstr ""
 
-#: inc/customizer.php:1520
+#: inc/customizer.php:1540
 msgid "🎞️ Classico Var 1 (Solo Pellicole 35mm)"
 msgstr ""
 
-#: inc/customizer.php:1521
+#: inc/customizer.php:1541
 msgid "🎞️ Classico Var 2 (Pizze & Rullini Vintage)"
 msgstr ""
 
-#: inc/customizer.php:1522
+#: inc/customizer.php:1542
 msgid "🎞️ Classico Var 3 (Pellicola Essenziale)"
 msgstr ""
 
-#: inc/customizer.php:1523
+#: inc/customizer.php:1543
 msgid "📣 Regia Master (Sedia XL + Megafono + Ciak + Proiettore)"
 msgstr ""
 
-#: inc/customizer.php:1524
+#: inc/customizer.php:1544
 msgid "📣 Regia Var 1 (Sedia XL & Megafono XL)"
 msgstr ""
 
-#: inc/customizer.php:1525
+#: inc/customizer.php:1545
 msgid "📣 Regia Var 2 (Ciak & Taccuino)"
 msgstr ""
 
-#: inc/customizer.php:1526
+#: inc/customizer.php:1546
 msgid "📣 Regia Var 3 (Audio Boom & Ciak)"
 msgstr ""
 
-#: inc/customizer.php:1527
+#: inc/customizer.php:1547
 msgid "✂️ Moviola Master (Guide + Forbici XL + Lente XL + Fotogrammi)"
 msgstr ""
 
-#: inc/customizer.php:1528
+#: inc/customizer.php:1548
 msgid "✂️ Moviola Var 1 (Forbici XL & Nastro)"
 msgstr ""
 
-#: inc/customizer.php:1529
+#: inc/customizer.php:1549
 msgid "✂️ Moviola Var 2 (Lente XL & Timecode)"
 msgstr ""
 
-#: inc/customizer.php:1530
+#: inc/customizer.php:1550
 msgid "✂️ Moviola Var 3 (Taglio & Giunta Precisione)"
 msgstr ""
 
-#: inc/customizer.php:1531
+#: inc/customizer.php:1551
 msgid "🚫 Nessuna Scenografia (Solo Foto Polaroid Semplice)"
 msgstr ""
 
-#: inc/customizer.php:1540
+#: inc/customizer.php:1560
 msgid "Effetto Inclinazione Polaroid Casuale"
 msgstr ""
 
-#: inc/customizer.php:1541
+#: inc/customizer.php:1561
 msgid "Applica una leggera rotazione vintage variabile alle foto quando vengono aperte nella galleria."
 msgstr ""
 
-#: inc/customizer.php:1548
+#: inc/customizer.php:1568
 msgid "⚠️ Manutenzione & Ripristino di Fabbrica"
 msgstr ""
 
-#: inc/customizer.php:1559
+#: inc/customizer.php:1579
 msgid "⚠️ Ripristina Valori di Fabbrica del Tema"
 msgstr ""
 
-#: inc/customizer.php:1560
+#: inc/customizer.php:1580
 msgid "Spunta questa casella e fai clic su \"Pubblica\" solo se desideri cancellare tutte le personalizzazioni e ripristinare le impostazioni predefinite originali."
 msgstr ""
 
@@ -2094,11 +2134,11 @@ msgstr ""
 msgid "Informativa sul trattamento dei dati personali ai sensi del Regolamento UE 2016/679 (GDPR)."
 msgstr ""
 
-#: inc/setup.php:58
+#: inc/setup.php:60
 msgid "Menu Principale"
 msgstr ""
 
-#: inc/setup.php:59
+#: inc/setup.php:61
 msgid "Menu Footer"
 msgstr ""
 
@@ -2357,15 +2397,21 @@ msgstr ""
 msgid "Temi & Tag:"
 msgstr ""
 
-#: single.php:157
+#: single.php:153
+#, php-format
+msgid "Tutte le recensioni di %s"
+msgstr ""
+
+#: single.php:158
+#: single.php:168
 msgid "A cura di"
 msgstr ""
 
-#: single.php:219
+#: single.php:231
 msgid "Consigli di lettura"
 msgstr ""
 
-#: single.php:220
+#: single.php:232
 msgid "Potrebbero interessarti anche:"
 msgstr ""
 

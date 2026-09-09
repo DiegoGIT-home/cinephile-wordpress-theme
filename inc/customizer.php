@@ -147,6 +147,7 @@ function cinephile_get_customizer_defaults() {
 		'default_fallback_image'     => '',
 		'single_show_featured_image' => true,
 		'show_featured_images'       => true,
+		'enable_author_archive_links' => false,
 
 		// --- 7. SOCIAL MEDIA & ESTERNI ---
 		'social_letterboxd'          => '',
@@ -1415,6 +1416,25 @@ function cinephile_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 'show_featured_images', array(
 		'label'       => __( 'Mostra Miniature nelle Griglie Archivio', 'cinephile' ),
 		'description' => __( 'Se disattivato, mostra le griglie degli articoli solo con titoli e testi in stile minimale.', 'cinephile' ),
+		'section'     => 'cec_template_content_section',
+		'type'        => 'checkbox',
+	) );
+
+	// 5. Scheda Profilo Autore & Archivi Personali
+	$wp_customize->add_control( new Cinephile_Customizer_Header_Control( $wp_customize, 'cec_head_tmpl_author', array(
+		'label'    => __( '👤 Scheda Autore & Profilo Critico', 'cinephile' ),
+		'section'  => 'cec_template_content_section',
+		'settings' => array(),
+	) ) );
+
+	$wp_customize->add_setting( 'enable_author_archive_links', array(
+		'default'           => $defaults['enable_author_archive_links'],
+		'sanitize_callback' => 'wp_validate_boolean',
+		'transport'         => 'refresh',
+	) );
+	$wp_customize->add_control( 'enable_author_archive_links', array(
+		'label'       => __( 'Abilita Pagina Profilo Autore & Link nella Firma', 'cinephile' ),
+		'description' => __( 'Se disattivato (consigliato per siti mono-autore o all\'avvio), la firma a fondo articolo rimane un badge grafico statico e i link sono disattivati. Se attivato, cliccando sull\'autore si apre la sua pagina biografica con tutte le sue recensioni.', 'cinephile' ),
 		'section'     => 'cec_template_content_section',
 		'type'        => 'checkbox',
 	) );

@@ -22,6 +22,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Protezione da accesso diretto via URL.
 }
 
+// Se le pagine profilo autore sono disattivate dal Customizer, reindirizza alla Home (301 SEO-friendly)
+if ( ! get_theme_mod( 'enable_author_archive_links', false ) ) {
+	wp_safe_redirect( home_url( '/' ), 301 );
+	exit;
+}
+
 get_header();
 
 $author_obj  = get_queried_object();
