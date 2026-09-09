@@ -90,7 +90,7 @@ function cinephile_render_cinema_video_player( $video_id, $caption = '' ) {
 
 			<!-- Fallback per utenti con JavaScript disattivato -->
 			<noscript>
-				<iframe class="cinema-player-iframe" src="<?php echo esc_url( 'https://www.youtube-nocookie.com/embed/' . $video_id . '?rel=0' ); ?>" title="<?php esc_attr_e( 'Riproduttore video YouTube', 'cinephile' ); ?>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe class="cinema-player-iframe" src="<?php echo esc_url( 'https://www.youtube-nocookie.com/embed/' . $video_id . '?rel=0&iv_load_policy=3&playsinline=1' ); ?>" title="<?php esc_attr_e( 'Riproduttore video YouTube', 'cinephile' ); ?>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</noscript>
 		</div>
 

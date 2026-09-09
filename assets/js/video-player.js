@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Creazione iframe pulito su dominio youtube-nocookie.com (Zero-Cookie preventivi)
             const iframe = document.createElement('iframe');
-            iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(videoId) + '?autoplay=1&rel=0&modestbranding=1');
+            iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(videoId) + '?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&playsinline=1');
             iframe.setAttribute('title', 'Riproduttore video YouTube');
             iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
             iframe.setAttribute('allowfullscreen', 'true');
