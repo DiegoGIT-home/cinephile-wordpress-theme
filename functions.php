@@ -48,6 +48,7 @@ $cinephile_moduli_core = array(
 	'hide-featured-image.php',// Gestione tag di servizio per soppressione cover
 	'setup-pages.php',       // Creazione e gestione automatica pagine di sistema
 	'customizer.php',        // Pannello di configurazione unificato Customizer & CSS Variables
+	'video-player.php',      // Player video cinematografico (Lite Facade & Due Clic GDPR)
 );
 
 // Inclusione sequenziale controllata tramite require_once

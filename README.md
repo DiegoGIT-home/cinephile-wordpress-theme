@@ -370,6 +370,26 @@ Per avere video veloci, gratuiti e con qualità cinematografica:
    - **Zero consumo di banda** (lo streaming viene gestito interamente dai potenti server globali di Google/YouTube).
    - **Qualità massima e adattiva**: lo spettatore guarda il video fluido a 1080p/4K su qualsiasi dispositivo e connessione.
 
+#### 🎬 Player Cinematografico Facade (Zero Cookie Preventivi & Zero Banner Fastidiosi)
+Cinephile include nativamente un sistema intelligente per i video di YouTube, ispirato alle sale cinematografiche e alla massima tutela della privacy:
+
+1. **Come Inserire un Video in 3 Secondi (Senza Alcun Plugin)**:
+   - All'interno della bacheca di WordPress, apri l'articolo o la recensione.
+   - Incolla l'URL del video di YouTube direttamente su una riga vuota (oppure premi `+` e seleziona il blocco nativo **"YouTube"**).
+   - Non devi installare nessun plugin: il tema intercetta automaticamente il link e lo trasforma nel **Player Cinematografico Cinephile**!
+
+2. **Perché Non Serve Nessun Cookie Banner sul Sito (La "Two-Click Solution" del Garante)**:
+   - Di norma, i siti web che inseriscono video di YouTube sono obbligati per legge a mostrare quegli odiosi banner/popup di consenso cookie (come Cookiebot o Iubenda), perché i video standard di YouTube rilasciano cookie pubblicitari di Google non appena la pagina viene aperta.
+   - **Cinephile risolve questo problema alla radice con la Soluzione a Due Clic**:
+     * **Al caricamento della pagina**: Viene mostrata la locandina HD del trailer con un pulsante Play dorato e un elegante micro-avviso semitrasparente. **Nessun cookie viene installato e nessun dato viene trasmesso a Google.** L'immagine del film rimane perfettamente nitida e visibile.
+     * **Al clic su Play**: Il lettore acconsente esplicitamente alla riproduzione e il video si avvia istantaneamente sul dominio protetto `youtube-nocookie.com`.
+     * **Risultato**: **Il tuo sito rimane al 100% libero da cookie banner invasivi**, pienamente conforme alle direttive del Garante della Privacy e con tempi di caricamento da record (**appena 25KB** invece di 1.2MB per video!).
+
+3. **Funzioni Cinematografiche Integrate**:
+   - **Formato Widescreen 16:9 Nativo**: Il player mantiene sempre le proporzioni ideali del cinema senza bande asimmetriche e senza sgranare su nessun dispositivo.
+   - **Schermo Intero (Fullscreen)**: Cliccando sull'icona di espansione o ruotando lo smartphone in orizzontale, il video si visualizza a pieno schermo con risoluzione massima.
+   - **Colori Dinamici del Tema**: Bordo, pulsante Play ed effetto d'alone luminoso utilizzano le variabili CSS globali (`var(--accent-color)`), adattandosi istantaneamente alla palette scelta nel Customizer (*Deep Cinema Noir*, *Crimson Elegance*, *Sepia Archive*, *Minimalist Light*).
+
 ---
 
 ### 🔌 Cosa Fare se il Traffico Raggiunge Centinaia di Migliaia di Visite?
