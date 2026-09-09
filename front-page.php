@@ -33,6 +33,23 @@ get_header();
         $slot_posts = function_exists( 'cinephile_get_home_slot_posts' ) ? cinephile_get_home_slot_posts() : array();
         ?>
 
+        <?php if ( empty( $slot_posts ) ) : ?>
+            <section class="section-empty-welcome">
+                <div class="empty-welcome-card">
+                    <div class="empty-welcome-icon">🎬</div>
+                    <h2 class="empty-welcome-title"><?php esc_html_e( 'Benvenuto su Cinephile!', 'cinephile' ); ?></h2>
+                    <p class="empty-welcome-desc">
+                        <?php esc_html_e( 'Il tuo magazine cinematografico è pronto. Inizia a pubblicare le prime recensioni o saggi dal pannello di amministrazione per popolare automaticamente le sezioni In Primo Piano, Focus e gli archivi.', 'cinephile' ); ?>
+                    </p>
+                    <?php if ( current_user_can( 'edit_posts' ) ) : ?>
+                        <a href="<?php echo esc_url( admin_url( 'post-new.php' ) ); ?>" class="btn-primary-welcome">
+                            <?php esc_html_e( '✍️ Scrivi il tuo primo articolo', 'cinephile' ); ?>
+                        </a>
+                    <?php endif; ?>
+                </div>
+            </section>
+        <?php endif; ?>
+
         <!-- 1. SEZIONE: IN PRIMO PIANO -->
         <?php if ( isset( $slot_posts['hero_main'] ) ) :
             $post = $slot_posts['hero_main'];

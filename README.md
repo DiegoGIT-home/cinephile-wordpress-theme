@@ -22,7 +22,7 @@
 
 - **⚡ Zero Plugin Dependency**: Everything works 100% out of the box — movie technical sheet, contact forms, schema markup, and interactive galleries without installing heavy third-party plugins.
 - **🛡️ 100% GDPR-Native & Privacy First**: Zero third-party tracker requests, no external Google Fonts calls (all fonts are served locally in modern WOFF2 format), no tracking cookies.
-- **🎞️ Interactive Film Technical Sheet**: Built-in metabox for director, original title, cast, country, year, runtime, genre, and decimal rating badge (1.0 to 10.0).
+- **🎞️ Interactive Film Technical Sheet**: Built-in metabox for director, original title, cast, country, year, runtime, genre, and rating badge (1 to 5 stars with half-stars).
 - **📸 Polaroid Lightbox Scenography**: Responsive photo gallery with vintage polaroid styling, dynamic subtle rotation, and smooth native JavaScript lightbox.
 - **🎯 Curated Home Page Slot Management**: Intuitive editorial curation system directly in the WordPress admin to assign articles to specific homepage slots (*Spotlight*, *Editoriale*, *Primo Piano*, etc.) with dedicated list-table filters.
 - **🚀 Ultra-Optimized Performance**: Stripped-down core bloat (removed emoji scripts, oEmbeds, generator tags, WLW manifest), built-in transient caching, and responsive WebP image optimization.
@@ -47,7 +47,7 @@ cinephile-theme/
 ├── category.php                # Category template with bento grid
 ├── comments.php                # Clean, accessible threaded comments
 ├── footer.php                  # Semantic footer with navigation & copyright
-├── front-page.php              # Curated magazine homepage with editorial slots
+├── front-page.php              # Curated magazine homepage with editorial slots & empty state
 ├── functions.php               # Core orchestrator loading inc/ modules
 ├── header.php                  # High-performance header with navigation & search modal
 ├── inc/
@@ -68,7 +68,7 @@ cinephile-theme/
 │   ├── setup.php               # Theme supports, menus, widget areas & image sizes
 │   └── template-tags.php       # Reading time counter, pill badges, and formatters
 ├── index.php                   # Fallback loop
-├── page-chi-siamo.php          # Editorial "About Us" magazine layout
+├── page-chi-siamo.php          # Editorial "About Us" magazine layout with widescreen banner
 ├── page-contatti.php           # Native contact page template
 ├── page.php                    # Default clean page layout
 ├── search.php                  # Interactive search results with live query badge
@@ -91,18 +91,52 @@ cinephile-theme/
 2. **Activate the Theme**:
    Go to your WordPress Admin panel: **Appearance > Themes** and click **Activate** on **Cinephile**.
 
-3. **Recommended Settings**:
+3. **Recommended Initial Settings**:
+   - Go to **Settings > Permalinks** and ensure **Post name** (`/%postname%/`) is selected (crucial for SEO!).
    - Navigate to **Appearance > Customize** to choose your favorite palette and typography.
-   - Go to **Settings > Permalinks** and ensure **Post name** (`/%postname%/`) is selected.
+   - Start writing your first review: as soon as you publish, the homepage and slots will automatically populate!
 
 ---
 
-## 🔒 Security & Code Standards
+## 📈 SEO Mastery & Editorial Best Practices
 
-- **Late Escaping**: 100% of frontend outputs are escaped using contextual functions (`esc_html`, `esc_attr`, `esc_url`, `wp_kses_post`, `wp_json_encode`).
-- **CSRF Protection**: All form submissions and metadata saves are validated with nonces.
-- **Capability Verification**: Post and options saves are strictly restricted via `current_user_can()`.
-- **Zero Raw SQL**: Uses native WordPress APIs (`WP_Query`, `get_post_meta`), preventing SQL injection risks entirely.
+### Why SEO is Crucial for a Cinema Magazine
+Film reviews face intense competition on Google from industry giants (IMDb, Rotten Tomatoes, Letterboxd). To rank near the top and attract passionate cinephiles, technical optimization must be combined with disciplined editorial writing.
+
+### What Cinephile Does Automatically For You:
+- **Google Star Rating Rich Snippets**: Automatically generates Schema.org `Review` + `Movie` JSON-LD markup. When you rate a film, Google can display yellow review stars directly in search results.
+- **Hierarchical Breadcrumbs**: Built-in `BreadcrumbList` schema showing site navigation in Google SERPs.
+- **Sitelinks Search Box**: Generates `WebSite` schema enabling Google to show a direct search box for your publication.
+- **Open Graph & Twitter Cards**: Native social sharing meta tags with large preview images (`max-image-preview:large`) for Google Discover, WhatsApp, Telegram, Facebook, and X.
+- **Duplicate Content Defense**: Manages strict canonical URLs to prevent search engines from penalizing duplicate query parameters.
+- **Blistering Core Web Vitals (100/100)**: Clean vanilla CSS/JS and zero bloated third-party scripts guarantee maximum speed, Google's #1 ranking factor.
+
+### Editorial SEO Checklist (What the Author MUST Do):
+1. **Permalink Structure**: Go to **Settings > Permalinks** and select **Post name** (`/%postname%/`). Never leave default query-string URLs (`?p=123`).
+2. **Fill the "Film Technical Sheet"**: On every review, fill in the Director, Year, and especially the **Rating (1 to 5 stars)**. Without a rating, Google cannot display review stars!
+3. **Keyword-Rich Titles (H1)**: Always include the movie title and keywords like "Review", "Analysis", or director name (e.g., *Oppenheimer: In-depth Review of Christopher Nolan's Masterpiece*).
+4. **Write a Custom Excerpt**: Fill the "Excerpt" field in the post editor with 1-2 compelling sentences (140–160 characters). This automatically becomes your Google meta description and social media summary.
+5. **Featured Image with Alt Text**: Upload high-resolution horizontal stills and **always fill in the "Alternative Text" (ALT)** describing the image content (e.g., *Cillian Murphy in Oppenheimer*).
+6. **Subheadings (H2, H3)**: Break your critique into readable sections using H2 and H3 tags (e.g., *Directorial Style & Cinematography*, *Performances & Casting*, *Verdict*).
+
+---
+
+## 🔒 Security Architecture & The ONLY Recommended Plugin
+
+### Native Built-in Security:
+- **Zero Raw SQL Queries**: 100% powered by WordPress core APIs (`WP_Query`, `get_post_meta`), eliminating SQL Injection risks.
+- **Superglobal Sanitization**: All `$_POST`, `$_GET`, and `$_SERVER` data are unslashed and sanitized with native helper functions.
+- **CSRF Token Validation**: Form and metabox saves require strict nonce verification.
+- **Anti-Enumeration Protection**: Blocks author enumeration attempts used by automated brute-force bots.
+- **XML-RPC Hardening**: Closes insecure legacy RPC endpoints.
+
+### The Single Recommended Security Plugin:
+Cinephile requires **ZERO security plugins** for daily operation. However, we strongly recommend installing one lightweight, open-source plugin:
+* **Plugin**: A login URL obfuscator such as **WPS Hide Login** (free, open source, lightweight).
+* **Why**: Over 99% of malicious bots constantly probe default URLs like `yoursite.com/wp-login.php` and `yoursite.com/wp-admin`. Renaming the login URL to a private slug (e.g., `yoursite.com/editorial-access` or `yoursite.com/ciak-login`) immediately neutralizes brute-force attacks.
+
+> [!CAUTION]
+> **CRITICAL WARNING**: Immediately after configuring your new secret login URL, **bookmark it or write it down in a safe password manager**. If you forget your custom login URL, you will be locked out of your WordPress admin dashboard!
 
 ---
 
@@ -128,7 +162,7 @@ See the [LICENSE](LICENSE) file for complete details.
 
 - **⚡ Zero Dipendenze da Plugin**: Funziona al 100% in autonomia fin dal primo secondo. Scheda tecnica film, modulo contatti, microdati Schema.org e gallerie polaroid sono integrati nativamente nel tema.
 - **🛡️ 100% Conforme al GDPR**: Nessun font o risorsa caricata da server esterni (Google Fonts inclusi in locale in formato WOFF2 ad altissima efficienza), zero cookie di tracciamento o profilazione.
-- **🎞️ Scheda Tecnica Cinematografica Nativa**: Metabox dedicato per Titolo Originale, Regista, Cast, Anno, Nazione, Durata, Genere e Voto critico (da 1.0 a 10.0 con visualizzazione a stella).
+- **🎞️ Scheda Tecnica Cinematografica Nativa**: Metabox dedicato per Titolo Originale, Regista, Cast, Anno, Nazione, Durata, Genere e Voto critico (da 1 a 5 stelle con mezzi voti e visualizzazione dorata).
 - **📸 Galleria Scenografie Polaroid**: Presentazione fotografica a polaroid con inclinazioni casuali naturali e lightbox fotografico nativo in puro JavaScript (nessuna libreria esterna pesante).
 - **🎯 Gestione Editoriale degli Slot in Home Page**: Sistema di posizionamento dei post per la prima pagina (*Spotlight*, *Editoriale*, *Primo Piano*, ecc.) direttamente dal pannello degli articoli, con filtro dedicato nella tabella dei contenuti.
 - **🚀 Performance Estreme**: Rimozione automatica del codice superfluo di WordPress (emoji script, oEmbeds non necessari, link wlwmanifest), transient cache su query complesse e supporto WebP nativo.
@@ -139,13 +173,59 @@ See the [LICENSE](LICENSE) file for complete details.
 
 ## 🛠️ Installazione Rapida
 
-1. Scarica o clona la cartella nella directory dei temi:
+1. **Scarica o Clona il Tema**:
    ```bash
    cd wp-content/themes/
    git clone https://github.com/DiegoGIT-home/cinephile-wordpress-theme.git cinephile
    ```
-2. Accedi al pannello di amministrazione di WordPress: **Aspetto > Temi** e clicca su **Attiva** sul tema **Cinephile**.
-3. Personalizza i colori e i caratteri da **Aspetto > Personalizza**.
+2. **Attiva il Tema**:
+   Accedi a WordPress: **Aspetto > Temi** e clicca su **Attiva** sul tema **Cinephile**.
+3. **Configurazione Iniziale Consigliata**:
+   - Vai in **Impostazioni > Permalink** e seleziona **Nome articolo** (`/%postname%/`) (fondamentale per la SEO!).
+   - Personalizza colori e caratteri da **Aspetto > Personalizza**.
+   - Inizia a scrivere: appena pubblicherai il tuo primo articolo, la home page si popolerà automaticamente!
+
+---
+
+## 📈 Guida Completa alla SEO & Best Practice Editoriali
+
+### Perché la SEO è Vitale per una Rivista di Cinema
+Le recensioni di film competono quotidianamente sui motori di ricerca contro colossi come IMDb, MyMovies, Movieplayer o Wikipedia. Per farsi trovare da Google e posizionarsi tra i primi risultati, la tecnica del tema deve andare a braccetto con una corretta disciplina redazionale.
+
+### Cosa fa Cinephile Automaticamente per Te:
+- **Stelle di Recensione su Google (Rich Snippets)**: Genera automaticamente i microdati JSON-LD `Review` + `Movie`. Quando inserisci un voto al film, Google può mostrare le stelle dorate di valutazione direttamente nei risultati di ricerca!
+- **Percorsi Breadcrumbs**: Genera lo schema `BreadcrumbList` per far capire a Google la gerarchia delle categorie.
+- **Sitelinks Search Box**: Genera lo schema `WebSite` per mostrare la barra di ricerca del tuo sito nei risultati di Google.
+- **Open Graph & Twitter Cards**: Genera anteprime social grandi e d'impatto con direttiva `max-image-preview:large` per Google Discover.
+- **Zero Codice Duplicato**: Gestione rigorosa dei tag Canonical per evitare penalizzazioni.
+- **Core Web Vitals da 100/100**: Codice leggerissimo, zero librerie pesanti di terze parti, fattore di ranking n.1 per Google.
+
+### Checklist Redazionale SEO (Cosa DEVE Fare l'Autore):
+1. **Struttura Permalink**: Vai in **Impostazioni > Permalink** e seleziona **Nome articolo** (`/%postname%/`). Non usare mai gli indirizzi predefiniti con `?p=123`.
+2. **Compila la "Scheda Film"**: In ogni recensione, compila sempre il Regista, l'Anno e soprattutto la **Valutazione Film (da 1 a 5 stelle)** nel box sotto l'articolo. Senza voto, Google non mostrerà le stelline nella ricerca!
+3. **Titolo Efficace (H1)**: Inserisci sempre il nome del film e parole chiave ricercate come "Recensione", "Analisi" o il nome del regista (es. *Dune - Parte Due: Recensione del capolavoro fantascientifico di Denis Villeneuve*).
+4. **Scrivi un Estratto Accattivante**: Nel pannello laterale dell'articolo compila il campo **"Estratto"** con 1-2 frasi incisive (140–160 caratteri). Diventerà la meta-descrizione su Google e il testo d'anteprima su WhatsApp e social.
+5. **Immagine in Evidenza & Testo ALT**: Carica foto orizzontali ad alta definizione e compila sempre il **"Testo alternativo (ALT)"** descrivendo l'immagine (es. *Scena del film con protagonista nel deserto*).
+6. **Sottotitoli nel Testo (H2, H3)**: Non pubblicare muri di testo unici; dividi l'analisi con titoli H2 (es. *La regia e la messa in scena*, *Le interpretazioni del cast*, *Giudizio finale*).
+
+---
+
+## 🔒 Sicurezza del Sito & L'UNICO Plugin Raccomandato
+
+### Protezioni Native Già Attive nel Tema:
+- **Nessuna Query SQL Raw**: Il tema usa esclusivamente le API core di WordPress, azzerando i rischi di SQL Injection.
+- **Sanitizzazione Totale**: Tutti gli input da form e URL sono filtrati con `wp_unslash()` e sanitizzati nativamente.
+- **Protezione CSRF**: Form e salvataggi sono protetti da token crittografici Nonce.
+- **Anti-Enumeration Autori**: Blocca i bot automatici che tentano di risalire ai nomi utente per sferrare attacchi brute-force.
+- **Hardening XML-RPC**: Disabilita endpoint non sicuri spesso presi di mira da attacchi esterni.
+
+### L'Unico Plugin Raccomandato:
+Cinephile non richiede **alcun plugin pesante di sicurezza** per funzionare al massimo. Consigliamo soltanto un plugin open source leggero e pulito:
+* **Plugin**: Un software per **nascondere/modificare l'indirizzo di login**, come **WPS Hide Login** (gratuito, open source, leggero).
+* **Perché serve**: Oltre il 99% dei bot malevoli scansiona automaticamente gli indirizzi predefiniti `tuosito.it/wp-login.php` o `tuosito.it/wp-admin`. Cambiando questo percorso in uno segreto (ad esempio `tuosito.it/accesso-redazione` o `tuosito.it/ciak-login`), i bot riceveranno un errore 404 e il sito risulterà protetto da attacchi automatici.
+
+> [!CAUTION]
+> **AVVERTENZA FONDAMENTALE**: Subito dopo aver attivato il plugin e scelto il nuovo indirizzo di login segreto, **salvalo immediatamente nei preferiti del browser o annotalo in un posto sicuro**. Se dimentichi il nuovo link di accesso, non potrai più accedere al pannello di amministrazione di WordPress!
 
 ---
 

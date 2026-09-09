@@ -43,6 +43,11 @@ function cinephile_custom_title_parts( $title_parts ) {
 add_filter( 'document_title_parts', 'cinephile_custom_title_parts', 10, 1 );
 
 /**
+ * Rimuove il tag canonical nativo duplicato di WordPress per usare quello controllato dal tema.
+ */
+remove_action( 'wp_head', 'rel_canonical' );
+
+/**
  * Inietta i dati strutturati Schema.org JSON-LD nell'head delle pagine.
  */
 function cinephile_schema_review_markup() {
@@ -72,63 +77,101 @@ function cinephile_schema_review_markup() {
 		$data_mod  = get_the_modified_date( 'c', $post_id );
 		$thumb_url = get_the_post_thumbnail_url( $post_id, 'full' );
 
+		$excerpt = get_the_excerpt( $post_id );
+		if ( empty( $excerpt ) ) {
+			$excerpt = wp_strip_all_tags( strip_shortcodes( get_post_field( 'post_content', $post_id ) ) );
+			$excerpt = mb_substr( $excerpt, 0, 160 );
+		}
+		$clean_desc = trim( preg_replace( '/\s+/', ' ', $excerpt ) );
+
+		$publisher_schema = array(
+			'@type' => 'Organization',
+			'name'  => get_bloginfo( 'name' ),
+			'url'   => home_url( '/' ),
+			'logo'  => array(
+				'@type' => 'ImageObject',
+				'url'   => get_theme_file_uri( '/assets/img/cinephile-logo.png' ),
+			),
+		);
+
 		if ( ! empty( $voto ) ) {
 			$regista = get_post_meta( $post_id, '_film_regista', true );
 			$anno    = get_post_meta( $post_id, '_film_anno', true );
 			$genere  = get_post_meta( $post_id, '_film_genere', true );
 			$cast    = get_post_meta( $post_id, '_film_cast', true );
 
-			$schema = array(
-				'@context'     => 'https://schema.org/',
-				'@type'        => 'Review',
-				'itemReviewed' => array(
-					'@type' => 'Movie',
-					'name'  => $titolo,
-				),
-				'reviewRating' => array(
-					'@type'       => 'Rating',
-					'ratingValue' => (float) $voto,
-					'bestRating'  => 5,
-					'worstRating' => 1,
-				),
-				'author'       => array(
-					'@type' => 'Person',
-					'name'  => $autore,
-				),
+			$item_reviewed = array(
+				'@type' => 'Movie',
+				'name'  => $titolo,
 			);
 
+			if ( ! empty( $thumb_url ) ) {
+				$item_reviewed['image'] = $thumb_url;
+			}
 			if ( ! empty( $regista ) ) {
-				$schema['itemReviewed']['director'] = array( '@type' => 'Person', 'name' => $regista );
+				$item_reviewed['director'] = array(
+					'@type' => 'Person',
+					'name'  => $regista,
+				);
 			}
 			if ( ! empty( $anno ) ) {
-				$schema['itemReviewed']['dateCreated'] = $anno;
+				$item_reviewed['dateCreated'] = $anno;
 			}
 			if ( ! empty( $genere ) ) {
-				$schema['itemReviewed']['genre'] = $genere;
+				$item_reviewed['genre'] = $genere;
 			}
 			if ( ! empty( $cast ) ) {
 				$actors      = explode( ',', $cast );
 				$actor_array = array();
 				foreach ( $actors as $actor ) {
-					$actor_array[] = array( '@type' => 'Person', 'name' => trim( $actor ) );
+					$trimmed = trim( $actor );
+					if ( ! empty( $trimmed ) ) {
+						$actor_array[] = array(
+							'@type' => 'Person',
+							'name'  => $trimmed,
+						);
+					}
 				}
-				$schema['itemReviewed']['actor'] = $actor_array;
+				if ( ! empty( $actor_array ) ) {
+					$item_reviewed['actor'] = $actor_array;
+				}
 			}
-		} else {
+
 			$schema = array(
 				'@context'      => 'https://schema.org',
-				'@type'         => 'Article',
-				'headline'      => $titolo,
-				'datePublished' => $data_pub,
-				'dateModified'  => $data_mod,
+				'@type'         => 'Review',
+				'itemReviewed'  => $item_reviewed,
+				'reviewRating'  => array(
+					'@type'       => 'Rating',
+					'ratingValue' => (float) $voto,
+					'bestRating'  => 5,
+					'worstRating' => 1,
+				),
 				'author'        => array(
 					'@type' => 'Person',
 					'name'  => $autore,
 				),
-				'publisher'     => array(
-					'@type' => 'Organization',
-					'name'  => get_bloginfo( 'name' ),
+				'publisher'     => $publisher_schema,
+				'datePublished' => $data_pub,
+				'dateModified'  => $data_mod,
+				'description'   => $clean_desc,
+				'inLanguage'    => get_bloginfo( 'language' ),
+			);
+		} else {
+			$schema = array(
+				'@context'         => 'https://schema.org',
+				'@type'            => 'Article',
+				'headline'         => $titolo,
+				'datePublished'    => $data_pub,
+				'dateModified'     => $data_mod,
+				'mainEntityOfPage' => get_permalink( $post_id ),
+				'author'           => array(
+					'@type' => 'Person',
+					'name'  => $autore,
 				),
+				'publisher'        => $publisher_schema,
+				'description'      => $clean_desc,
+				'inLanguage'       => get_bloginfo( 'language' ),
 			);
 
 			if ( $thumb_url ) {
@@ -173,7 +216,7 @@ function cinephile_schema_review_markup() {
 add_action( 'wp_head', 'cinephile_schema_review_markup' );
 
 /**
- * Inietta meta tag Open Graph e Twitter Cards.
+ * Inietta meta tag Open Graph, Twitter Cards e Direttive Robots avanzate per Google.
  */
 function cinephile_seo_meta_tags() {
 	$site_name = get_bloginfo( 'name' );
@@ -182,6 +225,8 @@ function cinephile_seo_meta_tags() {
 	$url       = home_url( '/' );
 	$type      = 'website';
 	$img_url   = '';
+	$img_w     = 0;
+	$img_h     = 0;
 
 	if ( is_single() || is_page() ) {
 		$post_id = get_queried_object_id();
@@ -202,13 +247,25 @@ function cinephile_seo_meta_tags() {
 				$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'large' );
 				if ( $thumb ) {
 					$img_url = $thumb[0];
+					$img_w   = $thumb[1];
+					$img_h   = $thumb[2];
 				}
 			}
 		}
 	}
 
+	// Meta Robots avanzato: Google Discover & Snippet Richieste
+	if ( is_404() || is_search() ) {
+		echo '<meta name="robots" content="noindex, follow">' . "\n";
+	} else {
+		echo '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">' . "\n";
+	}
+
 	echo '<meta name="description" content="' . esc_attr( $desc ) . '">' . "\n";
 	echo '<link rel="canonical" href="' . esc_url( $url ) . '">' . "\n";
+
+	// Open Graph (Facebook, WhatsApp, LinkedIn, Telegram)
+	echo '<meta property="og:locale" content="' . esc_attr( get_locale() ) . '">' . "\n";
 	echo '<meta property="og:site_name" content="' . esc_attr( $site_name ) . '">' . "\n";
 	echo '<meta property="og:type" content="' . esc_attr( $type ) . '">' . "\n";
 	echo '<meta property="og:title" content="' . esc_attr( $title ) . '">' . "\n";
@@ -217,9 +274,14 @@ function cinephile_seo_meta_tags() {
 
 	if ( ! empty( $img_url ) ) {
 		echo '<meta property="og:image" content="' . esc_url( $img_url ) . '">' . "\n";
+		if ( $img_w > 0 && $img_h > 0 ) {
+			echo '<meta property="og:image:width" content="' . absint( $img_w ) . '">' . "\n";
+			echo '<meta property="og:image:height" content="' . absint( $img_h ) . '">' . "\n";
+		}
 		echo '<meta name="twitter:image" content="' . esc_url( $img_url ) . '">' . "\n";
 	}
 
+	// Twitter / X Cards
 	echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
 	echo '<meta name="twitter:title" content="' . esc_attr( $title ) . '">' . "\n";
 	echo '<meta name="twitter:description" content="' . esc_attr( $desc ) . '">' . "\n";
@@ -245,6 +307,7 @@ add_filter( 'wp_get_attachment_image_attributes', 'cinephile_auto_image_alt', 10
 function cinephile_custom_robots( $output, $public ) {
 	if ( $public ) {
 		$output .= "Disallow: /wp-admin/\n";
+		$output .= "Allow: /wp-admin/admin-ajax.php\n";
 		$output .= "Disallow: /?s=\n";
 		$output .= "Disallow: /search/\n";
 		$output .= "Sitemap: " . esc_url( home_url( '/wp-sitemap.xml' ) ) . "\n";
