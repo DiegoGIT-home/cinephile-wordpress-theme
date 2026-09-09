@@ -253,25 +253,50 @@ Mentre i temi commerciali (Elementor, Divi) richiedono 150MB di RAM per pagina e
 
 ### ⚙️ Configurazione Consigliata del Server (PHP & `.htaccess`)
 
-#### 1. Versione e Parametri PHP (dal cPanel / Plesk del tuo hosting):
-* **Versione PHP**: Seleziona **PHP 8.2** o **PHP 8.3** (utilizza fino al 30% in meno di memoria ed è fino a 3 volte più veloce di PHP 7.4).
-* **Memory Limit**: `256M` (sufficiente e abbondante per Cinephile, che ne consuma meno di 25M).
-* **Max Execution Time**: `60` secondi.
-* **OPcache**: Assicurati che l'estensione `opcache` sia abilitata nel selettore PHP dell'hosting (velocizza l'esecuzione del codice PHP di oltre il 200%).
+#### 1. Versione e Parametri PHP per Immagini e Video Pesanti
+Nei server condivisi (cPanel, Plesk o DirectAdmin), apri lo strumento **MultiPHP INI Editor** o **Select PHP Version** per impostare i seguenti parametri ottimali:
 
-#### 2. Regole di Cache e Compressione `.htaccess` (Apache / LiteSpeed)
-Se il tuo fornitore di hosting utilizza un web server Apache o LiteSpeed, aggiungi queste regole in cima al file `.htaccess` nella cartella principale del tuo sito per attivare la compressione GZIP e la cache del browser a 1 anno:
+* **Versione PHP**: Seleziona **PHP 8.2** o **PHP 8.3** (fino a 3 volte più veloce di PHP 7.4 e parsimonioso di RAM).
+* **OPcache**: Attiva l'estensione `opcache` (velocizza l'esecuzione del codice PHP di oltre il 200%).
+* **Parametri per Upload Media (Immagini HD e Video)**:
+  * `upload_max_filesize = 128M` (o `256M` se desideri consentire l'upload di file video consistenti).
+  * `post_max_size = 128M` (o `256M`, deve essere sempre pari o superiore a `upload_max_filesize`).
+  * `memory_limit = 256M` (o `512M` durante l'elaborazione di ritagli fotografici ad alta risoluzione).
+  * `max_execution_time = 120` (o `300` per evitare che la connessione scada durante il caricamento di file pesanti).
+  * `max_input_time = 120` (tempo massimo concesso per la ricezione dei dati via upload).
+  * `max_input_vars = 3000`.
+
+> [!TIP]
+> **Come applicare questi valori se non hai cPanel**: Se l'hosting non offre un selettore grafico, puoi creare un file denominato `.user.ini` nella cartella principale del tuo sito WordPress inserendo queste righe:
+> ```ini
+> upload_max_filesize = 128M
+> post_max_size = 128M
+> memory_limit = 256M
+> max_execution_time = 120
+> max_input_time = 120
+> ```
+
+---
+
+#### 2. File `.htaccess` Completo: Prestazioni Estreme & Protezione Totale
+Se il tuo provider di hosting utilizza un web server **Apache** o **LiteSpeed**, inserisci il seguente blocco in cima al file `.htaccess` situato nella cartella principale del tuo sito WordPress (`public_html`):
 
 ```apache
-# --- CINEPHILE: OTTIMIZZAZIONE PERFORMANCES & BROWSER CACHE ---
+# ==============================================================================
+# 🎬 CINEPHILE: PRESTAZIONI ESTREME & SICUREZZA SERVER
+# ==============================================================================
+
+# 1. COMPRESSIONE GZIP / BROTLI (mod_deflate)
 <IfModule mod_deflate.c>
-    # Compressione GZIP per testi, CSS, JS e SVG
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
+    AddOutputFilterByType DEFLATE image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
 </IfModule>
 
+# 2. CACHE DEL BROWSER A 1 ANNO (mod_expires)
 <IfModule mod_expires.c>
     ExpiresActive On
-    # Cache per font locali WOFF2 e immagini WebP per 1 anno
+    # Font locali WOFF2 e immagini WebP conservati nella memoria del visitatore per 1 anno
     ExpiresByType font/woff2 "access plus 1 year"
     ExpiresByType font/woff "access plus 1 year"
     ExpiresByType image/webp "access plus 1 year"
@@ -283,14 +308,67 @@ Se il tuo fornitore di hosting utilizza un web server Apache o LiteSpeed, aggiun
     ExpiresDefault "access plus 2 days"
 </IfModule>
 
+# 3. HEADER DI CACHING (mod_headers)
 <IfModule mod_headers.c>
-    # Header di sicurezza e caching
     <FilesMatch "\.(woff2|woff|webp|png|jpe?g|css|js)$">
         Header set Cache-Control "max-age=31536000, public"
     </FilesMatch>
 </IfModule>
-# --- FINE OTTIMIZZAZIONE CINEPHILE ---
+
+# 4. SICUREZZA: DISABILITAZIONE NAVIGAZIONE CARTELLE
+Options -Indexes
+
+# 5. SICUREZZA: PROTEZIONE FILE CRITICI (wp-config.php e file nascosti)
+<Files wp-config.php>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files xmlrpc.php>
+    Order allow,deny
+    Deny from all
+</Files>
+
+<FilesMatch "(^\.|\.(bak|config|sql|fla|psd|ini|log|sh))$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# 6. SICUREZZA: BLOCCO ESECUZIONE PHP NELLA CARTELLA UPLOADS
+# (Impedisce l'esecuzione di script malevoli caricati spacciati per immagini)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} ^/wp-content/uploads/.*\.php$ [NC]
+    RewriteRule .* - [F,L]
+</IfModule>
+# ==============================================================================
+# FINE CONFIGURAZIONE CINEPHILE
+# ==============================================================================
 ```
+
+---
+
+### 🎥 Guida Strategica ai Video: Perché YouTube ("Non in Elenco") Batte il Self-Hosting
+
+Su un hosting condiviso a basso costo (~20€/anno), **caricare file video (MP4/MOV) direttamente nella libreria media di WordPress è sconsigliato** per 3 motivi tecnici critici:
+1. **Saturazione dello Spazio Disco**: Un video in Full HD o 4K di pochi minuti pesa tra i 200MB e 1GB. Con soli 3 o 4 video esauriresti l'intero spazio disco concesso dal tuo piano hosting.
+2. **Saturazione della Banda e dei Processi PHP**: Quando un visitatore preme Play su un video self-hosted, il tuo server deve inviare una mole enorme di dati in streaming. Se 5 lettori guardano il video contemporaneamente, la banda del server si satura all'istante, provocando il blocco del sito con errore *508 Resource Limit*.
+3. **Mancanza di Bitrate Adattivo**: I server condivisi non generano automaticamente le diverse risoluzioni (1080p, 720p, 480p, 360p) a seconda della velocità di connessione dell'utente, causando continui blocchi su smartphone e reti mobili.
+
+#### 💡 La Strategia Vincente: YouTube con Video "Non in Elenco" (Unlisted)
+Per avere video veloci, gratuiti e con qualità cinematografica:
+1. **Carica il tuo video su YouTube** dal tuo account Google.
+2. Nelle opzioni di visibilità, seleziona **"Non in elenco" (Unlisted)**.
+   - *Cosa significa*: Il video **non compare nella ricerca di YouTube**, non compare sul tuo canale pubblico e nessuno può trovarlo casualmente.
+   - *Chi può vederlo*: **Esclusivamente chi visita il tuo sito web!**
+3. **Come incorporarlo nell'articolo**:
+   - Copia semplicemente il link del video di YouTube (es. `https://www.youtube.com/watch?v=...`).
+   - All'interno dell'editor del tuo articolo, incolla il link direttamente in un paragrafo o inserisci il blocco nativo **"YouTube"**.
+   - WordPress lo convertirà istantaneamente in un riproduttore video perfettamente funzionante!
+4. **Vantaggi Straordinari**:
+   - **Zero spazio consumato** sul tuo hosting da 20€.
+   - **Zero consumo di banda** (lo streaming viene gestito interamente dai potenti server globali di Google/YouTube).
+   - **Qualità massima e adattiva**: lo spettatore guarda il video fluido a 1080p/4K su qualsiasi dispositivo e connessione.
 
 ---
 
