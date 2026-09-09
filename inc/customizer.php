@@ -53,7 +53,7 @@ function cinephile_get_customizer_defaults() {
 		// --- 1. BRAND & PALETTE COLORI (CSS VARIABLES) ---
 		'brand_name'                 => $site_name,
 		'brand_tagline'              => $site_desc,
-		'header_logo_url'            => '',
+		'header_logo_url'            => get_theme_file_uri( '/assets/img/cinephile-logo.webp' ),
 		'theme_color_accent'         => '#c2410c', // Terracotta ambrato caldo / cinematografico
 		'theme_bg_canvas'            => '#f8fafc', // Slate 50: Sfondo generale neutro, chiaro e rilassante
 		'theme_text_main'            => '#0f172a', // Slate 900: Inchiostro scuro ad altissimo contrasto (WCAG AAA)

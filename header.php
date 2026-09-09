@@ -65,6 +65,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                 echo '<a href="' . esc_url( home_url( '/' ) ) . '" class="main-logo-link">';
                 echo '<img src="' . esc_url( $header_logo ) . '" alt="' . esc_attr( $brand_name ) . '" class="main-brand-logo">';
                 echo '</a>';
+            } elseif ( file_exists( get_template_directory() . '/assets/img/cinephile-logo.webp' ) ) {
+                $default_logo = get_theme_file_uri( '/assets/img/cinephile-logo.webp' );
+                echo '<a href="' . esc_url( home_url( '/' ) ) . '" class="main-logo-link">';
+                echo '<img src="' . esc_url( $default_logo ) . '" alt="' . esc_attr( $brand_name ) . '" class="main-brand-logo">';
+                echo '</a>';
             } else {
                 echo '<h1 class="site-title"><a href="' . esc_url( home_url( '/' ) ) . '">' . esc_html( $brand_name ) . '</a></h1>';
                 if ( ! empty( $brand_tagline ) ) {
