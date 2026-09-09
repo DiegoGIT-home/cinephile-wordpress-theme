@@ -170,3 +170,24 @@ function cinephile_admin_scripts( $hook_suffix ) {
 }
 add_action( 'admin_enqueue_scripts', 'cinephile_admin_scripts' );
 
+/**
+ * Favicon predefinita del tema (emblema lente cinematografica con ciak dorato).
+ * Viene caricata automaticamente solo se l'utente non ha impostato una propria Icona del Sito in WordPress.
+ */
+function cinephile_default_favicon() {
+	if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) {
+		$icon_32  = get_theme_file_uri( '/assets/img/favicon-32x32.png' );
+		$icon_180 = get_theme_file_uri( '/assets/img/apple-touch-icon.png' );
+		$icon_192 = get_theme_file_uri( '/assets/img/favicon-192x192.png' );
+		$icon_ico = get_theme_file_uri( '/favicon.ico' );
+
+		echo '<link rel="shortcut icon" href="' . esc_url( $icon_ico ) . '" />' . "\n";
+		echo '<link rel="icon" type="image/png" sizes="32x32" href="' . esc_url( $icon_32 ) . '" />' . "\n";
+		echo '<link rel="icon" type="image/png" sizes="192x192" href="' . esc_url( $icon_192 ) . '" />' . "\n";
+		echo '<link rel="apple-touch-icon" sizes="180x180" href="' . esc_url( $icon_180 ) . '" />' . "\n";
+	}
+}
+add_action( 'wp_head', 'cinephile_default_favicon', 2 );
+add_action( 'admin_head', 'cinephile_default_favicon', 2 );
+add_action( 'login_head', 'cinephile_default_favicon', 2 );
+
