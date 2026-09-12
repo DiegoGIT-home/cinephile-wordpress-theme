@@ -56,6 +56,7 @@ cinephile-theme/
 │       └── video-player.js     # Player video cinematografico (Lite Facade & Due Clic)
 ├── author.php                  # Scheda profilo del critico cinematografico e sue recensioni
 ├── category.php                # Template categorie con architettura visiva
+├── cinephile-child/            # Starter pronto all'uso del Tema Child (style.css, functions.php, screenshot)
 ├── comments.php                # Sistema commenti accessibile e conforme privacy
 ├── favicon.ico                 # Favicon nativa del sito per browser e bookmark
 ├── footer.php                  # Footer semantico con menu e copyright
@@ -115,6 +116,17 @@ cinephile-theme/
    - Vai in **Impostazioni > Permalink** e seleziona **Nome articolo** (`/%postname%/`) (fondamentale per la SEO!).
    - Personalizza colori e caratteri da **Aspetto > Personalizza**.
    - Inizia a scrivere: appena pubblicherai il tuo primo articolo, la home page si popolerà automaticamente!
+
+### 👶 Tema Figlio (Child Theme): Modifiche al Codice in Totale Sicurezza
+Il repository include la cartella pronta all'uso `cinephile-child/` (con `style.css`, `functions.php` e anteprima `screenshot.png` dedicata).
+- **Perché usarlo:** Tutte le modifiche fatte nel Customizer (colori, loghi, testi) sono salvate nel database e non si perdono mai. Ma se desideri modificare il **codice sorgente** (aggiungere regole CSS personalizzate, scrivere funzioni PHP o sovrascrivere file di template), fallo sempre nel Tema Child: in questo modo il tema genitore potrà ricevere tutti gli aggiornamenti futuri senza rischiare di cancellare il tuo codice!
+- **Come attivarlo:**
+  1. Copia o sposta la cartella `cinephile-child` direttamente nella directory dei temi di WordPress:  
+     `wp-content/themes/cinephile-child/` *(affiancata alla cartella del tema genitore `cinemaecritica-theme`)*.
+  2. Vai in **Aspetto > Temi** su WordPress e clicca su **Attiva** su **Cinephile Child**.
+  3. Scrivi i tuoi stili personalizzati in `cinephile-child/style.css` e i tuoi snippet PHP in `cinephile-child/functions.php`.
+
+> **💡 Nota sul Template:** Se la cartella del tema genitore viene rinominata (es. `cinephile`), assicurati che la voce `Template: nome-cartella` nella testata di `cinephile-child/style.css` coincida esattamente con il nome di quella cartella.
 
 ---
 
@@ -400,6 +412,7 @@ cinephile-theme/
 │       └── video-player.js     # Cinematic Video Player (Lite Facade & GDPR Two-Click)
 ├── author.php                  # Film critic profile template & published reviews catalogue
 ├── category.php                # Category template with bento grid
+├── cinephile-child/            # Ready-to-use Child Theme starter (style.css, functions.php, screenshot)
 ├── comments.php                # Clean, accessible threaded comments
 ├── favicon.ico                 # Browser and bookmark fallback native favicon
 ├── footer.php                  # Semantic footer with navigation & copyright
@@ -462,6 +475,17 @@ cinephile-theme/
    - Go to **Settings > Permalinks** and ensure **Post name** (`/%postname%/`) is selected (crucial for SEO!).
    - Navigate to **Appearance > Customize** to choose your favorite palette and typography.
    - Start writing your first review: as soon as you publish, the homepage slots and archives will automatically populate!
+
+### 👶 Child Theme: Custom Code & Safe Future Updates
+The repository includes a ready-to-use `cinephile-child/` folder (with `style.css`, `functions.php`, and a dedicated `screenshot.png` preview badge).
+- **Why use it:** All adjustments made via the WordPress Customizer (colors, typography, logo, layout texts) are stored in the database and never overwritten. However, if you plan to modify **source code** (add custom CSS rules, write custom PHP functions, or override template files), always use the Child Theme: this ensures the parent theme can be updated seamlessly without ever losing your customizations!
+- **How to activate:**
+  1. Copy or move the `cinephile-child` folder directly into your WordPress themes directory:  
+     `wp-content/themes/cinephile-child/` *(alongside your parent theme folder `cinemaecritica-theme`)*.
+  2. Navigate to **Appearance > Themes** in your WordPress dashboard and click **Activate** on **Cinephile Child**.
+  3. Write your custom CSS inside `cinephile-child/style.css` and custom PHP snippets inside `cinephile-child/functions.php`.
+
+> **💡 Template Name Tip:** If the parent theme folder is renamed (e.g. to `cinephile`), ensure the `Template: folder-name` line in `cinephile-child/style.css` matches that folder name exactly.
 
 ---
 
