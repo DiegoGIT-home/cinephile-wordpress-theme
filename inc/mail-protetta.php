@@ -46,6 +46,39 @@ if ( ! function_exists( 'cinephile_proteggi_email_js' ) ) :
 	}
 endif;
 
+if ( ! function_exists( 'cinephile_render_protected_email' ) ) :
+	/**
+	 * Restituisce il markup offuscato in Base64 per un singolo indirizzo email,
+	 * con fallback antispambot nativo di WordPress per utenti senza JS attivo.
+	 *
+	 * @param string $email Indirizzo email da mascherare.
+	 * @return string Elemento HTML protetto.
+	 */
+	function cinephile_render_protected_email( $email ) {
+		if ( empty( $email ) || ! is_email( $email ) ) {
+			return '';
+		}
+
+		$parts = explode( '@', $email, 2 );
+		if ( 2 !== count( $parts ) ) {
+			$safe = antispambot( $email );
+			return '<a href="mailto:' . esc_attr( $safe ) . '">' . esc_html( $safe ) . '</a>';
+		}
+
+		$user_b64   = base64_encode( $parts[0] );
+		$domain_b64 = base64_encode( $parts[1] );
+		$fallback   = antispambot( $email );
+
+		return sprintf(
+			'<span class="js-email-protect" data-u="%s" data-d="%s"></span><noscript><a href="mailto:%s">%s</a></noscript>',
+			esc_attr( $user_b64 ),
+			esc_attr( $domain_b64 ),
+			esc_attr( $fallback ),
+			esc_html( $fallback )
+		);
+	}
+endif;
+
 // Applicazione filtri sul contenuto degli articoli, widget e riassunti
 add_filter( 'the_content', 'cinephile_proteggi_email_js', 20 );
 add_filter( 'widget_text', 'cinephile_proteggi_email_js', 20 );

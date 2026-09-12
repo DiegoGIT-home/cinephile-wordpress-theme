@@ -133,3 +133,19 @@ if ( ! function_exists( 'cinephile_process_contact_form' ) ) :
 		return '<div class="form-alert alert-error">' . esc_html__( 'Si è verificato un errore tecnico durante l\'invio. Riprova più tardi.', 'cinephile' ) . '</div>';
 	}
 endif;
+
+/* ==========================================================================
+   LOGGING ERRORI MAIL LOCALE (DIDATTICO & SVILUPPO)
+   ========================================================================== */
+
+if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+	/**
+	 * Intercetta eventuali fallimenti nell'invio delle email tramite wp_mail()
+	 * e traccia il dettaglio dell'errore nel file debug.log del server.
+	 */
+	add_action( 'wp_mail_failed', function( $wp_error ) {
+		if ( is_wp_error( $wp_error ) ) {
+			error_log( 'Errore Invio Mail WP [Cinephile]: ' . $wp_error->get_error_message() );
+		}
+	} );
+}

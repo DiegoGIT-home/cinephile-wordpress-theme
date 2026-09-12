@@ -1,0 +1,5 @@
+- **GDPR Assoluto:** Niente chiamate esterne. Asset 100% locali. Offuscamento email.
+- **Architettura PHP:** File atomici dentro `/inc/`. Il file `functions.php` deve solo fare include/require.
+- **Sicurezza:** `defined('ABSPATH') || exit;` in ogni file. `esc_html()`, `esc_attr()` e `sanitize_text_field()` obbligatori su ogni input/output.
+- **Blocchi:** Supporto a Gutenberg, no costruttori visivi pesanti (Elementor/Divi).
+- **Commenti:** PHPDoc esteso e commenti in italiano semplici per studio.

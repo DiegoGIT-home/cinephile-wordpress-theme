@@ -61,15 +61,17 @@ cinephile-theme/
 ├── footer.php                  # Footer semantico con menu e copyright
 ├── front-page.php              # Homepage con slot editoriali e scheda benvenuto empty-state
 ├── functions.php               # Orchestratore principale e caricamento moduli inc/
+├── get-fonts.sh                # Script shell per il download locale dei font Google in WOFF2
 ├── GUIDA-IMMAGINI.md           # Guida completa a formati, risoluzioni e compressione immagini
 ├── header.php                  # Testata ad alte prestazioni, logo trasparente e navigazione
 ├── inc/
+│   ├── assets.php              # Enqueue fogli di stile, font locali WOFF2, script e favicon
 │   ├── customizer.php          # Controlli Customizer live e iniezione variabili CSS
 │   ├── excerpt-cleaner.php     # Pulizia estratti, rimozione URL e preservazione leggibilità
 │   ├── form-contatti.php       # Modulo contatti nativo, honeypot anti-spam e transient rate-limit
 │   ├── hide-featured-image.php # Toggle per post per sopprimere l'immagine di copertina
 │   ├── image-optimization.php  # Supporto WebP nativo, taglie cinema e srcset
-│   ├── mail_protetta.php       # Mascheramento email nativo antispambot
+│   ├── mail-protetta.php       # Mascheramento email nativo antispambot e Base64/JS
 │   ├── metabox-film.php        # Scheda tecnica del film (regista, anno, voto a stelle)
 │   ├── metabox-gallery.php     # Controlli scenografia polaroid e preset
 │   ├── metabox-positions.php   # Posizionamento slot homepage e filtri admin
@@ -78,7 +80,7 @@ cinephile-theme/
 │   ├── security.php            # Anti-enumerazione utenti, firewall leggero e no XML-RPC
 │   ├── seo-schema.php          # Microdati Schema.org JSON-LD (Review stelle, Movie, Article)
 │   ├── setup-pages.php         # Generazione pagine legali e shortcode Privacy GDPR
-│   ├── setup.php               # Supporti tema, favicon nativa e caricamento asset
+│   ├── setup.php               # Supporti tema, menu e formati mime font
 │   ├── template-tags.php       # Tempo di lettura, badge e formattatori editoriali
 │   └── video-player.php        # Player video cinematografico (Lite Facade & Due Clic GDPR)
 ├── index.php                   # Fallback loop standard WordPress
@@ -86,6 +88,7 @@ cinephile-theme/
 │   └── cinephile.pot           # File master di traduzione e localizzazione con 2.400+ stringhe
 ├── LICENSE                     # Licenza ufficiale internazionale (GNU GPL v2 in lingua inglese)
 ├── LICENZA.md                  # Traduzione italiana di cortesia & guida alla licenza GPL v2
+├── ottimizza-media.sh          # Script shell per la conversione automatica WebP e MP4
 ├── page-chi-siamo.php          # Pagina manifesto con banner 2.35:1 e transient cache autori
 ├── page-contatti.php           # Template pagina contatti sicura
 ├── page.php                    # Layout pagina generica pulita
@@ -402,15 +405,17 @@ cinephile-theme/
 ├── footer.php                  # Semantic footer with navigation & copyright
 ├── front-page.php              # Curated magazine homepage with editorial slots & empty state
 ├── functions.php               # Core orchestrator loading inc/ modules
+├── get-fonts.sh                # Shell script to download Google Fonts locally into WOFF2
 ├── GUIDA-IMMAGINI.md           # Comprehensive image formats, resolutions & optimization guide
 ├── header.php                  # High-performance header with navigation & search modal
 ├── inc/
+│   ├── assets.php              # Stylesheet enqueuing, local WOFF2 fonts, scripts & favicon
 │   ├── customizer.php          # Live Customizer controls & dynamic CSS injection
 │   ├── excerpt-cleaner.php     # Smart excerpt trimmer preserving readability
 │   ├── form-contatti.php       # Plugin-free secure contact form with Cloudflare IP & honeypot
 │   ├── hide-featured-image.php # Per-post toggle to hide hero thumbnail
 │   ├── image-optimization.php  # WebP support, aspect-ratio wrappers & srcset
-│   ├── mail_protetta.php       # Native email antispam obfuscator
+│   ├── mail-protetta.php       # Native email antispam obfuscator (Base64/JS)
 │   ├── metabox-film.php        # Native movie metadata (director, cast, rating, runtime)
 │   ├── metabox-gallery.php     # Polaroid gallery controls & preset overrides
 │   ├── metabox-positions.php   # Editorial homepage slot assignment & admin filters
@@ -419,7 +424,7 @@ cinephile-theme/
 │   ├── security.php            # Anti-enumeration, query inspection & XML-RPC hardening
 │   ├── seo-schema.php          # JSON-LD structured data for Movie & Review (Google stars)
 │   ├── setup-pages.php         # Automated template detection & GDPR privacy shortcode
-│   ├── setup.php               # Theme supports, menus, native favicon & image sizes
+│   ├── setup.php               # Theme supports, menus & font mime types
 │   ├── template-tags.php       # Reading time counter, pill badges, and formatters
 │   └── video-player.php        # Cinematic Video Player (Lite Facade & GDPR Two-Click)
 ├── index.php                   # Fallback loop standard WordPress
@@ -427,6 +432,7 @@ cinephile-theme/
 │   └── cinephile.pot           # Master localization template file with 2,400+ indexed strings
 ├── LICENSE                     # Official international license (GNU GPL v2 in English)
 ├── LICENZA.md                  # Italian courtesy translation & plain-language summary of GPL v2
+├── ottimizza-media.sh          # Shell script for automated WebP and MP4 optimization
 ├── page-chi-siamo.php          # Editorial "About Us" magazine layout with 2.35:1 banner
 ├── page-contatti.php           # Native contact page template
 ├── page.php                    # Default clean page layout

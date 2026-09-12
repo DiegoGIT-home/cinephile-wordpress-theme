@@ -1,0 +1,23 @@
+root = true
+
+# Impostazioni globali per tutti i file
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Standard HTML5, CSS, JSON e Markdown (Front-end)
+[*.{html,css,js,json,md,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Standard WordPress ufficiale (PHP)
+[*.php]
+indent_style = tab
+indent_size = 4
+
+# Script Bash
+[*.sh]
+indent_style = space
+indent_size = 2

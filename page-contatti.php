@@ -139,10 +139,14 @@ $privacy_notice  = get_theme_mod( 'contact_privacy_notice', __( "I dati inseriti
 				</div>
 				<div class="card-text">
 					<h4><?php echo esc_html( $card1_title ); ?></h4>
-					<?php $email_sicura = antispambot( $card1_email ); ?>
-					<a href="mailto:<?php echo esc_attr( $email_sicura ); ?>">
-						<?php echo wp_kses_post( $email_sicura ); ?>
-					</a>
+					<?php
+					if ( function_exists( 'cinephile_render_protected_email' ) ) {
+						echo cinephile_render_protected_email( $card1_email );
+					} else {
+						$email_sicura = antispambot( $card1_email );
+						echo '<a href="mailto:' . esc_attr( $email_sicura ) . '">' . wp_kses_post( $email_sicura ) . '</a>';
+					}
+					?>
 				</div>
 			</div>
 

@@ -157,3 +157,27 @@ if ( ! is_admin() ) {
 	add_filter( 'style_loader_src', 'cinephile_remove_ver_css_js', 9999 );
 	add_filter( 'script_loader_src', 'cinephile_remove_ver_css_js', 9999 );
 }
+
+
+/* ==========================================================================
+   5. FILTRO ANTI-BOT HONEYPOT SUI COMMENTI
+   ========================================================================== */
+
+/**
+ * Intercetta l'invio dei commenti e blocca le sottomissioni in cui il campo honeypot è compilato.
+ *
+ * @param array $commentdata Dati del commento in ingresso.
+ * @return array Dati commento validati.
+ */
+function cinephile_verify_comment_honeypot( $commentdata ) {
+	if ( ! empty( $_POST['real_user_comment_hp'] ) ) {
+		wp_die(
+			esc_html__( 'Invio del commento bloccato dal filtro di sicurezza anti-bot.', 'cinephile' ),
+			esc_html__( 'Spam Rilevato', 'cinephile' ),
+			array( 'response' => 403 )
+		);
+	}
+	return $commentdata;
+}
+add_filter( 'preprocess_comment', 'cinephile_verify_comment_honeypot' );
+

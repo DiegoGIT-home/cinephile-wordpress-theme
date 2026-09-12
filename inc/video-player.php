@@ -56,14 +56,30 @@ function cinephile_render_cinema_video_player( $video_id, $caption = '' ) {
 		return '';
 	}
 
-	// Immagine di copertina ad alta risoluzione da YouTube CDN (fallback a hqdefault se non presente maxres)
-	$thumb_url = 'https://i.ytimg.com/vi/' . rawurlencode( $video_id ) . '/hqdefault.jpg';
+	// Immagine di copertina: priorità all'immagine in evidenza locale del post per garantire conformità GDPR assoluta.
+	// Zero chiamate terze preventive prima del consenso/clic dell'utente.
+	$thumb_style = '';
+	if ( has_post_thumbnail() ) {
+		$featured_img_url = get_the_post_thumbnail_url( get_the_ID(), 'cinephile-hero-large' );
+		if ( ! $featured_img_url ) {
+			$featured_img_url = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+		}
+		if ( $featured_img_url ) {
+			$thumb_style = 'background-image: url(\'' . esc_url( $featured_img_url ) . '\');';
+		}
+	}
+
+	// Filtro opzionale per consentire la miniatura remota di YouTube solo se espressamente autorizzata
+	$allow_remote_thumb = apply_filters( 'cinephile_allow_remote_youtube_thumb', false, $video_id );
+	if ( empty( $thumb_style ) && $allow_remote_thumb ) {
+		$thumb_style = 'background-image: url(\'' . esc_url( 'https://i.ytimg.com/vi/' . rawurlencode( $video_id ) . '/hqdefault.jpg' ) . '\');';
+	}
 
 	ob_start();
 	?>
 	<div class="cinephile-cinema-player-wrapper">
 		<div class="cinephile-cinema-player" data-video-id="<?php echo esc_attr( $video_id ); ?>">
-			<div class="cinema-player-poster" style="background-image: url('<?php echo esc_url( $thumb_url ); ?>');" role="button" tabindex="0" aria-label="<?php esc_attr_e( 'Riproduci trailer cinematografico', 'cinephile' ); ?>">
+			<div class="cinema-player-poster" <?php if ( ! empty( $thumb_style ) ) : ?>style="<?php echo esc_attr( $thumb_style ); ?>"<?php endif; ?> role="button" tabindex="0" aria-label="<?php esc_attr_e( 'Riproduci trailer cinematografico', 'cinephile' ); ?>">
 				
 				<!-- Badge Cinematografico Superiore -->
 				<div class="cinema-player-badge">
@@ -88,9 +104,14 @@ function cinephile_render_cinema_video_player( $video_id, $caption = '' ) {
 				</div>
 			</div>
 
-			<!-- Fallback per utenti con JavaScript disattivato -->
+			<!-- Fallback per utenti con JavaScript disattivato (Zero connessioni esterne automatiche) -->
 			<noscript>
-				<iframe class="cinema-player-iframe" src="<?php echo esc_url( 'https://www.youtube-nocookie.com/embed/' . $video_id . '?rel=0&iv_load_policy=3&playsinline=1' ); ?>" title="<?php esc_attr_e( 'Riproduttore video YouTube', 'cinephile' ); ?>" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<div class="cinema-player-noscript" style="padding: 1.5rem; text-align: center; background: rgba(0,0,0,0.85); border-radius: 8px; margin-top: 1rem;">
+					<p style="margin-bottom: 0.75rem; color: #cbd5e1;"><?php esc_html_e( 'JavaScript è disattivato nel browser. Per visualizzare il trailer su YouTube:', 'cinephile' ); ?></p>
+					<a href="<?php echo esc_url( 'https://www.youtube-nocookie.com/embed/' . rawurlencode( $video_id ) ); ?>" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.6rem 1.2rem; background: #e50914; color: #ffffff; border-radius: 4px; font-weight: 600; text-decoration: none;">
+						▶ <?php esc_html_e( 'Guarda il video (apre YouTube in una nuova scheda)', 'cinephile' ); ?>
+					</a>
+				</div>
 			</noscript>
 		</div>
 

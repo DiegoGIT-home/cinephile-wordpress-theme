@@ -1,8 +1,9 @@
 # ==============================================================================
 # Cinephile WordPress Theme - .gitignore
+# Solo file strettamente necessari per la produzione e distribuzione del tema
 # ==============================================================================
 
-# Operating System Files
+# 1. File di Sistema Operativo
 .DS_Store
 .DS_Store?
 ._*
@@ -11,45 +12,55 @@
 ehthumbs.db
 Thumbs.db
 Desktop.ini
-
-# Editor & IDE Files
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.idea/
-*.sublime-project
-*.sublime-workspace
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
 *.swp
 *.swo
 *~
-*.bak
 
-# Logs & Databases
+# 2. Ambienti IDE, Editor e Configurazioni Agente AI
+.vscode/
+.idea/
+.antigravity/
+.agents/
+.gemini/
+*.sublime-project
+*.sublime-workspace
+
+# 3. File Operativi Interni, Note di Sviluppo e Prompt Privati
+PROMPT_INIZIALE.md
+README-antigraviti.md
+github.txt
+*.todo
+*.notes
+
+# 4. Risorse Grezze di Lavoro (gestite dagli script shell locali)
+assets/raw/
+
+# 5. Log di Sistema e File Temporanei
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 debug.log
 error_log
+*.tmp
+*.bak
+*.orig
 
-# Environment & Credentials
+# 6. Pacchetti, Database e File Sensibili
+*.sql
+*.sql.gz
+*.sqlite
+*.zip
+*.tar.gz
+*.rar
 .env
-.env.local
-.env.*.local
+.env.*
 *.pem
 *.key
 
-# Temporary files & Caches
-*.tmp
-*.temp
+# 7. Dipendenze e Build Artifacts
+node_modules/
+vendor/
 .sass-cache/
 .cache/
 
-# Node & Package Managers (if ever used for assets)
-node_modules/

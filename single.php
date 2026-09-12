@@ -112,23 +112,6 @@ $show_thumb = get_theme_mod( 'single_show_featured_image', true );
                 </div>
             <?php endif; ?>
 
-            <?php
-            $gallery_preset = get_post_meta( get_the_ID(), '_cinephile_gallery_preset_override', true );
-            if ( empty( $gallery_preset ) ) {
-                $gallery_preset = get_post_meta( get_the_ID(), '_cinemaecritica_gallery_preset_override', true );
-            }
-            if ( empty( $gallery_preset ) || 'default' === $gallery_preset ) {
-                $gallery_preset = get_theme_mod( 'gallery_props_preset', 'classico_master' );
-            }
-            $gallery_random_rot = (bool) get_theme_mod( 'gallery_random_rot', true );
-            ?>
-            <script>
-                window.ccGalleryConfig = {
-                    preset: '<?php echo esc_js( $gallery_preset ); ?>',
-                    randomRot: <?php echo wp_json_encode( $gallery_random_rot ); ?>
-                };
-            </script>
-
             <div class="entry-content">
                 <?php the_content(); ?>
             </div>
